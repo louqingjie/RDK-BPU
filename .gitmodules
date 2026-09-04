@@ -1,0 +1,9 @@
+[submodule "Galaxy_camera_node"]
+	path = Galaxy_camera_node
+	url = https://github.com/wunuo1/RM.git
+[submodule "data/AT_NN_Detector"]
+	path = data/AT_NN_Detector
+	url = https://github.com/PraySky1337/AT_NN_Detector.git
+[submodule "data/rm_armor_detection"]
+	path = data/rm_armor_detection
+	url = https://github.com/wunuo1/rm_armor_detection.git

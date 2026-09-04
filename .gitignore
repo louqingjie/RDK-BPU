@@ -1,6 +1,9 @@
 # OE SDK 交付包与模型产物不入库
 oe_sdk/
-data/
+# data/ 默认忽略，但其中的两个子模块仓库除外
+data/*
+!data/AT_NN_Detector
+!data/rm_armor_detection
 *.tar.gz
 *.bin
 .trae/
