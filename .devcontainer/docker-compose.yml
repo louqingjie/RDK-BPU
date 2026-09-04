@@ -1,0 +1,29 @@
+# 1:1 还原 devcontainer.json 的 GPU / shm / 挂载配置，并暴露 SSH 端口
+services:
+  rdk-x5-quant:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        SSH_PUB_KEY: ${SSH_PUB_KEY:-}
+    image: rdk-x5-quant-ssh:1.2.8
+    container_name: rdk-x5-quant
+    init: true
+    shm_size: 15g                 # 对应 --shm-size=15g
+    working_dir: /workspace       # 对应 workspaceFolder
+    user: root                    # 对应 remoteUser
+    ports:
+      - "127.0.0.1:2222:22"       # 仅本机访问；需外部访问改为 0.0.0.0:2222:22
+    volumes:
+      - ../:/workspace            # 对应 workspaceMount（整个工程）
+      - ../oe_sdk:/open_explorer  # 对应 mounts[0]
+      - ../data:/data             # 对应 mounts[1]
+    deploy:                       # 对应 --gpus=all
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    stdin_open: true
+    tty: true
