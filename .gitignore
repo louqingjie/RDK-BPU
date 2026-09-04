@@ -1,0 +1,6 @@
+# OE SDK 交付包与模型产物不入库
+oe_sdk/
+data/
+*.tar.gz
+*.bin
+.trae/
