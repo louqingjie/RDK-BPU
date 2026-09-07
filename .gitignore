@@ -1,11 +1,32 @@
-# OE SDK 交付包与模型产物不入库
+# OE SDK 交付包不入库
 oe_sdk/
-# data/ 默认忽略，但其中的两个子模块仓库除外
+
+# 第三方公开数据集（108 MB，按需本地下载，不入库）
+RM2025-Armor-Public-Dataset/
+
+# ============================================================
+# data/ 白名单策略：默认全部忽略，只放行「目录骨架 + 元数据」
+# 大体量二进制（模型、校准样本、可视化图）一律不入库
+# ============================================================
 data/*
+# 两个子模块仓库（由各自远端独立版本管理）
 !data/AT_NN_Detector
 !data/rm_armor_detection
+# RDK X5 量化工作区：跟踪 yaml / manifest / README
+!data/horizon_x5/
+# ONNX 落盘目录：只保留目录骨架
+!data/onnx/
+
+# 校准集：跟踪 manifest.csv 与 README.md，忽略样本本体
+data/horizon_x5/data/calibration_data/images/
+data/horizon_x5/data/calibration_data/source/
+
+# 二进制与大文件
 *.tar.gz
 *.bin
-.trae/
+*.onnx
+*.hbm
+*.hbir
 *.avi
-RM2025-Armor-Public-Dataset/
+*.mp4
+.trae/
