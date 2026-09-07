@@ -7,3 +7,5 @@ data/*
 *.tar.gz
 *.bin
 .trae/
+*.avi
+RM2025-Armor-Public-Dataset/

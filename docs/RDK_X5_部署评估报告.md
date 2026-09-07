@@ -49,6 +49,9 @@
    - 输出转 NHWC 布局（permute(0,2,3,1)）
    - 导出无后处理的 ONNX
 3. 准备校准数据集（建议 100+ 张真实装甲板图，覆盖不同光照场景）
+   > ⚠️ 数据集来源红线见 [数据集使用规范.md](./数据集使用规范.md)：
+   > `data/AT_NN_Detector/video/` 下 3 个 mp4 **禁止用于校准集与验证集**；
+   > `/workspace/video.avi` 仅限暗光补充（≤20%）。
 4. OE 工具链 Docker 内运行 hb_mapper checker，确认无算子回落 CPU
 5. hb_mapper makertbin 完成 PTQ 量化，生成 .bin
 6. 若 mAP 掉点明显，使用 horizon_plugin_pytorch 做 QAT
@@ -65,6 +68,7 @@
 
 ## 七、参考
 
+- 数据集使用规范（禁用/限用清单）：[数据集使用规范.md](./数据集使用规范.md)
 - 模型包自带 `README.md`（两组模型区别、量化说明、命名规则）
 - RDK 社区：YOLOv8 / YOLOv5 在 X5 上的模型转换与部署实测帖
 - CSDN：RDK X5 部署 YOLOv11n 从 7 FPS 到 47 FPS 的性能优化实录（Softmax int8 回落 CPU 问题）
