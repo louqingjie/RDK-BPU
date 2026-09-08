@@ -1,0 +1,36 @@
+# 深圳大学 RobotPilots 0526 装甲板检测模型 -> RDK X5 (bayes-e) 量化编译配置
+# 生成：2026-09-07
+# 模型：data/onnx/rp_0526_fp32.onnx（由 rp_0526.onnx 经 convert_input_fp32.py 转换，输入 FP16->FP32）
+# 校准集：data/horizon_x5/data/calibration_data_640_u8/（200 张 uint8 RGB NCHW，640x640）
+
+model_parameters:
+  onnx_model: '/workspace/data/onnx/rp_0526_fp32.onnx'
+  march: 'bayes-e'
+  layer_out_dump: False
+  working_dir: '/workspace/quant/rp0526_per_channel/model_output'
+  output_model_file_prefix: 'rp0526_640x640_per_channel'
+
+input_parameters:
+  # 整图已转 FP32（convert_model_fp32.py），输入节点名保持原名
+  input_name: 'images'
+  # 部署时直接喂 uint8 RGB，归一化由 BPU 内部完成（省 CPU）
+  # 布局用 NHWC：编译器内部即 NHWC，避免运行时对 [25200,22] 大矩阵做 NCHW 转置（实测 27ms）
+  input_type_rt: 'rgb'
+  input_layout_rt: 'NHWC'
+  input_type_train: 'rgb'
+  input_layout_train: 'NCHW'
+  input_shape: '1x3x640x640'
+  # 训练侧预处理为 /255
+  norm_type: 'data_scale'
+  scale_value: 0.00392156862745098
+
+calibration_parameters:
+  cal_data_dir: '/workspace/data/horizon_x5/data/calibration_data_640_u8/images'
+  cal_data_type: 'uint8'
+  calibration_type: 'mix'
+  per_channel: True
+
+compiler_parameters:
+  compile_mode: 'latency'
+  debug: True
+  optimize_level: 'O2'

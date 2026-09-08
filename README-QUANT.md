@@ -41,6 +41,31 @@ hb_mapper makertbin --model-type onnx --config your_config.yaml
 hb_perf data/output/model_output/your_model.bin
 ```
 
+## 文档索引
+
+| 文档 | 内容 |
+|---|---|
+| [docs/RDK_X5_部署评估报告.md](docs/RDK_X5_部署评估报告.md) | AT_NN_Detector 模型包初评 |
+| [docs/RDK_X5_量化可行性评估_AT_NN_Detector.md](docs/RDK_X5_量化可行性评估_AT_NN_Detector.md) | 图结构/算子/动态范围实测 + 实机测试结果（14 章） |
+| [docs/量化踩坑记录.md](docs/量化踩坑记录.md) | **量化全过程问题实录（FP16、输出混量纲、runtime 开销等 16 项）** |
+| [docs/传统精修与PnP解算分析_上科大与同济方案.md](docs/传统精修与PnP解算分析_上科大与同济方案.md) | 强队传统精修方案解读 |
+| [docs/数据集使用规范.md](docs/数据集使用规范.md) | 校准/验证数据集禁用与合规清单 |
+
+## 实用脚本（scripts/）
+
+| 脚本 | 用途 |
+|---|---|
+| `inspect_onnx.py` | ONNX 算子统计与 BPU 阻断项识别 |
+| `analyze_cutpoint.py` | 主干/后处理分界与算力统计 |
+| `probe_output_range.py` | 裁剪点张量动态范围与量化步长 |
+| `convert_model_fp32.py` | FP16 模型全图转 FP32（makertbin 前置） |
+| `convert_input_fp32.py` | 仅输入节点 FP16→FP32（图首 Cast 方案） |
+| `normalize_rp_output.py` | 深大模型输出归一化图手术（拆分输出） |
+| `prepare_calibration_data.py` | 校准集生成（分层抽样 + letterbox 预处理） |
+| `capture.cpp` | 大恒相机最小采集程序（板上 GxIAPI） |
+| `real_camera_test.py` | 真实相机帧板端推理 + 后处理 + 标注 |
+| `pnp_error_sim.py` | 角点量化误差 → PnP 解算误差蒙特卡洛仿真 |
+
 ## 切换 CPU 镜像 / 离线兜底
 
 - **CPU 版**：将 `.devcontainer/devcontainer.json` 中 image 改为
