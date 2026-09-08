@@ -62,6 +62,9 @@ hb_perf data/output/model_output/your_model.bin
 | `convert_input_fp32.py` | 仅输入节点 FP16→FP32（图首 Cast 方案） |
 | `normalize_rp_output.py` | 深大模型输出归一化图手术（拆分输出） |
 | `prepare_calibration_data.py` | 校准集生成（分层抽样 + letterbox 预处理） |
+| `verify_sp25_models.py` | 第三方 IR vs 原始 ONNX 双引擎同源验证（余弦 >0.999） |
+| `prepare_sp25_models.py` | tiny_resnet 量化前处理（动态 batch 固化 + opset 17→11 降级） |
+| `prepare_sp25_calibration.py` | sp25 分类器 32×32 灰度校准集（对齐 classifier.cpp 预处理） |
 | `capture.cpp` | 大恒相机最小采集程序（板上 GxIAPI） |
 | `real_camera_test.py` | 真实相机帧板端推理 + 后处理 + 标注 |
 | `pnp_error_sim.py` | 角点量化误差 → PnP 解算误差蒙特卡洛仿真 |
