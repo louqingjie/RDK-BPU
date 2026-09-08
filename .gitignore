@@ -16,12 +16,16 @@ data/*
 !data/horizon_x5/
 # ONNX 落盘目录：只保留目录骨架
 !data/onnx/
+# 第三方下载的模型本体（同济 sp_vision_25 IR 原件等）
+data/onnx/sp_vision_25/
 
 # 校准集：跟踪 manifest.csv 与 README.md，忽略样本本体
 data/horizon_x5/data/calibration_data/images/
 data/horizon_x5/data/calibration_data/source/
 data/horizon_x5/data/calibration_data_640/
 data/horizon_x5/data/calibration_data_640_u8/
+data/horizon_x5/data/calibration_data_32gray/images/
+data/horizon_x5/data/calibration_data_32gray/preview/
 
 # Python 缓存
 __pycache__/
