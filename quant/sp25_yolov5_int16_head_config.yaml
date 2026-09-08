@@ -1,0 +1,38 @@
+# 对照实验（P17 流程）：仅将三个检测头 Conv 及解码 Mul / Add 固定为 INT16。
+# sp25_yolov5（rp24_0708.onnx）的检测头为 model.26（m.0/m.1/m.2 三尺度）。
+model_parameters:
+  onnx_model: '/workspace/data/onnx/sp_vision_25/rp24_0708.onnx'
+  march: 'bayes-e'
+  layer_out_dump: False
+  working_dir: '/workspace/quant/sp25_yolov5_int16_head/model_output'
+  output_model_file_prefix: 'sp25_yolov5_640x640_int16_head'
+  node_info:
+    "/m/model.26/m.0/Conv": {"ON": "BPU", "InputType": "int16", "OutputType": "int16"}
+    "/m/model.26/Mul": {"ON": "BPU", "InputType": "int16", "OutputType": "int16"}
+    "/m/model.26/Add": {"ON": "BPU", "InputType": "int16", "OutputType": "int16"}
+    "/m/model.26/m.1/Conv": {"ON": "BPU", "InputType": "int16", "OutputType": "int16"}
+    "/m/model.26/Mul_1": {"ON": "BPU", "InputType": "int16", "OutputType": "int16"}
+    "/m/model.26/Add_1": {"ON": "BPU", "InputType": "int16", "OutputType": "int16"}
+    "/m/model.26/m.2/Conv": {"ON": "BPU", "InputType": "int16", "OutputType": "int16"}
+    "/m/model.26/Mul_2": {"ON": "BPU", "InputType": "int16", "OutputType": "int16"}
+    "/m/model.26/Add_2": {"ON": "BPU", "InputType": "int16", "OutputType": "int16"}
+
+input_parameters:
+  input_name: 'images'
+  input_type_rt: 'rgb'
+  input_layout_rt: 'NHWC'
+  input_type_train: 'rgb'
+  input_layout_train: 'NCHW'
+  input_shape: '1x3x640x640'
+  norm_type: 'data_scale'
+  scale_value: 0.00392156862745098
+
+calibration_parameters:
+  cal_data_dir: '/workspace/data/horizon_x5/data/calibration_data_640_u8/images'
+  cal_data_type: 'uint8'
+  calibration_type: 'mix'
+
+compiler_parameters:
+  compile_mode: 'latency'
+  debug: True
+  optimize_level: 'O2'
