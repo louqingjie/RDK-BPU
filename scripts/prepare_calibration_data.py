@@ -109,6 +109,9 @@ def main():
     ap.add_argument("--min-side", type=int, default=360)
     ap.add_argument("--layout", choices=["nchw", "nhwc"], default="nchw")
     ap.add_argument("--input-name", default="images")
+    ap.add_argument("--dtype", choices=["float32", "uint8"], default="float32",
+                    help="float32: 已归一化(/255)，配 norm_type:no_preprocess；"
+                         "uint8: 原始 0~255，配 input_type_rt:rgb + data_scale(1/255)")
     args = ap.parse_args()
 
     img_dir = os.path.join(args.out, "images")
@@ -124,13 +127,20 @@ def main():
     rows = []
     for i, (name, img, bright) in enumerate(picked):
         canvas, scale, pad = letterbox(img, args.height, args.width)
-        rgb = cv2.cvtColor(canvas, cv2.COLOR_BGR2RGB).astype(np.float32) / 255.0
-        if args.layout == "nchw":
-            blob = np.ascontiguousarray(rgb.transpose(2, 0, 1)[None])
-        else:
-            blob = np.ascontiguousarray(rgb[None])
+        rgb = cv2.cvtColor(canvas, cv2.COLOR_BGR2RGB)
+        if args.dtype == "float32":
+            data = rgb.astype(np.float32) / 255.0
+            if args.layout == "nchw":
+                blob = np.ascontiguousarray(data.transpose(2, 0, 1)[None], dtype=np.float32)
+            else:
+                blob = np.ascontiguousarray(data[None], dtype=np.float32)
+        else:  # uint8，原始 0~255
+            if args.layout == "nchw":
+                blob = np.ascontiguousarray(rgb.transpose(2, 0, 1)[None], dtype=np.uint8)
+            else:
+                blob = np.ascontiguousarray(rgb[None], dtype=np.uint8)
         bin_name = f"{args.input_name}_{i:04d}.bin"
-        blob.astype(np.float32).tofile(os.path.join(img_dir, bin_name))
+        blob.tofile(os.path.join(img_dir, bin_name))
         cv2.imwrite(os.path.join(src_dir, f"{i:04d}.jpg"), canvas,
                     [int(cv2.IMWRITE_JPEG_QUALITY), 95])
         rows.append({
