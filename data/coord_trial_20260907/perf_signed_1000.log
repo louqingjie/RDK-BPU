@@ -1,0 +1,27 @@
+hrt_model_exec perf --model_file coord_trial_576x768.bin --input_file positive_rgb_s8_chw.bin --frame_count 1000 --thread_num 1
+I0000 00:00:00.000000  6171 vlog_is_on.cc:197] RAW: Set VLOG level for "*" to 3
+[BPU_PLAT]BPU Platform Version(1.3.6)! soc info(x5)
+[HBRT] set log level as 0. version = 3.15.55.0
+[DNN] Runtime version = 1.24.5_(3.15.55 HBRT)
+[A][DNN][packed_model.cpp:247][Model](2026-09-07,18:46:31.603.187) [HorizonRT] The model builder version = 1.24.3
+Load model to DDR cost 105.925ms.
+I0907 18:46:31.653251  6171 function_util.cpp:323] get model handle success
+I0907 18:46:31.653378  6171 function_util.cpp:656] get model input count success
+file length: 1327104
+I0907 18:46:31.655104  6171 tensor_util.cpp:194] read file success!
+I0907 18:46:31.655179  6171 function_util.cpp:687] prepare input tensor success!
+I0907 18:46:31.655215  6171 function_util.cpp:697] get model output count success
+Frame count: 200,  Thread Average: 6.749804 ms,  thread max latency: 10.190000 ms,  thread min latency: 4.926000 ms,  FPS: 147.652908
+Frame count: 400,  Thread Average: 7.088794 ms,  thread max latency: 10.190000 ms,  thread min latency: 4.864000 ms,  FPS: 140.684021
+Frame count: 600,  Thread Average: 7.121188 ms,  thread max latency: 10.190000 ms,  thread min latency: 4.844000 ms,  FPS: 140.072952
+Frame count: 800,  Thread Average: 7.381522 ms,  thread max latency: 10.190000 ms,  thread min latency: 4.844000 ms,  FPS: 135.137833
+Frame count: 1000,  Thread Average: 7.561813 ms,  thread max latency: 10.190000 ms,  thread min latency: 4.844000 ms,  FPS: 131.914078
+
+Running condition:
+  Thread number is: 1
+  Frame count   is: 1000
+  Program run time: 7581.275000 ms
+Perf result:
+  Frame totally latency is: 7561.813477 ms
+  Average    latency    is: 7.561813 ms
+  Frame      rate       is: 131.903934 FPS

@@ -5,21 +5,26 @@ oe_sdk/
 RM2025-Armor-Public-Dataset/
 
 # ============================================================
-# data/ 白名单策略：默认全部忽略，只放行「目录骨架 + 元数据」
-# 大体量二进制（模型、校准样本、可视化图）一律不入库
+# data/ 白名单策略：默认全部忽略，放行试验成果目录
+# 2026-09-09 起模型产物 bin / onnx 一律入库；
+# 仅校准样本本体仍排除（约 2.2 GB，可由 prepare_calibration_data.py 再生）
 # ============================================================
 data/*
 # 两个子模块仓库（由各自远端独立版本管理）
 !data/AT_NN_Detector
 !data/rm_armor_detection
-# RDK X5 量化工作区：跟踪 yaml / manifest / README
+# RDK X5 量化工作区：跟踪 yaml / manifest / README（校准样本本体不入库）
 !data/horizon_x5/
-# ONNX 落盘目录：只保留目录骨架
+# ONNX 模型目录（含第三方 sp_vision_25 IR，共约 76 MB）
 !data/onnx/
-# 第三方下载的模型本体（同济 sp_vision_25 IR 原件等）
-data/onnx/sp_vision_25/
+# 板端相机帧试验（bin 推理输入/输出 + jpg 标注，约 97 MB）
+!data/camera_test/
+# 同济 sp25 量化模型与板端 dump（约 30 MB）
+!data/sp25_requant/
+# CoordAtt 576x768 板端试验（2026-09-07）：编译模型、输入样本与 README / 日志
+!data/coord_trial_20260907/
 
-# 校准集：跟踪 manifest.csv 与 README.md，忽略样本本体
+# 校准样本本体（约 2.2 GB，可由脚本再生，不入库）
 data/horizon_x5/data/calibration_data/images/
 data/horizon_x5/data/calibration_data/source/
 data/horizon_x5/data/calibration_data_640/
@@ -31,18 +36,17 @@ data/horizon_x5/data/calibration_data_32gray/preview/
 __pycache__/
 *.pyc
 
-# 二进制与大文件
+# 其他二进制与大文件
 *.tar.gz
-*.bin
-*.onnx
 *.hbm
 *.hbir
 *.avi
 *.mp4
 *.html
 .trae/
+.Trash-0/
 
-# 量化编译工作目录（保留 config yaml，产物不入库）
+# 量化编译工作目录（保留 config yaml，中间产物不入库）
 quant/*/model_output/
 quant/verifier_output/
 hb_mapper_makertbin.log
@@ -50,3 +54,4 @@ hb_mapper_checker.log
 
 # 量化检查器产物
 .hb_check/
+.codebuddy/

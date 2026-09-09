@@ -1,0 +1,71 @@
+hrt_model_exec infer --model_file coord_trial_576x768.bin --input_file positive_rgb_u8_chw.bin --enable_dump true --dump_format bin --dump_path positive_dump
+I0000 00:00:00.000000  5930 vlog_is_on.cc:197] RAW: Set VLOG level for "*" to 3
+[BPU_PLAT]BPU Platform Version(1.3.6)! soc info(x5)
+[HBRT] set log level as 0. version = 3.15.55.0
+[DNN] Runtime version = 1.24.5_(3.15.55 HBRT)
+[A][DNN][packed_model.cpp:247][Model](2026-09-07,18:45:46.882.49) [HorizonRT] The model builder version = 1.24.3
+Load model to DDR cost 156.327ms.
+I0907 18:45:46.974707  5930 function_util.cpp:106] get model handle success
+I0907 18:45:46.974807  5930 function_util.cpp:112] get model input count success
+I0907 18:45:46.974836  5930 function_util.cpp:118] get model output count success
+I0907 18:45:46.975517  5930 function_util.cpp:150] prepare output tensor success
+file length: 1327104
+I0907 18:45:46.977155  5930 function_util.cpp:166] read file success!
+I0907 18:45:46.977365  5930 function_util.cpp:201] infer success
+I0907 18:45:46.983516  5930 function_util.cpp:207] task done
+
+---------------------Frame 0 begin---------------------
+Infer time: 6.218 ms
+---------------------Frame 0 end---------------------
+I0907 18:45:46.983855  5930 function_util.cpp:1386] offset: 0
+I0907 18:45:46.983897  5930 function_util.cpp:1387] element_of_num: 1327104
+I0907 18:45:46.983929  5930 function_util.cpp:1388] element_of_memsize: 1327104
+I0907 18:45:46.989832  5930 function_util.cpp:1421] Dump path: positive_dump/model_infer_input_0_images.bin
+I0907 18:45:46.989982  5930 function_util.cpp:1386] offset: 0
+I0907 18:45:46.990016  5930 function_util.cpp:1387] element_of_num: 27648
+I0907 18:45:46.990047  5930 function_util.cpp:1388] element_of_memsize: 110592
+I0907 18:45:46.990710  5930 function_util.cpp:1421] Dump path: positive_dump/model_infer_output_0__model_model.23_cv2.0_cv2.0.2_Conv_output_0.bin
+I0907 18:45:46.990777  5930 function_util.cpp:1386] offset: 0
+I0907 18:45:46.990813  5930 function_util.cpp:1387] element_of_num: 55296
+I0907 18:45:46.990842  5930 function_util.cpp:1388] element_of_memsize: 221184
+I0907 18:45:46.991850  5930 function_util.cpp:1421] Dump path: positive_dump/model_infer_output_1__model_model.23_cv4_kpts.0_Conv_output_0.bin
+I0907 18:45:46.991907  5930 function_util.cpp:1386] offset: 0
+I0907 18:45:46.991942  5930 function_util.cpp:1387] element_of_num: 27648
+I0907 18:45:46.991972  5930 function_util.cpp:1388] element_of_memsize: 110592
+I0907 18:45:46.992561  5930 function_util.cpp:1421] Dump path: positive_dump/model_infer_output_2__model_model.23_cv3_color.0_cv3_color.0.2_Conv_output_0.bin
+I0907 18:45:46.992633  5930 function_util.cpp:1386] offset: 0
+I0907 18:45:46.992668  5930 function_util.cpp:1387] element_of_num: 82944
+I0907 18:45:46.992698  5930 function_util.cpp:1388] element_of_memsize: 331776
+I0907 18:45:46.994169  5930 function_util.cpp:1421] Dump path: positive_dump/model_infer_output_3__model_model.23_cv3_obj.0_cv3_obj.0.2_Conv_output_0.bin
+I0907 18:45:46.994225  5930 function_util.cpp:1386] offset: 0
+I0907 18:45:46.994258  5930 function_util.cpp:1387] element_of_num: 6912
+I0907 18:45:46.994289  5930 function_util.cpp:1388] element_of_memsize: 27648
+I0907 18:45:46.994547  5930 function_util.cpp:1421] Dump path: positive_dump/model_infer_output_4__model_model.23_cv2.1_cv2.1.2_Conv_output_0.bin
+I0907 18:45:46.994601  5930 function_util.cpp:1386] offset: 0
+I0907 18:45:46.994634  5930 function_util.cpp:1387] element_of_num: 13824
+I0907 18:45:46.994663  5930 function_util.cpp:1388] element_of_memsize: 55296
+I0907 18:45:46.995033  5930 function_util.cpp:1421] Dump path: positive_dump/model_infer_output_5__model_model.23_cv4_kpts.1_Conv_output_0.bin
+I0907 18:45:46.995082  5930 function_util.cpp:1386] offset: 0
+I0907 18:45:46.995116  5930 function_util.cpp:1387] element_of_num: 6912
+I0907 18:45:46.995146  5930 function_util.cpp:1388] element_of_memsize: 27648
+I0907 18:45:46.995409  5930 function_util.cpp:1421] Dump path: positive_dump/model_infer_output_6__model_model.23_cv3_color.1_cv3_color.1.2_Conv_output_0.bin
+I0907 18:45:46.995463  5930 function_util.cpp:1386] offset: 0
+I0907 18:45:46.995519  5930 function_util.cpp:1387] element_of_num: 20736
+I0907 18:45:46.995551  5930 function_util.cpp:1388] element_of_memsize: 82944
+I0907 18:45:46.996141  5930 function_util.cpp:1421] Dump path: positive_dump/model_infer_output_7__model_model.23_cv3_obj.1_cv3_obj.1.2_Conv_output_0.bin
+I0907 18:45:46.996196  5930 function_util.cpp:1386] offset: 0
+I0907 18:45:46.996228  5930 function_util.cpp:1387] element_of_num: 1728
+I0907 18:45:46.996258  5930 function_util.cpp:1388] element_of_memsize: 6912
+I0907 18:45:46.996430  5930 function_util.cpp:1421] Dump path: positive_dump/model_infer_output_8__model_model.23_cv2.2_cv2.2.2_Conv_output_0.bin
+I0907 18:45:46.996480  5930 function_util.cpp:1386] offset: 0
+I0907 18:45:46.996513  5930 function_util.cpp:1387] element_of_num: 3456
+I0907 18:45:46.996543  5930 function_util.cpp:1388] element_of_memsize: 13824
+I0907 18:45:46.996752  5930 function_util.cpp:1421] Dump path: positive_dump/model_infer_output_9__model_model.23_cv4_kpts.2_Conv_output_0.bin
+I0907 18:45:46.996801  5930 function_util.cpp:1386] offset: 0
+I0907 18:45:46.996833  5930 function_util.cpp:1387] element_of_num: 1728
+I0907 18:45:46.996865  5930 function_util.cpp:1388] element_of_memsize: 6912
+I0907 18:45:46.997035  5930 function_util.cpp:1421] Dump path: positive_dump/model_infer_output_10__model_model.23_cv3_color.2_cv3_color.2.2_Conv_output_0.bin
+I0907 18:45:46.997087  5930 function_util.cpp:1386] offset: 0
+I0907 18:45:46.997120  5930 function_util.cpp:1387] element_of_num: 5184
+I0907 18:45:46.997149  5930 function_util.cpp:1388] element_of_memsize: 20736
+I0907 18:45:46.997385  5930 function_util.cpp:1421] Dump path: positive_dump/model_infer_output_11__model_model.23_cv3_obj.2_cv3_obj.2.2_Conv_output_0.bin
