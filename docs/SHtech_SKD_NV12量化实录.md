@@ -98,6 +98,23 @@ NV12 的色度半分辨率采样对装甲板检测无可测影响，**确定最�
 
 ## 8. 坑位与注意事项
 
+0. **NV12 vs RGB 输入效率对照（2026-09-09 补充实验）**：同权重、同校准集，仅改 `input_type_rt`
+   （`quant/shtech_skd_rgb_config.yaml`，`input_type_rt: rgb` + `input_layout_rt: NHWC`）编译对照模型实测：
+
+   | 指标 | NV12 版 | RGB 版 | 说明 |
+   |---|---|---|---|
+   | BPU 仿真 latency | **3.05 ms** | 3.28 ms | NV12 的硬件 CSC 近乎免费，比 uint8 RGB 输入整理还快 |
+   | 板端 BPU 纯推理（profiler） | **3.74 ms** | 3.92 ms | 转换开销不是问题 |
+   | CPU 侧输出处理 | 30.4 ms | **15.7 ms** | 差距不在输入 CSC，而在输出端 Transpose/layout_convert/反量化路径（NV12 模型约为 RGB 版 2 倍） |
+   | 板端端到端（perf 1000 帧） | 22.6 ms | **15.7 ms** | RGB 版当前更快，赢在 runtime CPU 侧；两者 min 均约 15 ms |
+   | 输入数据量/帧 | 0.49 MB | 0.98 MB | 30 FPS 下带宽差异 ~15 MB/s，对 5.1 GB/s DDR 可忽略 |
+
+   **结论**：① BPU 内部 NV12→RGB 硬件转换效率极高，无转换税；② 当前 runtime 版本下 NV12 模型的
+   **输出端** CPU 处理路径更慢（P13 问题对 NV12 模型更严重），端到端 RGB 版暂时占优；
+   ③ 按相机形态决策——USB BGR 相机（本项目大恒）短期直接用 RGB 版最省；MIPI/硬解码源原生 NV12
+   零拷贝直通，省 CPU 转换 1~2 ms，但需先解决输出端开销（C++ 申请 NHWC 输出 / 反量化问题反馈社区）
+   才能体现 NV12 端到端优势；④ 两个 bin 均已产出，按部署形态选择。
+
 1. **校准预处理必须直拉**：上科大无 letterbox，角点按 src_roi 纯缩放还原；若沿用现有 letterbox 校准集会引入分布失配（最高优先坑 R2，已通过 `--resize-mode stretch` 解决）。
 2. **NV12 不写 input_layout_rt**（P2）；板端喂数据大小 491520 字节（Y 平面 + UV 交错），可用 `bgr_to_nv12()`（`shtech_fp32_baseline.py`）生成，注意 OpenCV `BGR2YUV_I420` 输出需先 `reshape(-1)` 再切 U/V 平面。
 3. **OPTEL 报告的逐层相似度不作验收依据**（P14）；本次以 host FP32 阳性对照为准。
