@@ -111,9 +111,22 @@ NV12 的色度半分辨率采样对装甲板检测无可测影响，**确定最�
 
    **结论**：① BPU 内部 NV12→RGB 硬件转换效率极高，无转换税；② 当前 runtime 版本下 NV12 模型的
    **输出端** CPU 处理路径更慢（P13 问题对 NV12 模型更严重），端到端 RGB 版暂时占优；
-   ③ 按相机形态决策——USB BGR 相机（本项目大恒）短期直接用 RGB 版最省；MIPI/硬解码源原生 NV12
-   零拷贝直通，省 CPU 转换 1~2 ms，但需先解决输出端开销（C++ 申请 NHWC 输出 / 反量化问题反馈社区）
-   才能体现 NV12 端到端优势；④ 两个 bin 均已产出，按部署形态选择。
+   ③ 按相机形态决策（USB 相机实际输出 **RAW Bayer**，非 BGR8，见下条）；④ 两个 bin 均已产出，按部署形态选择。
+
+0b. **Bayer 相机链路实测**（`scripts/shtech_bayer_pipeline_bench.py`，1280×1024 模拟 RGGB Bayer 起点）：
+
+   | 链路 | CPU 单帧（x86 实测，ARM 约 ×3） | top1 vs 全分辨率 demosaic 基准 |
+   |---|---|---|
+   | A 全分辨率 demosaic → resize → RGB（capture.cpp 现状） | 0.12 ms | 基准 conf 0.9219 |
+   | A' Bayer 2×2 块合并 → 小图 demosaic → RGB | 0.09 ms | conf 0.8933，tag/size 一致，**color 1 帧翻转** |
+   | C = A' + NV12 pack（NV12 版模型） | 0.19 ms | conf 0.8900（≈A'，NV12 pack 几乎无损） |
+
+   **Bayer 起点的所有 CPU 转换都在亚毫秒级**——转换成本不再是 NV12/RGB 的决定因素。
+   决定因素回到：① runtime 输出端开销（RGB 版 15.7 ms vs NV12 版 22.6 ms，RGB 版当前胜）；
+   ② 色度质量：2×2 块合并/小图 demosaic 相对全分辨率 demosaic 有轻微色度损失（实验中 color 出现临界翻转），
+   全分辨率 demosaic 链路质量最优。**Bayer USB 相机当前最优选择：RGB 版 bin + capture.cpp 现有
+   SDK demosaic 链路**（input_type_train 按 bgr 可省通道交换）；NV12 版的零拷贝优势仅在
+   MIPI 相机/硬解码源（原生 NV12）场景成立，且需先解决输出端 runtime 开销。
 
 1. **校准预处理必须直拉**：上科大无 letterbox，角点按 src_roi 纯缩放还原；若沿用现有 letterbox 校准集会引入分布失配（最高优先坑 R2，已通过 `--resize-mode stretch` 解决）。
 2. **NV12 不写 input_layout_rt**（P2）；板端喂数据大小 491520 字节（Y 平面 + UV 交错），可用 `bgr_to_nv12()`（`shtech_fp32_baseline.py`）生成，注意 OpenCV `BGR2YUV_I420` 输出需先 `reshape(-1)` 再切 U/V 平面。
