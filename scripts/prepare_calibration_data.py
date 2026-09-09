@@ -2,7 +2,8 @@
 """生成 RDK X5 PTQ 校准集。
 
 处理链路（与部署/训练预处理严格一致，参考 data/AT_NN_Detector/README.md）：
-    BGR 原图 -> letterbox(缩放+填充 114) -> BGR2RGB -> /255.0 -> float32 -> NCHW/NHWC -> .bin
+    letterbox 模式：BGR 原图 -> letterbox(缩放+填充 114) -> BGR2RGB -> /255.0 -> float32 -> NCHW/NHWC -> .bin
+    stretch   模式：BGR 原图 -> resize 直拉(无填充，对齐 SHtech 预处理) -> BGR2RGB -> 后同上
 
 筛选策略（依据 docs/数据集使用规范.md）：
     1. 剔除低质量小图（min(w,h) < min_side）
@@ -50,6 +51,14 @@ def letterbox(img_bgr, target_h, target_w, fill=114):
     pad_t, pad_l = (target_h - nh) // 2, (target_w - nw) // 2
     canvas[pad_t:pad_t + nh, pad_l:pad_l + nw] = resized
     return canvas, scale, (pad_l, pad_t)
+
+
+def stretch(img_bgr, target_h, target_w):
+    """直拉 resize（无 letterbox/填充），对齐 SHtech_auto_aim 的预处理。"""
+    h, w = img_bgr.shape[:2]
+    canvas = cv2.resize(img_bgr, (target_w, target_h), interpolation=cv2.INTER_AREA)
+    # scale 列记录 x 向缩放系数（y 向可能不同），pad 恒为 0
+    return canvas, target_w / w, (0, 0)
 
 
 def collect(src, min_side):
@@ -108,6 +117,8 @@ def main():
     ap.add_argument("--width", type=int, default=768)
     ap.add_argument("--min-side", type=int, default=360)
     ap.add_argument("--layout", choices=["nchw", "nhwc"], default="nchw")
+    ap.add_argument("--resize-mode", choices=["letterbox", "stretch"], default="letterbox",
+                    help="letterbox: 缩放+114 填充（AT_NN 等模型）；stretch: 直拉 resize（SHtech 模型，无填充）")
     ap.add_argument("--input-name", default="images")
     ap.add_argument("--dtype", choices=["float32", "uint8"], default="float32",
                     help="float32: 已归一化(/255)，配 norm_type:no_preprocess；"
@@ -124,9 +135,12 @@ def main():
     items = collect(args.src, args.min_side)
     picked = stratified_pick(items, args.count)
 
+    resize_fn = letterbox if args.resize_mode == "letterbox" else stretch
+    print(f"[resize] 模式: {args.resize_mode}")
+
     rows = []
     for i, (name, img, bright) in enumerate(picked):
-        canvas, scale, pad = letterbox(img, args.height, args.width)
+        canvas, scale, pad = resize_fn(img, args.height, args.width)
         rgb = cv2.cvtColor(canvas, cv2.COLOR_BGR2RGB)
         if args.dtype == "float32":
             data = rgb.astype(np.float32) / 255.0

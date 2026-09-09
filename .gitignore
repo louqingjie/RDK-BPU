@@ -31,6 +31,16 @@ data/horizon_x5/data/calibration_data_640/
 data/horizon_x5/data/calibration_data_640_u8/
 data/horizon_x5/data/calibration_data_32gray/images/
 data/horizon_x5/data/calibration_data_32gray/preview/
+data/horizon_x5/data/calibration_data_512x640_u8/images/
+data/horizon_x5/data/calibration_data_512x640_u8/source/
+
+# SHtech SKD NV12 量化试验（2026-09-09）：阳性样本 / 板端输出与基准入库
+!data/shtech_skd_positive/
+
+# 临时克隆与性能分析产物（可再生成，不入库）
+.tmp_shtech_auto_aim/
+hb_perf_result/
+hb_perf.log
 
 # Python 缓存
 __pycache__/

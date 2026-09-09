@@ -49,6 +49,7 @@ hb_perf data/output/model_output/your_model.bin
 | [docs/RDK_X5_部署评估报告.md](docs/RDK_X5_部署评估报告.md) | AT_NN_Detector 模型包初评 |
 | [docs/RDK_X5_量化可行性评估_AT_NN_Detector.md](docs/RDK_X5_量化可行性评估_AT_NN_Detector.md) | 图结构/算子/动态范围实测 + 实机测试结果（14 章） |
 | [docs/量化踩坑记录.md](docs/量化踩坑记录.md) | **量化全过程问题实录（FP16、输出混量纲、runtime 开销等 16 项）** |
+| [docs/SHtech_SKD_NV12量化实录.md](docs/SHtech_SKD_NV12量化实录.md) | 上科大 SHtech SKD250526 NV12 量化全记录（3.74 ms BPU、3/3 阳性对照 PASS、NV12 色度影响评估） |
 | [data/coord_trial_20260907/README.md](data/coord_trial_20260907/README.md) | CoordAtt 576×768 板端部署试验（int8 输入约定、12 路输出布局、板端-仿真逐元素一致、131.9 FPS @1000 帧） |
 | [docs/同济sp_vision_25量化实录_通俗版.md](docs/同济sp_vision_25量化实录_通俗版.md) | 同济开源模型量化全复盘（零基础向：溯源、成功/失败案例与启示） |
 | [docs/传统精修与PnP解算分析_上科大与同济方案.md](docs/传统精修与PnP解算分析_上科大与同济方案.md) | 强队传统精修方案解读 |
@@ -71,6 +72,9 @@ hb_perf data/output/model_output/your_model.bin
 | `capture.cpp` | 大恒相机最小采集程序（板上 GxIAPI） |
 | `real_camera_test.py` | 真实相机帧板端推理 + 后处理 + 标注 |
 | `pnp_error_sim.py` | 角点量化误差 → PnP 解算误差蒙特卡洛仿真 |
+| `shtech_fp32_baseline.py` | SHtech SKD host FP32 基准 + 阳性样本/NV12 bin 生成 |
+| `shtech_board_compare.py` | SHtech SKD 板端 vs host FP32 阳性对照 |
+| `shtech_nv12_chroma_check.py` | NV12 色度域偏移影响统计（BGR↔NV12 往返模拟） |
 
 ## 切换 CPU 镜像 / 离线兜底
 

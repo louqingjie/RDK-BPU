@@ -1,0 +1,38 @@
+# 上科大 SHtech_auto_aim SKD250526 装甲板检测模型 -> RDK X5 (bayes-e) NV12 输入量化配置
+# 生成：2026-09-09
+# 模型：data/onnx/shtech/SKD250526.onnx（原版 FP32，opset 11，checker 全图 BPU 通过）
+#       与 AX650 原厂 SKD250526.axmodel 同源（axmodel 元数据 outputs_info {"out":["FP32",[1,6720,21]]}）
+# 校准集：data/horizon_x5/data/calibration_data_512x640_u8/（200 张 uint8 RGB NCHW，512x640，
+#         --resize-mode stretch 直拉 resize，与上科大预处理严格对齐，无 letterbox）
+# 预处理依据（源码 detect/TensorRT/TRTModule.cpp）：RGB + /255，无 mean
+# 后处理依据（源码 detect/AXCL/AXCL.cpp）：输出 [1,6720,21]，conf=ch8（已 sigmoid，阈值 0.1），
+#         kpt=ch0..7（相对偏移，x*2*stride+网格中心），tag argmax ch9..16，color argmax ch17..18，size argmax ch19..20
+
+model_parameters:
+  onnx_model: '/workspace/data/onnx/shtech/SKD250526.onnx'
+  march: 'bayes-e'
+  layer_out_dump: False
+  working_dir: '/workspace/quant/shtech_skd/model_output'
+  output_model_file_prefix: 'shtech_skd_512x640_nv12'
+
+input_parameters:
+  input_name: 'image'
+  # NV12 输入：板端喂 Y+UV 双平面（512*640*3/2 字节），NV12->RGB CSC 由 BPU 图首完成
+  # 注意：input_type_rt 为 nv12 时不指定 input_layout_rt（踩坑记录 P2）
+  input_type_rt: 'nv12'
+  input_type_train: 'rgb'
+  input_layout_train: 'NCHW'
+  input_shape: '1x3x512x640'
+  # 训练侧预处理为 /255（TRT 路径 convertTo(1/255)；AXCL 路径 uint8 图内归一化，语义等价）
+  norm_type: 'data_scale'
+  scale_value: 0.00392156862745098
+
+calibration_parameters:
+  cal_data_dir: '/workspace/data/horizon_x5/data/calibration_data_512x640_u8/images'
+  cal_data_type: 'uint8'
+  calibration_type: 'mix'
+
+compiler_parameters:
+  compile_mode: 'latency'
+  debug: True
+  optimize_level: 'O2'
