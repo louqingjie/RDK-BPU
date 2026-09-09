@@ -45,6 +45,7 @@ hb_perf data/output/model_output/your_model.bin
 
 | 文档 | 内容 |
 |---|---|
+| [docs/量化工作总结与bin清单.md](docs/量化工作总结与bin清单.md) | **全部量化工作总览：15 个编译 bin 成败判定、验证数据清单、20 项踩坑索引、遗留问题** |
 | [docs/RDK_X5_部署评估报告.md](docs/RDK_X5_部署评估报告.md) | AT_NN_Detector 模型包初评 |
 | [docs/RDK_X5_量化可行性评估_AT_NN_Detector.md](docs/RDK_X5_量化可行性评估_AT_NN_Detector.md) | 图结构/算子/动态范围实测 + 实机测试结果（14 章） |
 | [docs/量化踩坑记录.md](docs/量化踩坑记录.md) | **量化全过程问题实录（FP16、输出混量纲、runtime 开销等 16 项）** |
