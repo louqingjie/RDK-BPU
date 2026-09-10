@@ -1,0 +1,29 @@
+# 对照实验（P17 流程）：全局 Conv / Mul / Sigmoid INT16，验证激活精度是否为
+# conf/color/num 通道崩坏的主因。sp25_yolov5（rp24_0708_normdec.onnx）。
+model_parameters:
+  onnx_model: '/workspace/data/onnx/sp_vision_25/rp24_0708_normdec.onnx'
+  march: 'bayes-e'
+  layer_out_dump: False
+  working_dir: '/workspace/quant/sp25_normdec_allint16/model_output'
+  output_model_file_prefix: 'sp25_normdec_640x640_allint16'
+
+input_parameters:
+  input_name: 'images'
+  input_type_rt: 'rgb'
+  input_layout_rt: 'NHWC'
+  input_type_train: 'rgb'
+  input_layout_train: 'NCHW'
+  input_shape: '1x3x640x640'
+  norm_type: 'data_scale'
+  scale_value: 0.00392156862745098
+
+calibration_parameters:
+  cal_data_dir: '/workspace/data/horizon_x5/data/calibration_data_640_u8/images'
+  cal_data_type: 'uint8'
+  calibration_type: 'mix'
+  optimization: 'set_Conv_input_int16; set_Conv_output_int16; set_Mul_input_int16; set_Mul_output_int16; set_Sigmoid_input_int16; set_Sigmoid_output_int16'
+
+compiler_parameters:
+  compile_mode: 'latency'
+  debug: True
+  optimize_level: 'O2'
