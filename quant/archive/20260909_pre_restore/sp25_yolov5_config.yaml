@@ -1,0 +1,37 @@
+# 同济 sp_vision_25 yolov5 装甲板检测器 -> RDK X5 (bayes-e) 量化编译配置
+# 生成：2026-09-08
+# 模型：data/onnx/sp_vision_25/rp24_0708.onnx
+#       （深大 RP24 官方原始模型；同济 assets/yolov5.xml 经
+#         scripts/verify_sp25_models.py 验证与之同源（余弦 1.0001），故直接用
+#         全 FP32 的原始 ONNX 走量化，避免 IR 反向转换损失）
+#       结构：剪枝 YOLOv5 + MobileNetV3，输出 [1,25200,22]（kpt/color/num），
+#       图内无 NMS/TopK，与 rp_0526 同源同架构 —— P17 精度风险已知。
+# 校准集：复用 rp0526 的 data/horizon_x5/data/calibration_data_640_u8/（200 张 uint8 RGB）
+
+model_parameters:
+  onnx_model: '/workspace/data/onnx/sp_vision_25/rp24_0708.onnx'
+  march: 'bayes-e'
+  layer_out_dump: False
+  working_dir: '/workspace/quant/sp25_yolov5/model_output'
+  output_model_file_prefix: 'sp25_yolov5_640x640'
+
+input_parameters:
+  input_name: 'images'
+  # 与 rp0526_config.yaml 保持一致：uint8 RGB 直喂，NHWC 布局省运行时转置
+  input_type_rt: 'rgb'
+  input_layout_rt: 'NHWC'
+  input_type_train: 'rgb'
+  input_layout_train: 'NCHW'
+  input_shape: '1x3x640x640'
+  norm_type: 'data_scale'
+  scale_value: 0.00392156862745098
+
+calibration_parameters:
+  cal_data_dir: '/workspace/data/horizon_x5/data/calibration_data_640_u8/images'
+  cal_data_type: 'uint8'
+  calibration_type: 'mix'
+
+compiler_parameters:
+  compile_mode: 'latency'
+  debug: True
+  optimize_level: 'O2'

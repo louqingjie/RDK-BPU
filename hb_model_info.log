@@ -1,0 +1,452 @@
+2026-09-09 17:42:21,535 file: tool_utils.py func: tool_utils line No: 77 log will be stored in /workspace/hb_model_info.log
+2026-09-09 17:42:21,536 file: hb_model_info.py func: hb_model_info line No: 47 Start hb_model_info....
+2026-09-09 17:42:21,536 file: hb_model_info.py func: hb_model_info line No: 48 hb_model_info version 1.24.3
+2026-09-09 17:42:21,540 file: hb_model_info.py func: hb_model_info line No: 248 model_reserial has multiple graphs
+2026-09-09 17:42:21,541 file: hb_model_info.py func: hb_model_info line No: 251 graphs length: 1
+2026-09-09 17:42:21,541 file: hb_model_info.py func: hb_model_info line No: 58 
+2026-09-09 17:42:21,541 file: hb_model_info.py func: hb_model_info line No: 59 ************ shtech_skd_512x640_nv12 *************
+2026-09-09 17:42:21,541 file: hb_model_info.py func: hb_model_info line No: 60 ############# model deps info #############
+2026-09-09 17:42:21,541 file: hb_model_info.py func: hb_model_info line No: 61 hb_mapper version   : 1.24.3
+2026-09-09 17:42:21,541 file: hb_model_info.py func: hb_model_info line No: 63 hbdk version        : 3.49.15
+2026-09-09 17:42:21,541 file: hb_model_info.py func: hb_model_info line No: 64 hbdk runtime version: 3.15.55.0
+2026-09-09 17:42:21,541 file: hb_model_info.py func: hb_model_info line No: 67 horizon_nn version  : 1.1.0
+2026-09-09 17:42:21,541 file: hb_model_info.py func: hb_model_info line No: 70 ############# model_parameters info #############
+2026-09-09 17:42:21,541 file: hb_model_info.py func: hb_model_info line No: 76 onnx_model          : /workspace/data/onnx/shtech/SKD250526.onnx
+2026-09-09 17:42:21,541 file: hb_model_info.py func: hb_model_info line No: 77 BPU march           : bayes-e
+2026-09-09 17:42:21,541 file: hb_model_info.py func: hb_model_info line No: 78 layer_out_dump      : False
+2026-09-09 17:42:21,542 file: hb_model_info.py func: hb_model_info line No: 79 log_level           : DEBUG
+2026-09-09 17:42:21,542 file: hb_model_info.py func: hb_model_info line No: 80 working dir         : /workspace/quant/shtech_skd/model_output
+2026-09-09 17:42:21,542 file: hb_model_info.py func: hb_model_info line No: 81 output_model_file_prefix: shtech_skd_512x640_nv12
+2026-09-09 17:42:21,542 file: hb_model_info.py func: hb_model_info line No: 99 ############# input_parameters info #############
+2026-09-09 17:42:21,542 file: hb_model_info.py func: hb_model_info line No: 116 ------------------------------------------
+2026-09-09 17:42:21,542 file: hb_model_info.py func: hb_model_info line No: 118 ---------input info : image ---------
+2026-09-09 17:42:21,542 file: hb_model_info.py func: hb_model_info line No: 119 input_name          : image
+2026-09-09 17:42:21,542 file: hb_model_info.py func: hb_model_info line No: 120 input_type_rt       : nv12
+2026-09-09 17:42:21,542 file: hb_model_info.py func: hb_model_info line No: 122 input_space&range   : regular
+2026-09-09 17:42:21,542 file: hb_model_info.py func: hb_model_info line No: 123 input_layout_rt     : None
+2026-09-09 17:42:21,542 file: hb_model_info.py func: hb_model_info line No: 124 input_type_train    : rgb
+2026-09-09 17:42:21,542 file: hb_model_info.py func: hb_model_info line No: 125 input_layout_train  : NCHW
+2026-09-09 17:42:21,542 file: hb_model_info.py func: hb_model_info line No: 126 norm_type           : data_scale
+2026-09-09 17:42:21,542 file: hb_model_info.py func: hb_model_info line No: 127 input_shape         : 1x3x512x640
+2026-09-09 17:42:21,542 file: hb_model_info.py func: hb_model_info line No: 135 scale_value         : 0.00392156862745098,
+2026-09-09 17:42:21,543 file: hb_model_info.py func: hb_model_info line No: 137 cal_data_dir        : /workspace/data/horizon_x5/data/calibration_data_512x640_u8/images
+2026-09-09 17:42:21,543 file: hb_model_info.py func: hb_model_info line No: 139 cal_data_type       : uint8
+2026-09-09 17:42:21,543 file: hb_model_info.py func: hb_model_info line No: 140 ---------input info : image end -------
+2026-09-09 17:42:21,543 file: hb_model_info.py func: hb_model_info line No: 141 ------------------------------------------
+2026-09-09 17:42:21,543 file: hb_model_info.py func: hb_model_info line No: 142 ############# calibration_parameters info #############
+2026-09-09 17:42:21,543 file: hb_model_info.py func: hb_model_info line No: 143 preprocess_on       : False
+2026-09-09 17:42:21,543 file: hb_model_info.py func: hb_model_info line No: 144 calibration_type    : mix
+2026-09-09 17:42:21,543 file: hb_model_info.py func: hb_model_info line No: 150 per_channel         : False
+2026-09-09 17:42:21,543 file: hb_model_info.py func: hb_model_info line No: 165 ############# compiler_parameters info #############
+2026-09-09 17:42:21,543 file: hb_model_info.py func: hb_model_info line No: 167 debug               : True
+2026-09-09 17:42:21,543 file: hb_model_info.py func: hb_model_info line No: 169 compile_mode        : latency
+2026-09-09 17:42:21,543 file: hb_model_info.py func: hb_model_info line No: 172 hbdk_pass_through_params: --O2 --debug --core-num 1 --fast
+2026-09-09 17:42:21,543 file: hb_model_info.py func: hb_model_info line No: 172 input-source        : {'image': 'pyramid', '_default_value': 'ddr'}
+2026-09-09 17:42:21,543 file: hb_model_info.py func: hb_model_info line No: 174 --------- input/output types -------------------
+2026-09-09 17:42:21,543 file: hb_model_info.py func: hb_model_info line No: 175 model input types   : [<InputDataType.NV12: 7>]
+2026-09-09 17:42:21,543 file: hb_model_info.py func: hb_model_info line No: 178 model output types  : [<DataType.FLOAT: 1>]
+2026-09-09 17:42:21,546 file: hb_model_info.py func: hb_model_info line No: 201 *******************************
+
+
+2026-09-09 17:42:21,547 file: hb_model_info.py func: hb_model_info line No: 202 storing info of model: /workspace/quant/shtech_skd/model_output/shtech_skd_512x640_nv12.bin
+2026-09-09 17:42:21,547 file: hb_model_info.py func: hb_model_info line No: 210 ======== graph info: shtech_skd_512x640_nv12 start ========
+2026-09-09 17:42:21,547 file: hb_model_info.py func: hb_model_info line No: 212 --------input----------
+2026-09-09 17:42:21,547 file: hb_model_info.py func: hb_model_info line No: 214 name: "image"
+type {
+  elem_type: INT8
+  dim: 1
+  dim: 512
+  dim: 640
+  dim: 3
+}
+
+2026-09-09 17:42:21,547 file: hb_model_info.py func: hb_model_info line No: 215 --------output----------
+2026-09-09 17:42:21,547 file: hb_model_info.py func: hb_model_info line No: 217 name: "out"
+type {
+  elem_type: FLOAT
+  dim: 1
+  dim: 6720
+  dim: 21
+}
+
+2026-09-09 17:42:21,548 file: hb_model_info.py func: hb_model_info line No: 218 --------node----------
+2026-09-09 17:42:21,548 file: hb_model_info.py func: hb_model_info line No: 220 input: "image"
+output: "/model.22/cv4.0/cv4.0.2/Conv_nhwc2nchw_transposed_output0"
+output: "/model.22/cv4.1/cv4.1.2/Conv_nhwc2nchw_transposed_output0"
+output: "/model.22/cv4.2/cv4.2.2/Conv_nhwc2nchw_transposed_output0"
+output: "/model.22/Split_output_0_quantized"
+output: "/model.22/Sigmoid_output_0_quantized"
+output: "/model.22/Split_1_output_1_quantized"
+output: "/model.22/Split_1_output_2_quantized"
+output: "/model.22/ReduceMax_output_0_quantized"
+name: "main_graph_subgraph_0"
+op_type: "BPU"
+
+2026-09-09 17:42:21,548 file: hb_model_info.py func: hb_model_info line No: 220 input: "/model.22/cv4.0/cv4.0.2/Conv_nhwc2nchw_transposed_output0"
+input: "/model.22/cv4.0/cv4.0.2/Conv_x_scale"
+output: "/model.22/cv4.0/cv4.0.2/Conv_output_0"
+name: "/model.22/cv4.0/cv4.0.2/Conv_output_0_HzDequantize"
+op_type: "Dequantize"
+attribute {
+  name: "num_args"
+  type: INT
+  i: 2
+}
+
+2026-09-09 17:42:21,548 file: hb_model_info.py func: hb_model_info line No: 220 input: "/model.22/cv4.0/cv4.0.2/Conv_output_0"
+input: "/model.22/Reshape_/model.22/Constant_output_0"
+output: "/model.22/Reshape_output_0"
+name: "/model.22/Reshape"
+op_type: "Reshape"
+
+2026-09-09 17:42:21,548 file: hb_model_info.py func: hb_model_info line No: 220 input: "/model.22/cv4.1/cv4.1.2/Conv_nhwc2nchw_transposed_output0"
+input: "/model.22/cv4.1/cv4.1.2/Conv_x_scale"
+output: "/model.22/cv4.1/cv4.1.2/Conv_output_0"
+name: "/model.22/cv4.1/cv4.1.2/Conv_output_0_HzDequantize"
+op_type: "Dequantize"
+attribute {
+  name: "num_args"
+  type: INT
+  i: 2
+}
+
+2026-09-09 17:42:21,548 file: hb_model_info.py func: hb_model_info line No: 220 input: "/model.22/cv4.1/cv4.1.2/Conv_output_0"
+input: "/model.22/Reshape_1_/model.22/Constant_output_0"
+output: "/model.22/Reshape_1_output_0"
+name: "/model.22/Reshape_1"
+op_type: "Reshape"
+
+2026-09-09 17:42:21,548 file: hb_model_info.py func: hb_model_info line No: 220 input: "/model.22/cv4.2/cv4.2.2/Conv_nhwc2nchw_transposed_output0"
+input: "/model.22/cv4.2/cv4.2.2/Conv_x_scale"
+output: "/model.22/cv4.2/cv4.2.2/Conv_output_0"
+name: "/model.22/cv4.2/cv4.2.2/Conv_output_0_HzDequantize"
+op_type: "Dequantize"
+attribute {
+  name: "num_args"
+  type: INT
+  i: 2
+}
+
+2026-09-09 17:42:21,548 file: hb_model_info.py func: hb_model_info line No: 220 input: "/model.22/cv4.2/cv4.2.2/Conv_output_0"
+input: "/model.22/Constant_output_0"
+output: "/model.22/Reshape_2_output_0"
+name: "/model.22/Reshape_2"
+op_type: "Reshape"
+
+2026-09-09 17:42:21,549 file: hb_model_info.py func: hb_model_info line No: 220 input: "/model.22/Reshape_output_0"
+input: "/model.22/Reshape_1_output_0"
+input: "/model.22/Reshape_2_output_0"
+output: "/model.22/Concat_output_0"
+name: "/model.22/Concat"
+op_type: "Concat"
+attribute {
+  name: "dimension"
+  type: INT
+  i: 2
+}
+attribute {
+  name: "num_args"
+  type: INT
+  i: 3
+}
+
+2026-09-09 17:42:21,549 file: hb_model_info.py func: hb_model_info line No: 220 input: "/model.22/Split_output_0_quantized"
+input: "/model.22/Concat_4_output_0_HzCalibration_y_scale"
+output: "/model.22/Split_output_0"
+name: "/model.22/Split_output_0_HzDequantize"
+op_type: "Dequantize"
+attribute {
+  name: "num_args"
+  type: INT
+  i: 2
+}
+
+2026-09-09 17:42:21,549 file: hb_model_info.py func: hb_model_info line No: 220 input: "/model.22/Sigmoid_output_0_quantized"
+input: "/model.22/Sigmoid_output_0_HzCalibration_y_scale"
+output: "/model.22/Sigmoid_output_0_calibrated"
+name: "/model.22/Sigmoid_output_0_calibrated_HzDequantize"
+op_type: "Dequantize"
+attribute {
+  name: "num_args"
+  type: INT
+  i: 2
+}
+
+2026-09-09 17:42:21,549 file: hb_model_info.py func: hb_model_info line No: 220 input: "/model.22/Split_1_output_1_quantized"
+input: "/model.22/Sigmoid_output_0_HzCalibration_y_scale"
+output: "/model.22/Split_1_output_1"
+name: "/model.22/Split_1_output_1_HzDequantize"
+op_type: "Dequantize"
+attribute {
+  name: "num_args"
+  type: INT
+  i: 2
+}
+
+2026-09-09 17:42:21,549 file: hb_model_info.py func: hb_model_info line No: 220 input: "/model.22/Split_1_output_2_quantized"
+input: "/model.22/Sigmoid_output_0_HzCalibration_y_scale"
+output: "/model.22/Split_1_output_2"
+name: "/model.22/Split_1_output_2_HzDequantize"
+op_type: "Dequantize"
+attribute {
+  name: "num_args"
+  type: INT
+  i: 2
+}
+
+2026-09-09 17:42:21,549 file: hb_model_info.py func: hb_model_info line No: 220 input: "/model.22/ReduceMax_output_0_quantized"
+input: "/model.22/Sigmoid_output_0_HzCalibration_y_scale"
+output: "/model.22/ReduceMax_output_0"
+name: "/model.22/ReduceMax_output_0_HzDequantize"
+op_type: "Dequantize"
+attribute {
+  name: "num_args"
+  type: INT
+  i: 2
+}
+
+2026-09-09 17:42:21,549 file: hb_model_info.py func: hb_model_info line No: 220 input: "/model.22/Concat_output_0"
+input: "/model.22/ReduceMax_output_0"
+input: "/model.22/Sigmoid_output_0_calibrated"
+output: "/model.22/Concat_5_output_0"
+name: "/model.22/Concat_5"
+op_type: "Concat"
+attribute {
+  name: "dimension"
+  type: INT
+  i: 1
+}
+attribute {
+  name: "num_args"
+  type: INT
+  i: 3
+}
+
+2026-09-09 17:42:21,549 file: hb_model_info.py func: hb_model_info line No: 220 input: "/model.22/Concat_5_output_0"
+output: "out"
+name: "/model.22/Transpose"
+op_type: "Transpose"
+attribute {
+  name: "perm"
+  type: INTS
+  ints: 0
+  ints: 2
+  ints: 1
+}
+
+2026-09-09 17:42:21,550 file: hb_model_info.py func: hb_model_info line No: 221 --------value_info----------
+2026-09-09 17:42:21,550 file: hb_model_info.py func: hb_model_info line No: 223 name: "/model.22/cv4.0/cv4.0.2/Conv_output_0"
+type {
+  elem_type: FLOAT
+  dim: 1
+  dim: 8
+  dim: 64
+  dim: 80
+}
+
+2026-09-09 17:42:21,550 file: hb_model_info.py func: hb_model_info line No: 223 name: "/model.22/Reshape_output_0"
+type {
+  elem_type: FLOAT
+  dim: 1
+  dim: 8
+  dim: 5120
+}
+
+2026-09-09 17:42:21,550 file: hb_model_info.py func: hb_model_info line No: 223 name: "/model.22/cv4.1/cv4.1.2/Conv_output_0"
+type {
+  elem_type: FLOAT
+  dim: 1
+  dim: 8
+  dim: 32
+  dim: 40
+}
+
+2026-09-09 17:42:21,550 file: hb_model_info.py func: hb_model_info line No: 223 name: "/model.22/Reshape_1_output_0"
+type {
+  elem_type: FLOAT
+  dim: 1
+  dim: 8
+  dim: 1280
+}
+
+2026-09-09 17:42:21,550 file: hb_model_info.py func: hb_model_info line No: 223 name: "/model.22/cv4.2/cv4.2.2/Conv_output_0"
+type {
+  elem_type: FLOAT
+  dim: 1
+  dim: 8
+  dim: 16
+  dim: 20
+}
+
+2026-09-09 17:42:21,550 file: hb_model_info.py func: hb_model_info line No: 223 name: "/model.22/Reshape_2_output_0"
+type {
+  elem_type: FLOAT
+  dim: 1
+  dim: 8
+  dim: 320
+}
+
+2026-09-09 17:42:21,550 file: hb_model_info.py func: hb_model_info line No: 223 name: "/model.22/Concat_output_0"
+type {
+  elem_type: FLOAT
+  dim: 1
+  dim: 8
+  dim: 6720
+}
+
+2026-09-09 17:42:21,550 file: hb_model_info.py func: hb_model_info line No: 223 name: "/model.22/Split_output_0"
+type {
+  elem_type: FLOAT
+  dim: 1
+  dim: 4
+  dim: 6720
+}
+
+2026-09-09 17:42:21,551 file: hb_model_info.py func: hb_model_info line No: 223 name: "/model.22/Sigmoid_output_0_calibrated"
+type {
+  elem_type: FLOAT
+  dim: 1
+  dim: 12
+  dim: 6720
+}
+
+2026-09-09 17:42:21,551 file: hb_model_info.py func: hb_model_info line No: 223 name: "/model.22/Split_1_output_1"
+type {
+  elem_type: FLOAT
+  dim: 1
+  dim: 2
+  dim: 6720
+}
+
+2026-09-09 17:42:21,551 file: hb_model_info.py func: hb_model_info line No: 223 name: "/model.22/Split_1_output_2"
+type {
+  elem_type: FLOAT
+  dim: 1
+  dim: 2
+  dim: 6720
+}
+
+2026-09-09 17:42:21,551 file: hb_model_info.py func: hb_model_info line No: 223 name: "/model.22/cv4.0/cv4.0.2/Conv_nhwc2nchw_transposed_output0"
+type {
+  elem_type: INT32
+  dim: 1
+  dim: 8
+  dim: 64
+  dim: 80
+}
+
+2026-09-09 17:42:21,551 file: hb_model_info.py func: hb_model_info line No: 223 name: "/model.22/cv4.1/cv4.1.2/Conv_nhwc2nchw_transposed_output0"
+type {
+  elem_type: INT32
+  dim: 1
+  dim: 8
+  dim: 32
+  dim: 40
+}
+
+2026-09-09 17:42:21,551 file: hb_model_info.py func: hb_model_info line No: 223 name: "/model.22/cv4.2/cv4.2.2/Conv_nhwc2nchw_transposed_output0"
+type {
+  elem_type: INT32
+  dim: 1
+  dim: 8
+  dim: 16
+  dim: 20
+}
+
+2026-09-09 17:42:21,551 file: hb_model_info.py func: hb_model_info line No: 223 name: "/model.22/Split_output_0_quantized"
+type {
+  elem_type: INT16
+  dim: 1
+  dim: 4
+  dim: 6720
+}
+
+2026-09-09 17:42:21,551 file: hb_model_info.py func: hb_model_info line No: 223 name: "/model.22/Sigmoid_output_0_quantized"
+type {
+  elem_type: INT16
+  dim: 1
+  dim: 12
+  dim: 6720
+}
+
+2026-09-09 17:42:21,551 file: hb_model_info.py func: hb_model_info line No: 223 name: "/model.22/Split_1_output_1_quantized"
+type {
+  elem_type: INT16
+  dim: 1
+  dim: 2
+  dim: 6720
+}
+
+2026-09-09 17:42:21,552 file: hb_model_info.py func: hb_model_info line No: 223 name: "/model.22/Split_1_output_2_quantized"
+type {
+  elem_type: INT16
+  dim: 1
+  dim: 2
+  dim: 6720
+}
+
+2026-09-09 17:42:21,552 file: hb_model_info.py func: hb_model_info line No: 223 name: "/model.22/ReduceMax_output_0_quantized"
+type {
+  elem_type: INT16
+  dim: 1
+  dim: 1
+  dim: 6720
+}
+
+2026-09-09 17:42:21,552 file: hb_model_info.py func: hb_model_info line No: 223 name: "/model.22/ReduceMax_output_0"
+type {
+  elem_type: FLOAT
+  dim: 1
+  dim: 1
+  dim: 6720
+}
+
+2026-09-09 17:42:21,552 file: hb_model_info.py func: hb_model_info line No: 223 name: "/model.22/Concat_5_output_0"
+type {
+  elem_type: FLOAT
+  dim: 1
+  dim: 21
+  dim: 6720
+}
+
+2026-09-09 17:42:21,552 file: hb_model_info.py func: hb_model_info line No: 224 --------initializer----------
+2026-09-09 17:42:21,552 file: hb_model_info.py func: hb_model_info line No: 226 name: /model.22/Sigmoid_output_0_HzCalibration_y_scale
+2026-09-09 17:42:21,552 file: hb_model_info.py func: hb_model_info line No: 227 type: elem_type: FLOAT
+dim: 1
+
+2026-09-09 17:42:21,552 file: hb_model_info.py func: hb_model_info line No: 226 name: /model.22/Constant_output_0
+2026-09-09 17:42:21,553 file: hb_model_info.py func: hb_model_info line No: 227 type: elem_type: INT64
+dim: 3
+
+2026-09-09 17:42:21,553 file: hb_model_info.py func: hb_model_info line No: 226 name: /model.22/Concat_4_output_0_HzCalibration_y_scale
+2026-09-09 17:42:21,553 file: hb_model_info.py func: hb_model_info line No: 227 type: elem_type: FLOAT
+dim: 1
+
+2026-09-09 17:42:21,553 file: hb_model_info.py func: hb_model_info line No: 226 name: /model.22/Reshape_/model.22/Constant_output_0
+2026-09-09 17:42:21,553 file: hb_model_info.py func: hb_model_info line No: 227 type: elem_type: INT64
+dim: 3
+
+2026-09-09 17:42:21,553 file: hb_model_info.py func: hb_model_info line No: 226 name: PACKED_HBM_MODEL
+2026-09-09 17:42:21,553 file: hb_model_info.py func: hb_model_info line No: 227 type: elem_type: STRING
+
+2026-09-09 17:42:21,553 file: hb_model_info.py func: hb_model_info line No: 226 name: /model.22/Reshape_1_/model.22/Constant_output_0
+2026-09-09 17:42:21,553 file: hb_model_info.py func: hb_model_info line No: 227 type: elem_type: INT64
+dim: 3
+
+2026-09-09 17:42:21,553 file: hb_model_info.py func: hb_model_info line No: 226 name: /model.22/cv4.1/cv4.1.2/Conv_x_scale
+2026-09-09 17:42:21,554 file: hb_model_info.py func: hb_model_info line No: 227 type: elem_type: FLOAT
+dim: 8
+
+2026-09-09 17:42:21,554 file: hb_model_info.py func: hb_model_info line No: 226 name: /model.22/cv4.2/cv4.2.2/Conv_x_scale
+2026-09-09 17:42:21,554 file: hb_model_info.py func: hb_model_info line No: 227 type: elem_type: FLOAT
+dim: 8
+
+2026-09-09 17:42:21,554 file: hb_model_info.py func: hb_model_info line No: 226 name: /model.22/cv4.0/cv4.0.2/Conv_x_scale
+2026-09-09 17:42:21,554 file: hb_model_info.py func: hb_model_info line No: 227 type: elem_type: FLOAT
+dim: 8
+
+2026-09-09 17:42:21,554 file: hb_model_info.py func: hb_model_info line No: 228 --------input_type----------
+2026-09-09 17:42:21,554 file: hb_model_info.py func: hb_model_info line No: 230 7
+2026-09-09 17:42:21,554 file: hb_model_info.py func: hb_model_info line No: 231 --------input_layout----------
+2026-09-09 17:42:21,554 file: hb_model_info.py func: hb_model_info line No: 233 2
+2026-09-09 17:42:21,555 file: hb_model_info.py func: hb_model_info line No: 234 ========= graph info: shtech_skd_512x640_nv12 end ========

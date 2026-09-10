@@ -1,0 +1,84 @@
+2026-09-09 17:10:41,473 [92mINFO[0m log will be stored in /workspace/quant/hb_mapper_makertbin.log
+2026-09-09 17:10:41,473 [92mINFO[0m Start hb_mapper....
+2026-09-09 17:10:41,473 [92mINFO[0m hbdk version 3.49.15
+2026-09-09 17:10:41,473 [92mINFO[0m horizon_nn version 1.1.0
+2026-09-09 17:10:41,473 [92mINFO[0m hb_mapper version 1.24.3
+2026-09-09 17:10:41,473 [92mINFO[0m Start Model Convert....
+2026-09-09 17:10:41,475 [92mINFO[0m Using onnx model file: /workspace/data/onnx/sp_vision_25/rp24_0708.onnx
+2026-09-09 17:10:41,487 [92mINFO[0m Model has 1 inputs according to model file
+2026-09-09 17:10:41,487 [92mINFO[0m The calibration dir name suffix is the same as the value uint8 of the cal_data_type parameter and will be read with the value of cal_data_type.
+2026-09-09 17:10:41,487 [92mINFO[0m custom_op does not exist, skipped
+2026-09-09 17:10:41,487 [93mWARNING[0m Input node images's input_source not set, it will be set to ddr by default
+2026-09-09 17:10:41,489 [92mINFO[0m *******************************************
+2026-09-09 17:10:41,489 [92mINFO[0m First calibration picture name: images_0000.bin
+2026-09-09 17:10:41,489 [92mINFO[0m First calibration picture md5:
+5fd0d5187823c7a9b8a4b19b12af5af2  /workspace/data/horizon_x5/data/calibration_data_640_u8/images/images_0000.bin
+2026-09-09 17:10:41,493 [92mINFO[0m *******************************************
+2026-09-09 17:10:43,525 [92mINFO[0m Start to Horizon NN Model Convert.
+2026-09-09 17:10:43,539 [92mINFO[0m Loading horizon_nn debug methods:set()
+2026-09-09 17:10:43,540 [92mINFO[0m The activation calibration parameters:
+    calibration_type:     mix
+The input of all Conv nodes are set to : int16
+The output of all Conv nodes are set to : int16
+The input of all Mul nodes are set to : int16
+The output of all Mul nodes are set to : int16
+The input of all Sigmoid nodes are set to : int16
+The output of all Sigmoid nodes are set to : int16
+2026-09-09 17:10:43,540 [92mINFO[0m The specified model compilation architecture: bayes-e.
+2026-09-09 17:10:43,540 [92mINFO[0m The specified model compilation optimization parameters: [].
+2026-09-09 17:10:43,540 [92mINFO[0m Start to prepare the onnx model.
+2026-09-09 17:10:43,639 [92mINFO[0m Input ONNX Model Information:
+ONNX IR version:          6
+Opset version:            ['ai.onnx v11', 'horizon v1']
+Producer:                 pytorch v1.13.0
+Domain:                   None
+Version:                  None
+Graph input:
+    images:               shape=[1, 3, 640, 640], dtype=FLOAT32
+Graph output:
+    output:               shape=[1, 25200, 22], dtype=FLOAT32
+2026-09-09 17:10:43,831 [92mINFO[0m End to prepare the onnx model.
+2026-09-09 17:10:43,860 [92mINFO[0m Saving model to: sp25_yolov5_640x640_all_int16_original_float_model.onnx.
+2026-09-09 17:10:43,860 [92mINFO[0m Start to optimize the onnx model.
+2026-09-09 17:10:44,305 [92mINFO[0m End to optimize the onnx model.
+2026-09-09 17:10:44,441 [92mINFO[0m Saving model to: sp25_yolov5_640x640_all_int16_optimized_float_model.onnx.
+2026-09-09 17:10:44,442 [92mINFO[0m Start to calibrate the model.
+2026-09-09 17:10:44,613 [93mWARNING[0m The input0 of Node(name:/m/model.1/conv/conv.5/avg_pool/GlobalAveragePool, type:GlobalAveragePool) does not support data type: int16
+2026-09-09 17:10:44,619 [93mWARNING[0m The output of Node(name:/m/model.17/Resize, type:Resize) does not support data type: int16
+2026-09-09 17:10:44,655 [92mINFO[0m There are 200 samples in the data set.
+2026-09-09 17:10:44,655 [92mINFO[0m Run calibration model with layerwise search method.
+2026-09-09 17:10:44,872 [93mWARNING[0m The input0 of Node(name:/m/model.4/conv/conv.5/avg_pool/GlobalAveragePool, type:GlobalAveragePool) does not support data type: int16
+2026-09-09 17:10:44,958 [92mINFO[0m Calibration using batch 8
+2026-09-09 17:10:45,158 [93mWARNING[0m The input0 of Node(name:/m/model.5/conv/conv.5/avg_pool/GlobalAveragePool, type:GlobalAveragePool) does not support data type: int16
+2026-09-09 17:10:45,158 [93mWARNING[0m The input0 of Node(name:/m/model.6/conv/conv.5/avg_pool/GlobalAveragePool, type:GlobalAveragePool) does not support data type: int16
+2026-09-09 17:10:45,158 [93mWARNING[0m The input0 of Node(name:/m/model.7/conv/conv.5/avg_pool/GlobalAveragePool, type:GlobalAveragePool) does not support data type: int16
+2026-09-09 17:10:45,159 [93mWARNING[0m The input0 of Node(name:/m/model.8/conv/conv.5/avg_pool/GlobalAveragePool, type:GlobalAveragePool) does not support data type: int16
+2026-09-09 17:10:45,159 [93mWARNING[0m The output of Node(name:/m/model.13/Resize, type:Resize) does not support data type: int16
+2026-09-09 17:10:45,159 [93mWARNING[0m The input0 of Node(name:/m/model.9/conv/conv.5/avg_pool/GlobalAveragePool, type:GlobalAveragePool) does not support data type: int16
+2026-09-09 17:10:45,159 [93mWARNING[0m The input0 of Node(name:/m/model.10/conv/conv.5/avg_pool/GlobalAveragePool, type:GlobalAveragePool) does not support data type: int16
+2026-09-09 17:10:45,159 [93mWARNING[0m The input0 of Node(name:/m/model.11/conv/conv.5/avg_pool/GlobalAveragePool, type:GlobalAveragePool) does not support data type: int16
+2026-09-09 17:10:45,159 [93mWARNING[0m The input0 of Node(name:/m/model.17/Resize, type:Resize) does not support data type: int16
+2026-09-09 17:10:45,159 [93mWARNING[0m The input0 of Node(name:/m/model.13/Resize, type:Resize) does not support data type: int16
+2026-09-09 17:10:45,160 [93mWARNING[0m The input0 of Node(name:/m/model.1/conv/conv.5/Mul) is excepted to calculate in int16, but actually calculate in int8
+2026-09-09 17:10:45,160 [93mWARNING[0m The output of Node(name:/m/model.1/conv/conv.3/Conv) is int16, then requantized to int8
+2026-09-09 17:10:45,160 [93mWARNING[0m The input0 of Node(name:/m/model.4/conv/conv.5/Mul) is excepted to calculate in int16, but actually calculate in int8
+2026-09-09 17:10:45,160 [93mWARNING[0m The output of Node(name:/m/model.4/conv/conv.3/Conv) is int16, then requantized to int8
+2026-09-09 17:10:45,160 [93mWARNING[0m The input0 of Node(name:/m/model.5/conv/conv.5/Mul) is excepted to calculate in int16, but actually calculate in int8
+2026-09-09 17:10:45,160 [93mWARNING[0m The output of Node(name:/m/model.5/conv/conv.3/Conv) is int16, then requantized to int8
+2026-09-09 17:10:45,160 [93mWARNING[0m The input0 of Node(name:/m/model.6/conv/conv.5/Mul) is excepted to calculate in int16, but actually calculate in int8
+2026-09-09 17:10:45,160 [93mWARNING[0m The output of Node(name:/m/model.6/conv/conv.3/Conv) is int16, then requantized to int8
+2026-09-09 17:10:45,160 [93mWARNING[0m The input0 of Node(name:/m/model.7/conv/conv.5/Mul) is excepted to calculate in int16, but actually calculate in int8
+2026-09-09 17:10:45,161 [93mWARNING[0m The output of Node(name:/m/model.7/conv/conv.3/Conv) is int16, then requantized to int8
+2026-09-09 17:10:45,161 [93mWARNING[0m The input0 of Node(name:/m/model.8/conv/conv.5/Mul) is excepted to calculate in int16, but actually calculate in int8
+2026-09-09 17:10:45,161 [93mWARNING[0m The output of Node(name:/m/model.8/conv/conv.3/Conv) is int16, then requantized to int8
+2026-09-09 17:10:45,161 [93mWARNING[0m The input0 of Node(name:/m/model.9/conv/conv.5/Mul) is excepted to calculate in int16, but actually calculate in int8
+2026-09-09 17:10:45,161 [93mWARNING[0m The output of Node(name:/m/model.9/conv/conv.3/Conv) is int16, then requantized to int8
+2026-09-09 17:10:45,161 [93mWARNING[0m The input0 of Node(name:/m/model.10/conv/conv.5/Mul) is excepted to calculate in int16, but actually calculate in int8
+2026-09-09 17:10:45,161 [93mWARNING[0m The output of Node(name:/m/model.10/conv/conv.3/Conv) is int16, then requantized to int8
+2026-09-09 17:10:45,161 [93mWARNING[0m The input0 of Node(name:/m/model.11/conv/conv.5/Mul) is excepted to calculate in int16, but actually calculate in int8
+2026-09-09 17:10:45,162 [93mWARNING[0m The output of Node(name:/m/model.11/conv/conv.3/Conv) is int16, then requantized to int8
+calibration in progress:   0%|          | 0/25 [00:00<?, ?it/s]2026-09-09 17:10:45.899865341 [E:onnxruntime:, sequential_executor.cc:183 Execute] Non-zero status code returned while running Reshape node. Name:'/m/model.1/conv/conv.5/fc/fc.1/Relu/m/model.1/conv/conv.5/fc/fc.1/Relu_output_0_reshape_Reshape_0' Status Message: /home/jenkins/agent/workspace/model_convert_hmct1_ut_cpu_1.1.0/onnxruntime/onnxruntime/core/providers/cpu/tensor/reshape_helper.h:43 onnxruntime::ReshapeHelper::ReshapeHelper(const onnxruntime::TensorShape&, std::vector<long int>&) gsl::narrow_cast<int64_t>(input_shape.Size()) == size was false. The input tensor cannot be reshaped to the requested shape. Input shape:{8,4,1,1}, requested shape:{1,1,1,4}
+
+calibration in progress:   0%|          | 0/25 [00:00<?, ?it/s]
+2026-09-09 17:10:45,900 [92mINFO[0m Reset batch_size=1 and execute forward again...
+calibration in progress:   0%|          | 0/200 [00:00<?, ?it/s]calibration in progress:   0%|          | 1/200 [00:01<03:49,  1.15s/it]calibration in progress:   1%|          | 2/200 [00:02<04:03,  1.23s/it]calibration in progress:   2%|▏         | 3/200 [00:03<04:14,  1.29s/it]calibration in progress:   2%|▏         | 4/200 [00:05<04:23,  1.35s/it]calibration in progress:   2%|▎         | 5/200 [00:06<04:26,  1.36s/it]calibration in progress:   3%|▎         | 6/200 [00:08<04:27,  1.38s/it]calibration in progress:   4%|▎         | 7/200 [00:09<04:31,  1.41s/it]calibration in progress:   4%|▍         | 8/200 [00:10<04:33,  1.42s/it]calibration in progress:   4%|▍         | 9/200 [00:12<04:36,  1.45s/it]calibration in progress:   5%|▌         | 10/200 [00:13<04:38,  1.46s/it]calibration in progress:   6%|▌         | 11/200 [00:16<05:46,  1.83s/it]calibration in progress:   6%|▌         | 12/200 [00:19<06:33,  2.09s/it]calibration in progress:   6%|▋         | 13/200 [00:22<07:05,  2.27s/it]calibration in progress:   7%|▋         | 14/200 [00:27<10:13,  3.30s/it]calibration in progress:   8%|▊         | 15/200 [00:33<12:22,  4.01s/it]calibration in progress:   8%|▊         | 16/200 [00:39<13:52,  4.52s/it]calibration in progress:   8%|▊         | 17/200 [00:44<14:48,  4.85s/it]calibration in progress:   9%|▉         | 18/200 [00:50<15:31,  5.12s/it]calibration in progress:  10%|▉         | 19/200 [00:56<16:01,  5.31s/it]calibration in progress:  10%|█         | 20/200 [01:01<16:18,  5.44s/it]calibration in progress:  10%|█         | 21/200 [01:07<16:28,  5.52s/it]calibration in progress:  11%|█         | 22/200 [01:13<16:37,  5.60s/it]calibration in progress:  12%|█▏        | 23/200 [01:19<16:43,  5.67s/it]calibration in progress:  12%|█▏        | 24/200 [01:25<16:54,  5.77s/it]calibration in progress:  12%|█▎        | 25/200 [01:31<16:55,  5.80s/it]calibration in progress:  13%|█▎        | 26/200 [01:37<16:55,  5.83s/it]calibration in progress:  14%|█▎        | 27/200 [01:42<16:53,  5.86s/it]calibration in progress:  14%|█▍        | 28/200 [01:48<16:45,  5.85s/it]calibration in progress:  14%|█▍        | 29/200 [01:54<16:38,  5.84s/it]calibration in progress:  15%|█▌        | 30/200 [02:00<16:33,  5.84s/it]calibration in progress:  16%|█▌        | 31/200 [02:06<16:27,  5.84s/it]calibration in progress:  16%|█▌        | 32/200 [02:12<16:25,  5.86s/it]calibration in progress:  16%|█▋        | 33/200 [02:17<16:15,  5.84s/it]calibration in progress:  17%|█▋        | 34/200 [02:23<16:10,  5.85s/it]calibration in progress:  18%|█▊        | 35/200 [02:29<16:06,  5.85s/it]calibration in progress:  18%|█▊        | 36/200 [02:35<16:00,  5.86s/it]calibration in progress:  18%|█▊        | 37/200 [02:41<15:57,  5.87s/it]calibration in progress:  19%|█▉        | 38/200 [02:47<15:49,  5.86s/it]calibration in progress:  20%|█▉        | 39/200 [02:53<15:45,  5.88s/it]calibration in progress:  20%|██        | 40/200 [02:59<15:43,  5.90s/it]calibration in progress:  20%|██        | 41/200 [03:05<15:40,  5.92s/it]calibration in progress:  21%|██        | 42/200 [03:11<15:36,  5.93s/it]calibration in progress:  22%|██▏       | 43/200 [03:16<15:29,  5.92s/it]calibration in progress:  22%|██▏       | 44/200 [03:22<15:21,  5.90s/it]calibration in progress:  22%|██▎       | 45/200 [03:28<15:16,  5.92s/it]calibration in progress:  23%|██▎       | 46/200 [03:34<15:08,  5.90s/it]calibration in progress:  24%|██▎       | 47/200 [03:40<15:03,  5.90s/it]calibration in progress:  24%|██▍       | 48/200 [03:46<14:55,  5.89s/it]calibration in progress:  24%|██▍       | 49/200 [03:52<14:51,  5.90s/it]calibration in progress:  25%|██▌       | 50/200 [03:58<14:46,  5.91s/it]calibration in progress:  26%|██▌       | 51/200 [04:04<14:40,  5.91s/it]calibration in progress:  26%|██▌       | 52/200 [04:10<14:34,  5.91s/it]calibration in progress:  26%|██▋       | 53/200 [04:15<14:27,  5.90s/it]calibration in progress:  27%|██▋       | 54/200 [04:21<14:23,  5.91s/it]calibration in progress:  28%|██▊       | 55/200 [04:27<14:15,  5.90s/it]calibration in progress:  28%|██▊       | 56/200 [04:33<14:08,  5.89s/it]calibration in progress:  28%|██▊       | 57/200 [04:39<14:01,  5.88s/it]calibration in progress:  29%|██▉       | 58/200 [04:45<13:56,  5.89s/it]calibration in progress:  30%|██▉       | 59/200 [04:51<13:52,  5.90s/it]calibration in progress:  30%|███       | 60/200 [04:57<13:47,  5.91s/it]calibration in progress:  30%|███       | 61/200 [05:03<13:45,  5.94s/it]calibration in progress:  31%|███       | 62/200 [05:09<13:38,  5.93s/it]

@@ -1,0 +1,2067 @@
+{
+    "summary": {
+        "BPU OPs per frame (effective)": 1581470912,
+        "BPU OPs per run (effective)": 1581470912,
+        "BPU PE number": 1,
+        "BPU core number": 1,
+        "BPU march": "B25E",
+        "DDR bytes per frame": 14392384,
+        "DDR bytes per run": 14392384,
+        "DDR bytes per second": 3348531613,
+        "DDR megabytes per frame": 13.726,
+        "DDR megabytes per run": 13.726,
+        "DDR megabytes per second": 3193.4,
+        "FPS": 232.66,
+        "HBDK version": "3.49.15",
+        "compiling options": "-f hbir -m /tmp/tmpmv_v2rub/torch_jit_subgraph_0.hbir -o /tmp/tmpmv_v2rub/torch_jit_subgraph_0.hbm --march bayes-e --progressbar --O2 --debug --core-num 1 --fast --input-layout NHWC --output-layout NHWC --input-source ddr",
+        "frame per run": 1,
+        "frame per second": 232.66,
+        "input features": [
+            [
+                "input name",
+                "input size"
+            ],
+            [
+                "images",
+                "1x3x640x640"
+            ]
+        ],
+        "interval computing unit utilization": [
+            0.798,
+            0.847,
+            0.842,
+            0.85,
+            0.924,
+            0.904,
+            0.972,
+            0.887,
+            0.91,
+            0.945,
+            0.864,
+            0.948,
+            0.847,
+            0.933,
+            0.932,
+            0.938,
+            0.84,
+            0.842,
+            0.902,
+            0.953,
+            0.95,
+            0.979,
+            0.888,
+            0.941,
+            0.742,
+            0.988,
+            0.804,
+            0.942,
+            0.978,
+            0.976,
+            0.979,
+            0.976,
+            0.977,
+            0.973,
+            0.882,
+            0.863,
+            0.704,
+            0.789,
+            0.544,
+            0.467,
+            0.539,
+            0.556,
+            0.479
+        ],
+        "interval computing units utilization": [
+            0.798,
+            0.847,
+            0.842,
+            0.85,
+            0.924,
+            0.904,
+            0.972,
+            0.887,
+            0.91,
+            0.945,
+            0.864,
+            0.948,
+            0.847,
+            0.933,
+            0.932,
+            0.938,
+            0.84,
+            0.842,
+            0.902,
+            0.953,
+            0.95,
+            0.979,
+            0.888,
+            0.941,
+            0.742,
+            0.988,
+            0.804,
+            0.942,
+            0.978,
+            0.976,
+            0.979,
+            0.976,
+            0.977,
+            0.973,
+            0.882,
+            0.863,
+            0.704,
+            0.789,
+            0.544,
+            0.467,
+            0.539,
+            0.556,
+            0.479
+        ],
+        "interval loading bandwidth (megabytes/s)": [
+            3106,
+            2951,
+            2789,
+            2783,
+            1614,
+            461,
+            256,
+            514,
+            741,
+            402,
+            786,
+            711,
+            496,
+            965,
+            1250,
+            1385,
+            2077,
+            2947,
+            2313,
+            1669,
+            959,
+            482,
+            1325,
+            2206,
+            2121,
+            1944,
+            1195,
+            1122,
+            1984,
+            1755,
+            1673,
+            1673,
+            1939,
+            1952,
+            1886,
+            1377,
+            2138,
+            3772,
+            4198,
+            4324,
+            4541,
+            4483,
+            2705
+        ],
+        "interval number": 43,
+        "interval storing bandwidth (megabytes/s)": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            195,
+            488,
+            410,
+            190,
+            256,
+            183,
+            183,
+            366,
+            183,
+            43,
+            109,
+            175,
+            109,
+            341,
+            683,
+            1229,
+            1708,
+            1675,
+            1367,
+            1684,
+            2929,
+            2490,
+            1831,
+            2197,
+            2197,
+            2270,
+            2563,
+            2825,
+            2197,
+            1194,
+            2263,
+            3435,
+            3223,
+            3242,
+            3027,
+            2431,
+            2636
+        ],
+        "interval time (ms)": 0.1,
+        "latency (ms)": 4.3,
+        "latency (ms) by segments": [
+            4.298
+        ],
+        "latency (us)": 4298.1,
+        "layer details": [
+            [
+                "layer",
+                "ops",
+                "original output shape",
+                "aligned output shape",
+                "computing cost (no DDR)",
+                "load/store cost",
+                "active period of time"
+            ],
+            [
+                "HZ_PREPROCESS_FOR_images",
+                "2,457,600",
+                "[1,640,640,3]",
+                "[1,640,640,8]",
+                "275 us (6.3% of model)",
+                "207 us (4.8% of model)",
+                "0 ~ 417 us (417)"
+            ],
+            [
+                "/m/model.0/conv/Conv",
+                "44,236,800",
+                "[1,320,320,8]",
+                "[1,320,320,16]",
+                "51 us (1.1% of model)",
+                "1 us (0% of model)",
+                "7 ~ 418 us (411)"
+            ],
+            [
+                "/m/model.0/act/Mul",
+                "0",
+                "[1,320,320,8]",
+                "[1,320,320,8]",
+                "34 us (0.7% of model)",
+                "4 us (0% of model)",
+                "12 ~ 419 us (407)"
+            ],
+            [
+                "/m/model.1/conv/conv.0/Conv-conv",
+                "26,214,400",
+                "[1,320,320,16]",
+                "[1,320,320,16]",
+                "57 us (1.3% of model)",
+                "1 us (0% of model)",
+                "415 ~ 522 us (107)"
+            ],
+            [
+                "/m/model.1/conv/conv.3/Conv",
+                "7,372,800",
+                "[1,160,160,16]",
+                "[1,160,160,16]",
+                "49 us (1.1% of model)",
+                "1 us (0% of model)",
+                "417 ~ 533 us (116)"
+            ],
+            [
+                "/m/model.1/conv/conv.5/avg_pool/GlobalAveragePool",
+                "0",
+                "[1,1,1,16]",
+                "[1,1,1,128]",
+                "7 us (0.1% of model)",
+                "0",
+                "533 ~ 539 us (6)"
+            ],
+            [
+                "/m/model.1/conv/conv.5/fc/fc.0/Gemm-conv",
+                "128",
+                "[1,1,1,4]",
+                "[1,2,8,16]",
+                "<1 us",
+                "1 us (0% of model)",
+                "419 ~ 540 us (121)"
+            ],
+            [
+                "/m/model.1/conv/conv.5/fc/fc.2/Gemm_NCHW2NHWC_LayoutConvert_Input0_reshape",
+                "0",
+                "[1,1,4,1]",
+                "[1,1,4,128]",
+                "1 us (0% of model)",
+                "0",
+                "540 ~ 542 us (2)"
+            ],
+            [
+                "/m/model.1/conv/conv.5/fc/fc.2/Gemm-conv",
+                "128",
+                "[1,1,1,16]",
+                "[1,2,8,16]",
+                "<1 us",
+                "1 us (0% of model)",
+                "540 ~ 543 us (3)"
+            ],
+            [
+                "/m/model.1/conv/conv.5/fc/fc.3/Div_mul_reshape_conv",
+                "512",
+                "[1,1,1,16]",
+                "[1,2,8,16]",
+                "<1 us",
+                "1 us (0% of model)",
+                "533 ~ 543 us (10)"
+            ],
+            [
+                "/m/model.1/conv/conv.5/Mul",
+                "0",
+                "[1,160,160,16]",
+                "[1,160,160,16]",
+                "30 us (0.6% of model)",
+                "2 us (0% of model)",
+                "27 ~ 596 us (569)"
+            ],
+            [
+                "/m/model.1/conv/conv.6/Relu",
+                "0",
+                "[1,160,160,16]",
+                "[1,160,160,16]",
+                "15 us (0.3% of model)",
+                "4 us (0% of model)",
+                "533 ~ 598 us (65)"
+            ],
+            [
+                "/m/model.1/conv/conv.7/Conv",
+                "6,553,600",
+                "[1,160,160,8]",
+                "[1,160,160,16]",
+                "15 us (0.3% of model)",
+                "1 us (0% of model)",
+                "37 ~ 602 us (565)"
+            ],
+            [
+                "/m/model.2/conv/conv.0/Conv-conv",
+                "29,491,200",
+                "[1,160,160,72]",
+                "[1,160,160,72]",
+                "42 us (0.9% of model)",
+                "1 us (0% of model)",
+                "576 ~ 724 us (148)"
+            ],
+            [
+                "/m/model.2/conv/conv.3/Conv-conv",
+                "8,294,400",
+                "[1,80,80,72]",
+                "[1,80,80,72]",
+                "56 us (1.2% of model)",
+                "1 us (0% of model)",
+                "597 ~ 734 us (137)"
+            ],
+            [
+                "/m/model.2/conv/conv.7/Conv",
+                "14,745,600",
+                "[1,80,80,16]",
+                "[1,80,80,32]",
+                "8 us (0.1% of model)",
+                "1 us (0% of model)",
+                "569 ~ 739 us (170)"
+            ],
+            [
+                "/m/model.3/conv/conv.0/Conv-conv",
+                "18,022,400",
+                "[1,80,80,88]",
+                "[1,80,80,96]",
+                "11 us (0.2% of model)",
+                "1 us (0% of model)",
+                "570 ~ 741 us (171)"
+            ],
+            [
+                "/m/model.3/conv/conv.3/Conv-conv",
+                "10,137,600",
+                "[1,80,80,88]",
+                "[1,80,80,88]",
+                "13 us (0.3% of model)",
+                "1 us (0% of model)",
+                "602 ~ 747 us (145)"
+            ],
+            [
+                "/m/model.3/conv/conv.7/Conv",
+                "18,022,400",
+                "[1,80,80,16]",
+                "[1,80,80,32]",
+                "10 us (0.2% of model)",
+                "20 us (0.4% of model)",
+                "572 ~ 750 us (178)"
+            ],
+            [
+                "/m/model.4/conv/conv.0/Conv",
+                "19,660,800",
+                "[1,80,80,96]",
+                "[1,80,80,96]",
+                "10 us (0.2% of model)",
+                "18 us (0.4% of model)",
+                "543 ~ 808 us (265)"
+            ],
+            [
+                "/m/model.4/conv/conv.2/Mul",
+                "0",
+                "[1,80,80,96]",
+                "[1,80,80,96]",
+                "30 us (0.6% of model)",
+                "2 us (0% of model)",
+                "504 ~ 814 us (310)"
+            ],
+            [
+                "/m/model.4/conv/conv.3/Conv",
+                "7,680,000",
+                "[1,40,40,96]",
+                "[1,40,48,96]",
+                "35 us (0.8% of model)",
+                "2 us (0% of model)",
+                "520 ~ 830 us (310)"
+            ],
+            [
+                "/m/model.4/conv/conv.5/avg_pool/GlobalAveragePool",
+                "0",
+                "[1,1,1,96]",
+                "[1,1,1,128]",
+                "3 us (0% of model)",
+                "0",
+                "830 ~ 833 us (3)"
+            ],
+            [
+                "/m/model.4/conv/conv.5/fc/fc.0/Gemm-conv",
+                "4,608",
+                "[1,1,1,24]",
+                "[1,2,8,32]",
+                "<1 us",
+                "1 us (0% of model)",
+                "814 ~ 833 us (19)"
+            ],
+            [
+                "/m/model.4/conv/conv.5/fc/fc.2/Gemm-conv",
+                "4,608",
+                "[1,1,1,96]",
+                "[1,2,8,96]",
+                "<1 us",
+                "1 us (0% of model)",
+                "815 ~ 833 us (18)"
+            ],
+            [
+                "/m/model.4/conv/conv.5/fc/fc.3/Div_mul_reshape_conv",
+                "18,432",
+                "[1,1,1,96]",
+                "[1,2,8,96]",
+                "<1 us",
+                "2 us (0% of model)",
+                "816 ~ 834 us (18)"
+            ],
+            [
+                "/m/model.4/conv/conv.5/Mul",
+                "0",
+                "[1,40,40,96]",
+                "[1,40,40,96]",
+                "11 us (0.2% of model)",
+                "4 us (0% of model)",
+                "731 ~ 897 us (166)"
+            ],
+            [
+                "/m/model.4/conv/conv.6/sigmoid/Add",
+                "0",
+                "[1,40,40,96]",
+                "[1,40,40,96]",
+                "11 us (0.2% of model)",
+                "3 us (0% of model)",
+                "732 ~ 903 us (171)"
+            ],
+            [
+                "/m/model.4/conv/conv.6/sigmoid/relu/Clip",
+                "0",
+                "[1,40,40,96]",
+                "[1,40,40,96]",
+                "9 us (0.1% of model)",
+                "2 us (0% of model)",
+                "834 ~ 905 us (71)"
+            ],
+            [
+                "/m/model.4/conv/conv.6/sigmoid/Div_mul",
+                "307,200",
+                "[1,40,40,96]",
+                "[1,40,48,96]",
+                "15 us (0.3% of model)",
+                "1 us (0% of model)",
+                "836 ~ 909 us (73)"
+            ],
+            [
+                "/m/model.4/conv/conv.6/Mul",
+                "0",
+                "[1,40,40,96]",
+                "[1,40,40,96]",
+                "11 us (0.2% of model)",
+                "2 us (0% of model)",
+                "808 ~ 912 us (104)"
+            ],
+            [
+                "/m/model.4/conv/conv.7/Conv",
+                "7,372,800",
+                "[1,40,40,24]",
+                "[1,40,40,32]",
+                "3 us (0% of model)",
+                "9 us (0.2% of model)",
+                "839 ~ 917 us (78)"
+            ],
+            [
+                "/m/model.5/conv/conv.0/Conv",
+                "18,432,000",
+                "[1,40,40,240]",
+                "[1,40,40,256]",
+                "7 us (0.1% of model)",
+                "2 us (0% of model)",
+                "595 ~ 915 us (320)"
+            ],
+            [
+                "/m/model.5/conv/conv.2/Mul",
+                "0",
+                "[1,40,40,240]",
+                "[1,40,40,240]",
+                "13 us (0.2% of model)",
+                "2 us (0% of model)",
+                "625 ~ 918 us (293)"
+            ],
+            [
+                "/m/model.5/conv/conv.3/Conv",
+                "19,200,000",
+                "[1,40,40,240]",
+                "[1,40,40,240]",
+                "21 us (0.4% of model)",
+                "2 us (0% of model)",
+                "843 ~ 926 us (83)"
+            ],
+            [
+                "/m/model.5/conv/conv.5/avg_pool/GlobalAveragePool",
+                "0",
+                "[1,1,1,240]",
+                "[1,1,1,256]",
+                "6 us (0.1% of model)",
+                "0",
+                "926 ~ 933 us (7)"
+            ],
+            [
+                "/m/model.5/conv/conv.5/fc/fc.0/Gemm-conv",
+                "28,800",
+                "[1,1,1,60]",
+                "[1,2,8,64]",
+                "<1 us",
+                "2 us (0% of model)",
+                "846 ~ 933 us (87)"
+            ],
+            [
+                "/m/model.5/conv/conv.5/fc/fc.2/Gemm-conv",
+                "28,800",
+                "[1,1,1,240]",
+                "[1,2,8,256]",
+                "<1 us",
+                "2 us (0% of model)",
+                "32 ~ 933 us (901)"
+            ],
+            [
+                "/m/model.5/conv/conv.5/fc/fc.3/Div_mul_reshape_conv",
+                "115,200",
+                "[1,1,1,240]",
+                "[1,2,8,256]",
+                "1 us (0% of model)",
+                "4 us (0.1% of model)",
+                "523 ~ 935 us (412)"
+            ],
+            [
+                "/m/model.5/conv/conv.5/Mul",
+                "0",
+                "[1,40,40,240]",
+                "[1,40,40,240]",
+                "24 us (0.5% of model)",
+                "4 us (0% of model)",
+                "37 ~ 959 us (922)"
+            ],
+            [
+                "/m/model.5/conv/conv.6/sigmoid/Add",
+                "0",
+                "[1,40,40,240]",
+                "[1,40,40,240]",
+                "30 us (0.7% of model)",
+                "3 us (0% of model)",
+                "912 ~ 1009 us (97)"
+            ],
+            [
+                "/m/model.5/conv/conv.6/sigmoid/relu/Clip",
+                "0",
+                "[1,40,40,240]",
+                "[1,40,40,240]",
+                "23 us (0.5% of model)",
+                "4 us (0% of model)",
+                "949 ~ 1011 us (62)"
+            ],
+            [
+                "/m/model.5/conv/conv.6/sigmoid/Div_mul",
+                "768,000",
+                "[1,40,40,240]",
+                "[1,40,48,240]",
+                "22 us (0.5% of model)",
+                "2 us (0% of model)",
+                "959 ~ 1061 us (102)"
+            ],
+            [
+                "/m/model.5/conv/conv.6/Mul",
+                "0",
+                "[1,40,40,240]",
+                "[1,40,40,240]",
+                "30 us (0.7% of model)",
+                "4 us (0% of model)",
+                "1010 ~ 1063 us (53)"
+            ],
+            [
+                "/m/model.5/conv/conv.7/Conv",
+                "18,432,000",
+                "[1,40,40,24]",
+                "[1,40,40,32]",
+                "6 us (0.1% of model)",
+                "8 us (0.1% of model)",
+                "1026 ~ 1069 us (43)"
+            ],
+            [
+                "/m/model.6/conv/conv.0/Conv",
+                "18,432,000",
+                "[1,40,40,240]",
+                "[1,40,40,256]",
+                "7 us (0.1% of model)",
+                "2 us (0% of model)",
+                "1051 ~ 1104 us (53)"
+            ],
+            [
+                "/m/model.6/conv/conv.2/Mul",
+                "0",
+                "[1,40,40,240]",
+                "[1,40,40,240]",
+                "13 us (0.2% of model)",
+                "2 us (0% of model)",
+                "1062 ~ 1106 us (44)"
+            ],
+            [
+                "/m/model.6/conv/conv.3/Conv",
+                "19,200,000",
+                "[1,40,40,240]",
+                "[1,40,40,240]",
+                "21 us (0.4% of model)",
+                "2 us (0% of model)",
+                "1054 ~ 1115 us (61)"
+            ],
+            [
+                "/m/model.6/conv/conv.5/avg_pool/GlobalAveragePool",
+                "0",
+                "[1,1,1,240]",
+                "[1,1,1,256]",
+                "6 us (0.1% of model)",
+                "0",
+                "1115 ~ 1121 us (6)"
+            ],
+            [
+                "/m/model.6/conv/conv.5/fc/fc.0/Gemm-conv",
+                "28,800",
+                "[1,1,1,60]",
+                "[1,2,8,64]",
+                "<1 us",
+                "2 us (0% of model)",
+                "1065 ~ 1121 us (56)"
+            ],
+            [
+                "/m/model.6/conv/conv.5/fc/fc.2/Gemm-conv",
+                "28,800",
+                "[1,1,1,240]",
+                "[1,2,8,256]",
+                "<1 us",
+                "2 us (0% of model)",
+                "953 ~ 1122 us (169)"
+            ],
+            [
+                "/m/model.6/conv/conv.5/fc/fc.3/Div_mul_reshape_conv",
+                "115,200",
+                "[1,1,1,240]",
+                "[1,2,8,256]",
+                "1 us (0% of model)",
+                "4 us (0.1% of model)",
+                "954 ~ 1123 us (169)"
+            ],
+            [
+                "/m/model.6/conv/conv.5/Mul",
+                "0",
+                "[1,40,40,240]",
+                "[1,40,40,240]",
+                "25 us (0.5% of model)",
+                "4 us (0% of model)",
+                "955 ~ 1148 us (193)"
+            ],
+            [
+                "/m/model.6/conv/conv.6/sigmoid/Add",
+                "0",
+                "[1,40,40,240]",
+                "[1,40,40,240]",
+                "24 us (0.5% of model)",
+                "3 us (0% of model)",
+                "1073 ~ 1173 us (100)"
+            ],
+            [
+                "/m/model.6/conv/conv.6/sigmoid/relu/Clip",
+                "0",
+                "[1,40,40,240]",
+                "[1,40,40,240]",
+                "21 us (0.4% of model)",
+                "4 us (0% of model)",
+                "1148 ~ 1222 us (74)"
+            ],
+            [
+                "/m/model.6/conv/conv.6/sigmoid/Div_mul",
+                "768,000",
+                "[1,40,40,240]",
+                "[1,40,48,240]",
+                "37 us (0.8% of model)",
+                "2 us (0% of model)",
+                "1173 ~ 1264 us (91)"
+            ],
+            [
+                "/m/model.6/conv/conv.6/Mul",
+                "0",
+                "[1,40,40,240]",
+                "[1,40,40,240]",
+                "30 us (0.7% of model)",
+                "4 us (0% of model)",
+                "1177 ~ 1265 us (88)"
+            ],
+            [
+                "/m/model.6/conv/conv.7/Conv",
+                "18,432,000",
+                "[1,40,40,24]",
+                "[1,40,40,32]",
+                "7 us (0.1% of model)",
+                "23 us (0.5% of model)",
+                "1071 ~ 1287 us (216)"
+            ],
+            [
+                "/m/model.7/conv/conv.0/Conv",
+                "9,216,000",
+                "[1,40,40,120]",
+                "[1,40,40,128]",
+                "4 us (0% of model)",
+                "2 us (0% of model)",
+                "1243 ~ 1288 us (45)"
+            ],
+            [
+                "/m/model.7/conv/conv.2/Mul",
+                "0",
+                "[1,40,40,120]",
+                "[1,40,40,120]",
+                "7 us (0.1% of model)",
+                "2 us (0% of model)",
+                "1266 ~ 1290 us (24)"
+            ],
+            [
+                "/m/model.7/conv/conv.3/Conv",
+                "9,600,000",
+                "[1,40,40,120]",
+                "[1,40,40,120]",
+                "11 us (0.2% of model)",
+                "2 us (0% of model)",
+                "1254 ~ 1294 us (40)"
+            ],
+            [
+                "/m/model.7/conv/conv.5/avg_pool/GlobalAveragePool",
+                "0",
+                "[1,1,1,120]",
+                "[1,1,1,128]",
+                "3 us (0% of model)",
+                "0",
+                "1294 ~ 1298 us (4)"
+            ],
+            [
+                "/m/model.7/conv/conv.5/fc/fc.0/Gemm-conv",
+                "7,200",
+                "[1,1,1,30]",
+                "[1,2,8,32]",
+                "<1 us",
+                "1 us (0% of model)",
+                "1256 ~ 1298 us (42)"
+            ],
+            [
+                "/m/model.7/conv/conv.5/fc/fc.2/Gemm-conv",
+                "7,200",
+                "[1,1,1,120]",
+                "[1,2,8,128]",
+                "<1 us",
+                "1 us (0% of model)",
+                "1256 ~ 1298 us (42)"
+            ],
+            [
+                "/m/model.7/conv/conv.5/fc/fc.3/Div_mul_reshape_conv",
+                "28,800",
+                "[1,1,1,120]",
+                "[1,2,8,128]",
+                "<1 us",
+                "2 us (0% of model)",
+                "1258 ~ 1298 us (40)"
+            ],
+            [
+                "/m/model.7/conv/conv.5/Mul",
+                "0",
+                "[1,40,40,120]",
+                "[1,40,40,120]",
+                "12 us (0.2% of model)",
+                "3 us (0% of model)",
+                "1275 ~ 1311 us (36)"
+            ],
+            [
+                "/m/model.7/conv/conv.6/sigmoid/Add",
+                "0",
+                "[1,40,40,120]",
+                "[1,40,40,120]",
+                "13 us (0.3% of model)",
+                "3 us (0% of model)",
+                "1278 ~ 1332 us (54)"
+            ],
+            [
+                "/m/model.7/conv/conv.6/sigmoid/relu/Clip",
+                "0",
+                "[1,40,40,120]",
+                "[1,40,40,120]",
+                "11 us (0.2% of model)",
+                "2 us (0% of model)",
+                "1288 ~ 1338 us (50)"
+            ],
+            [
+                "/m/model.7/conv/conv.6/sigmoid/Div_mul",
+                "384,000",
+                "[1,40,40,120]",
+                "[1,40,48,120]",
+                "18 us (0.4% of model)",
+                "1 us (0% of model)",
+                "1291 ~ 1345 us (54)"
+            ],
+            [
+                "/m/model.7/conv/conv.6/Mul",
+                "0",
+                "[1,40,40,120]",
+                "[1,40,40,120]",
+                "12 us (0.2% of model)",
+                "3 us (0% of model)",
+                "1295 ~ 1358 us (63)"
+            ],
+            [
+                "/m/model.7/conv/conv.7/Conv",
+                "9,216,000",
+                "[1,40,40,24]",
+                "[1,40,40,32]",
+                "4 us (0% of model)",
+                "17 us (0.3% of model)",
+                "1332 ~ 1384 us (52)"
+            ],
+            [
+                "/m/model.8/conv/conv.0/Conv",
+                "11,059,200",
+                "[1,40,40,144]",
+                "[1,40,40,160]",
+                "5 us (0.1% of model)",
+                "2 us (0% of model)",
+                "1342 ~ 1382 us (40)"
+            ],
+            [
+                "/m/model.8/conv/conv.2/Mul",
+                "0",
+                "[1,40,40,144]",
+                "[1,40,40,144]",
+                "8 us (0.1% of model)",
+                "2 us (0% of model)",
+                "1346 ~ 1384 us (38)"
+            ],
+            [
+                "/m/model.8/conv/conv.3/Conv",
+                "11,520,000",
+                "[1,40,40,144]",
+                "[1,40,40,144]",
+                "13 us (0.2% of model)",
+                "2 us (0% of model)",
+                "1348 ~ 1389 us (41)"
+            ],
+            [
+                "/m/model.8/conv/conv.5/avg_pool/GlobalAveragePool",
+                "0",
+                "[1,1,1,144]",
+                "[1,1,1,256]",
+                "4 us (0% of model)",
+                "0",
+                "1389 ~ 1393 us (4)"
+            ],
+            [
+                "/m/model.8/conv/conv.5/fc/fc.0/Gemm-conv",
+                "10,368",
+                "[1,1,1,36]",
+                "[1,2,8,64]",
+                "<1 us",
+                "2 us (0% of model)",
+                "1355 ~ 1394 us (39)"
+            ],
+            [
+                "/m/model.8/conv/conv.5/fc/fc.2/Gemm-conv",
+                "10,368",
+                "[1,1,1,144]",
+                "[1,2,8,160]",
+                "<1 us",
+                "2 us (0% of model)",
+                "1313 ~ 1394 us (81)"
+            ],
+            [
+                "/m/model.8/conv/conv.5/fc/fc.3/Div_mul_reshape_conv",
+                "41,472",
+                "[1,1,1,144]",
+                "[1,2,8,160]",
+                "1 us (0% of model)",
+                "2 us (0% of model)",
+                "1314 ~ 1394 us (80)"
+            ],
+            [
+                "/m/model.8/conv/conv.5/Mul",
+                "0",
+                "[1,40,40,144]",
+                "[1,40,40,144]",
+                "15 us (0.3% of model)",
+                "3 us (0% of model)",
+                "1279 ~ 1409 us (130)"
+            ],
+            [
+                "/m/model.8/conv/conv.6/sigmoid/Add",
+                "0",
+                "[1,40,40,144]",
+                "[1,40,40,144]",
+                "17 us (0.4% of model)",
+                "3 us (0% of model)",
+                "1381 ~ 1442 us (61)"
+            ],
+            [
+                "/m/model.8/conv/conv.6/sigmoid/relu/Clip",
+                "0",
+                "[1,40,40,144]",
+                "[1,40,40,144]",
+                "15 us (0.3% of model)",
+                "4 us (0% of model)",
+                "1389 ~ 1443 us (54)"
+            ],
+            [
+                "/m/model.8/conv/conv.6/sigmoid/Div_mul",
+                "460,800",
+                "[1,40,40,144]",
+                "[1,40,48,144]",
+                "12 us (0.2% of model)",
+                "1 us (0% of model)",
+                "1409 ~ 1461 us (52)"
+            ],
+            [
+                "/m/model.8/conv/conv.6/Mul",
+                "0",
+                "[1,40,40,144]",
+                "[1,40,40,144]",
+                "15 us (0.3% of model)",
+                "3 us (0% of model)",
+                "1424 ~ 1470 us (46)"
+            ],
+            [
+                "/m/model.8/conv/conv.7/Conv",
+                "11,059,200",
+                "[1,40,40,24]",
+                "[1,40,40,32]",
+                "4 us (0% of model)",
+                "7 us (0.1% of model)",
+                "1442 ~ 1474 us (32)"
+            ],
+            [
+                "/m/model.9/conv/conv.0/Conv",
+                "22,118,400",
+                "[1,40,40,288]",
+                "[1,40,40,288]",
+                "8 us (0.1% of model)",
+                "2 us (0% of model)",
+                "1461 ~ 1492 us (31)"
+            ],
+            [
+                "/m/model.9/conv/conv.2/Mul",
+                "0",
+                "[1,40,40,288]",
+                "[1,40,40,288]",
+                "24 us (0.5% of model)",
+                "4 us (0% of model)",
+                "1466 ~ 1526 us (60)"
+            ],
+            [
+                "/m/model.9/conv/conv.3/Conv",
+                "5,760,000",
+                "[1,20,20,288]",
+                "[1,20,32,288]",
+                "32 us (0.7% of model)",
+                "3 us (0% of model)",
+                "1463 ~ 1535 us (72)"
+            ],
+            [
+                "/m/model.9/conv/conv.5/avg_pool/GlobalAveragePool",
+                "0",
+                "[1,1,1,288]",
+                "[1,1,1,384]",
+                "2 us (0% of model)",
+                "0",
+                "1535 ~ 1537 us (2)"
+            ],
+            [
+                "/m/model.9/conv/conv.5/fc/fc.0/Gemm-conv",
+                "41,472",
+                "[1,1,1,72]",
+                "[1,2,8,96]",
+                "1 us (0% of model)",
+                "3 us (0% of model)",
+                "1471 ~ 1538 us (67)"
+            ],
+            [
+                "/m/model.9/conv/conv.5/fc/fc.2/Gemm-conv",
+                "41,472",
+                "[1,1,1,288]",
+                "[1,2,8,288]",
+                "1 us (0% of model)",
+                "2 us (0% of model)",
+                "1472 ~ 1538 us (66)"
+            ],
+            [
+                "/m/model.9/conv/conv.5/fc/fc.3/Div_mul_reshape_conv",
+                "165,888",
+                "[1,1,1,288]",
+                "[1,2,8,288]",
+                "1 us (0% of model)",
+                "5 us (0.1% of model)",
+                "1350 ~ 1540 us (190)"
+            ],
+            [
+                "/m/model.9/conv/conv.5/Mul",
+                "0",
+                "[1,20,20,288]",
+                "[1,20,24,288]",
+                "9 us (0.2% of model)",
+                "4 us (0% of model)",
+                "1480 ~ 1549 us (69)"
+            ],
+            [
+                "/m/model.9/conv/conv.6/sigmoid/Add",
+                "0",
+                "[1,20,20,288]",
+                "[1,20,24,288]",
+                "12 us (0.2% of model)",
+                "3 us (0% of model)",
+                "1532 ~ 1569 us (37)"
+            ],
+            [
+                "/m/model.9/conv/conv.6/sigmoid/relu/Clip",
+                "0",
+                "[1,20,20,288]",
+                "[1,20,24,288]",
+                "9 us (0.2% of model)",
+                "4 us (0% of model)",
+                "1542 ~ 1570 us (28)"
+            ],
+            [
+                "/m/model.9/conv/conv.6/sigmoid/Div_mul",
+                "230,400",
+                "[1,20,20,288]",
+                "[1,20,32,288]",
+                "11 us (0.2% of model)",
+                "2 us (0% of model)",
+                "1547 ~ 1584 us (37)"
+            ],
+            [
+                "/m/model.9/conv/conv.6/Mul",
+                "0",
+                "[1,20,20,288]",
+                "[1,20,24,288]",
+                "9 us (0.2% of model)",
+                "4 us (0% of model)",
+                "1550 ~ 1593 us (43)"
+            ],
+            [
+                "/m/model.9/conv/conv.7/Conv",
+                "11,059,200",
+                "[1,20,20,48]",
+                "[1,20,24,64]",
+                "5 us (0.1% of model)",
+                "8 us (0.1% of model)",
+                "1569 ~ 1620 us (51)"
+            ],
+            [
+                "/m/model.10/conv/conv.0/Conv",
+                "22,118,400",
+                "[1,20,20,576]",
+                "[1,20,24,576]",
+                "7 us (0.1% of model)",
+                "5 us (0.1% of model)",
+                "1581 ~ 1619 us (38)"
+            ],
+            [
+                "/m/model.10/conv/conv.2/Mul",
+                "0",
+                "[1,20,20,576]",
+                "[1,20,24,576]",
+                "9 us (0.2% of model)",
+                "2 us (0% of model)",
+                "1588 ~ 1621 us (33)"
+            ],
+            [
+                "/m/model.10/conv/conv.3/Conv",
+                "11,520,000",
+                "[1,20,20,576]",
+                "[1,20,24,576]",
+                "18 us (0.4% of model)",
+                "4 us (0% of model)",
+                "1590 ~ 1633 us (43)"
+            ],
+            [
+                "/m/model.10/conv/conv.5/avg_pool/GlobalAveragePool",
+                "0",
+                "[1,1,1,576]",
+                "[1,1,1,640]",
+                "5 us (0.1% of model)",
+                "0",
+                "1633 ~ 1638 us (5)"
+            ],
+            [
+                "/m/model.10/conv/conv.5/fc/fc.0/Gemm-conv",
+                "165,888",
+                "[1,1,1,144]",
+                "[1,2,8,160]",
+                "2 us (0% of model)",
+                "6 us (0.1% of model)",
+                "1621 ~ 1640 us (19)"
+            ],
+            [
+                "/m/model.10/conv/conv.5/fc/fc.2/Gemm-conv",
+                "165,888",
+                "[1,1,1,576]",
+                "[1,2,8,576]",
+                "2 us (0% of model)",
+                "6 us (0.1% of model)",
+                "1627 ~ 1641 us (14)"
+            ],
+            [
+                "/m/model.10/conv/conv.5/fc/fc.3/Div_mul_reshape_conv",
+                "663,552",
+                "[1,1,1,576]",
+                "[1,2,8,576]",
+                "5 us (0.1% of model)",
+                "18 us (0.4% of model)",
+                "1634 ~ 1658 us (24)"
+            ],
+            [
+                "/m/model.10/conv/conv.5/Mul",
+                "0",
+                "[1,20,20,576]",
+                "[1,20,24,576]",
+                "18 us (0.4% of model)",
+                "6 us (0.1% of model)",
+                "1473 ~ 1679 us (206)"
+            ],
+            [
+                "/m/model.10/conv/conv.6/sigmoid/Add",
+                "0",
+                "[1,20,20,576]",
+                "[1,20,24,576]",
+                "19 us (0.4% of model)",
+                "5 us (0.1% of model)",
+                "1652 ~ 1708 us (56)"
+            ],
+            [
+                "/m/model.10/conv/conv.6/sigmoid/relu/Clip",
+                "0",
+                "[1,20,20,576]",
+                "[1,20,24,576]",
+                "15 us (0.3% of model)",
+                "2 us (0% of model)",
+                "1668 ~ 1710 us (42)"
+            ],
+            [
+                "/m/model.10/conv/conv.6/sigmoid/Div_mul",
+                "460,800",
+                "[1,20,20,576]",
+                "[1,20,32,576]",
+                "22 us (0.5% of model)",
+                "3 us (0% of model)",
+                "1655 ~ 1754 us (99)"
+            ],
+            [
+                "/m/model.10/conv/conv.6/Mul",
+                "0",
+                "[1,20,20,576]",
+                "[1,20,24,576]",
+                "19 us (0.4% of model)",
+                "6 us (0.1% of model)",
+                "1617 ~ 1765 us (148)"
+            ],
+            [
+                "/m/model.10/conv/conv.7/Conv",
+                "22,118,400",
+                "[1,20,20,48]",
+                "[1,20,24,64]",
+                "9 us (0.2% of model)",
+                "15 us (0.3% of model)",
+                "1535 ~ 1771 us (236)"
+            ],
+            [
+                "/m/model.11/conv/conv.0/Conv",
+                "22,118,400",
+                "[1,20,20,576]",
+                "[1,20,24,576]",
+                "7 us (0.1% of model)",
+                "5 us (0.1% of model)",
+                "1658 ~ 1770 us (112)"
+            ],
+            [
+                "/m/model.11/conv/conv.2/Mul",
+                "0",
+                "[1,20,20,576]",
+                "[1,20,24,576]",
+                "9 us (0.2% of model)",
+                "1 us (0% of model)",
+                "1721 ~ 1779 us (58)"
+            ],
+            [
+                "/m/model.11/conv/conv.3/Conv",
+                "11,520,000",
+                "[1,20,20,576]",
+                "[1,20,24,576]",
+                "17 us (0.4% of model)",
+                "4 us (0% of model)",
+                "1734 ~ 1796 us (62)"
+            ],
+            [
+                "/m/model.11/conv/conv.5/avg_pool/GlobalAveragePool",
+                "0",
+                "[1,1,1,576]",
+                "[1,1,1,640]",
+                "5 us (0.1% of model)",
+                "0",
+                "1800 ~ 1805 us (5)"
+            ],
+            [
+                "/m/model.11/conv/conv.5/fc/fc.0/Gemm-conv",
+                "165,888",
+                "[1,1,1,144]",
+                "[1,2,8,160]",
+                "2 us (0% of model)",
+                "6 us (0.1% of model)",
+                "1742 ~ 1807 us (65)"
+            ],
+            [
+                "/m/model.11/conv/conv.5/fc/fc.2/Gemm-conv",
+                "165,888",
+                "[1,1,1,576]",
+                "[1,2,8,576]",
+                "2 us (0% of model)",
+                "6 us (0.1% of model)",
+                "1767 ~ 1808 us (41)"
+            ],
+            [
+                "/m/model.11/conv/conv.5/fc/fc.3/Div_mul_reshape_conv",
+                "663,552",
+                "[1,1,1,576]",
+                "[1,2,8,576]",
+                "5 us (0.1% of model)",
+                "18 us (0.4% of model)",
+                "1703 ~ 1814 us (111)"
+            ],
+            [
+                "/m/model.11/conv/conv.5/Mul",
+                "0",
+                "[1,20,20,576]",
+                "[1,20,24,576]",
+                "20 us (0.4% of model)",
+                "6 us (0.1% of model)",
+                "1773 ~ 1834 us (61)"
+            ],
+            [
+                "/m/model.11/conv/conv.6/sigmoid/Add",
+                "0",
+                "[1,20,20,576]",
+                "[1,20,24,576]",
+                "20 us (0.4% of model)",
+                "5 us (0.1% of model)",
+                "1798 ~ 1869 us (71)"
+            ],
+            [
+                "/m/model.11/conv/conv.6/sigmoid/relu/Clip",
+                "0",
+                "[1,20,20,576]",
+                "[1,20,24,576]",
+                "16 us (0.3% of model)",
+                "4 us (0% of model)",
+                "1809 ~ 1871 us (62)"
+            ],
+            [
+                "/m/model.11/conv/conv.6/sigmoid/Div_mul",
+                "460,800",
+                "[1,20,20,576]",
+                "[1,20,32,576]",
+                "22 us (0.5% of model)",
+                "3 us (0% of model)",
+                "1835 ~ 1923 us (88)"
+            ],
+            [
+                "/m/model.11/conv/conv.6/Mul",
+                "0",
+                "[1,20,20,576]",
+                "[1,20,24,576]",
+                "19 us (0.4% of model)",
+                "6 us (0.1% of model)",
+                "1743 ~ 1929 us (186)"
+            ],
+            [
+                "/m/model.11/conv/conv.7/Conv",
+                "22,118,400",
+                "[1,20,20,48]",
+                "[1,20,24,64]",
+                "9 us (0.2% of model)",
+                "11 us (0.2% of model)",
+                "1862 ~ 1931 us (69)"
+            ],
+            [
+                "/m/model.12/conv/Conv",
+                "4,300,800",
+                "[1,20,20,112]",
+                "[1,20,24,128]",
+                "2 us (0% of model)",
+                "2 us (0% of model)",
+                "1745 ~ 1933 us (188)"
+            ],
+            [
+                "/m/model.12/act/Mul",
+                "0",
+                "[1,20,20,112]",
+                "[1,20,24,112]",
+                "3 us (0% of model)",
+                "10 us (0.2% of model)",
+                "1746 ~ 1936 us (190)"
+            ],
+            [
+                "/m/model.13/Resize",
+                "0",
+                "[1,40,40,112]",
+                "[1,40,40,128]",
+                "15 us (0.3% of model)",
+                "0",
+                "1918 ~ 1941 us (23)"
+            ],
+            [
+                "/m/model.13/Resize_output_0_calibrated_Requantize",
+                "0",
+                "[1,40,40,112]",
+                "[1,40,40,112]",
+                "6 us (0.1% of model)",
+                "2 us (0% of model)",
+                "1898 ~ 1947 us (49)"
+            ],
+            [
+                "/m/model.8/Add_output_0_calibrated_Requantize",
+                "0",
+                "[1,40,40,24]",
+                "[1,40,40,24]",
+                "1 us (0% of model)",
+                "1 us (0% of model)",
+                "1899 ~ 1932 us (33)"
+            ],
+            [
+                "/m/model.14/Concat",
+                "0",
+                "[1,40,40,136]",
+                "[1,40,40,136]",
+                "7 us (0.1% of model)",
+                "0",
+                "1932 ~ 1953 us (21)"
+            ],
+            [
+                "/m/model.15/cv1/conv/Conv",
+                "24,371,200",
+                "[1,40,40,56]",
+                "[1,40,40,64]",
+                "7 us (0.1% of model)",
+                "2 us (0% of model)",
+                "1895 ~ 1960 us (65)"
+            ],
+            [
+                "/m/model.15/cv1/act/Mul",
+                "0",
+                "[1,40,40,56]",
+                "[1,40,40,56]",
+                "3 us (0% of model)",
+                "1 us (0% of model)",
+                "1929 ~ 1963 us (34)"
+            ],
+            [
+                "/m/model.15/m/m.0/cv1/conv/Conv",
+                "10,035,200",
+                "[1,40,40,56]",
+                "[1,40,40,64]",
+                "3 us (0% of model)",
+                "2 us (0% of model)",
+                "1895 ~ 1966 us (71)"
+            ],
+            [
+                "/m/model.15/m/m.0/cv1/act/Mul",
+                "0",
+                "[1,40,40,56]",
+                "[1,40,40,56]",
+                "3 us (0% of model)",
+                "2 us (0% of model)",
+                "1936 ~ 2003 us (67)"
+            ],
+            [
+                "/m/model.15/m/m.0/cv2/conv/Conv",
+                "90,316,800",
+                "[1,40,40,56]",
+                "[1,40,40,64]",
+                "25 us (0.5% of model)",
+                "5 us (0.1% of model)",
+                "1931 ~ 2022 us (91)"
+            ],
+            [
+                "/m/model.15/m/m.0/cv2/act/Mul",
+                "0",
+                "[1,40,40,56]",
+                "[1,40,40,56]",
+                "3 us (0% of model)",
+                "2 us (0% of model)",
+                "1866 ~ 2030 us (164)"
+            ],
+            [
+                "/m/model.15/cv2/conv/Conv",
+                "24,371,200",
+                "[1,40,40,56]",
+                "[1,40,40,64]",
+                "7 us (0.1% of model)",
+                "2 us (0% of model)",
+                "1939 ~ 2029 us (90)"
+            ],
+            [
+                "/m/model.15/cv2/act/Mul",
+                "0",
+                "[1,40,40,56]",
+                "[1,40,40,56]",
+                "3 us (0% of model)",
+                "2 us (0% of model)",
+                "1881 ~ 2031 us (150)"
+            ],
+            [
+                "/m/model.15/Concat",
+                "0",
+                "[1,40,40,112]",
+                "[1,40,40,112]",
+                "6 us (0.1% of model)",
+                "0",
+                "1966 ~ 2036 us (70)"
+            ],
+            [
+                "/m/model.15/cv3/conv/Conv",
+                "40,140,800",
+                "[1,40,40,112]",
+                "[1,40,40,128]",
+                "12 us (0.2% of model)",
+                "3 us (0% of model)",
+                "1870 ~ 2038 us (168)"
+            ],
+            [
+                "/m/model.15/cv3/act/Mul",
+                "0",
+                "[1,40,40,112]",
+                "[1,40,40,112]",
+                "6 us (0.1% of model)",
+                "2 us (0% of model)",
+                "1885 ~ 2040 us (155)"
+            ],
+            [
+                "/m/model.16/conv/Conv",
+                "20,070,400",
+                "[1,40,40,56]",
+                "[1,40,40,64]",
+                "6 us (0.1% of model)",
+                "2 us (0% of model)",
+                "1883 ~ 2043 us (160)"
+            ],
+            [
+                "/m/model.16/act/Mul",
+                "0",
+                "[1,40,40,56]",
+                "[1,40,40,56]",
+                "5 us (0.1% of model)",
+                "17 us (0.3% of model)",
+                "1925 ~ 2047 us (122)"
+            ],
+            [
+                "/m/model.17/Resize",
+                "0",
+                "[1,80,80,56]",
+                "[1,80,80,64]",
+                "30 us (0.6% of model)",
+                "0",
+                "2001 ~ 2061 us (60)"
+            ],
+            [
+                "/m/model.17/Resize_output_0_calibrated_Requantize",
+                "0",
+                "[1,80,80,56]",
+                "[1,80,80,56]",
+                "12 us (0.2% of model)",
+                "1 us (0% of model)",
+                "1944 ~ 2064 us (120)"
+            ],
+            [
+                "/m/model.3/Add_output_0_calibrated_Requantize",
+                "0",
+                "[1,80,80,16]",
+                "[1,80,80,16]",
+                "4 us (0% of model)",
+                "17 us (0.4% of model)",
+                "1947 ~ 2041 us (94)"
+            ],
+            [
+                "/m/model.18/Concat",
+                "0",
+                "[1,80,80,72]",
+                "[1,80,80,72]",
+                "15 us (0.3% of model)",
+                "0",
+                "2055 ~ 2075 us (20)"
+            ],
+            [
+                "/m/model.19/cv1/conv/Conv",
+                "25,804,800",
+                "[1,80,80,28]",
+                "[1,80,80,32]",
+                "7 us (0.1% of model)",
+                "1 us (0% of model)",
+                "2043 ~ 2082 us (39)"
+            ],
+            [
+                "/m/model.19/cv1/act/Mul",
+                "0",
+                "[1,80,80,28]",
+                "[1,80,80,32]",
+                "7 us (0.1% of model)",
+                "2 us (0% of model)",
+                "2043 ~ 2144 us (101)"
+            ],
+            [
+                "/m/model.19/m/m.0/cv1/conv/Conv",
+                "10,035,200",
+                "[1,80,80,28]",
+                "[1,80,80,32]",
+                "4 us (0% of model)",
+                "1 us (0% of model)",
+                "2029 ~ 2175 us (146)"
+            ],
+            [
+                "/m/model.19/m/m.0/cv1/act/Mul",
+                "0",
+                "[1,80,80,28]",
+                "[1,80,80,32]",
+                "7 us (0.1% of model)",
+                "2 us (0% of model)",
+                "2038 ~ 2179 us (141)"
+            ],
+            [
+                "/m/model.19/m/m.0/cv2/conv/Conv",
+                "90,316,800",
+                "[1,80,80,28]",
+                "[1,80,80,32]",
+                "29 us (0.6% of model)",
+                "2 us (0% of model)",
+                "1950 ~ 2215 us (265)"
+            ],
+            [
+                "/m/model.19/m/m.0/cv2/act/Mul",
+                "0",
+                "[1,80,80,28]",
+                "[1,80,80,32]",
+                "23 us (0.5% of model)",
+                "2 us (0% of model)",
+                "2031 ~ 2230 us (199)"
+            ],
+            [
+                "/m/model.19/cv2/conv/Conv",
+                "25,804,800",
+                "[1,80,80,28]",
+                "[1,80,80,32]",
+                "8 us (0.1% of model)",
+                "1 us (0% of model)",
+                "1952 ~ 2232 us (280)"
+            ],
+            [
+                "/m/model.19/cv2/act/Mul",
+                "0",
+                "[1,80,80,28]",
+                "[1,80,80,32]",
+                "23 us (0.5% of model)",
+                "2 us (0% of model)",
+                "2058 ~ 2238 us (180)"
+            ],
+            [
+                "/m/model.19/Concat",
+                "0",
+                "[1,80,80,56]",
+                "[1,80,128,56]",
+                "46 us (1.0% of model)",
+                "0",
+                "2104 ~ 2253 us (149)"
+            ],
+            [
+                "/m/model.19/cv3/conv/Conv",
+                "40,140,800",
+                "[1,80,80,56]",
+                "[1,80,80,64]",
+                "12 us (0.2% of model)",
+                "2 us (0% of model)",
+                "1888 ~ 2256 us (368)"
+            ],
+            [
+                "/m/model.19/cv3/act/Mul",
+                "0",
+                "[1,80,80,56]",
+                "[1,80,80,56]",
+                "18 us (0.4% of model)",
+                "53 us (1.2% of model)",
+                "2033 ~ 2270 us (237)"
+            ],
+            [
+                "/m/model.20/conv/Conv",
+                "90,316,800",
+                "[1,40,40,56]",
+                "[1,40,40,64]",
+                "31 us (0.7% of model)",
+                "5 us (0.1% of model)",
+                "1889 ~ 2276 us (387)"
+            ],
+            [
+                "/m/model.20/act/Mul",
+                "0",
+                "[1,40,40,56]",
+                "[1,40,40,56]",
+                "3 us (0% of model)",
+                "1 us (0% of model)",
+                "2159 ~ 2279 us (120)"
+            ],
+            [
+                "/m/model.21/Concat",
+                "0",
+                "[1,40,40,112]",
+                "[1,40,40,112]",
+                "6 us (0.1% of model)",
+                "12 us (0.2% of model)",
+                "2144 ~ 2282 us (138)"
+            ],
+            [
+                "/m/model.22/cv1/conv/Conv",
+                "20,070,400",
+                "[1,40,40,56]",
+                "[1,40,40,64]",
+                "6 us (0.1% of model)",
+                "2 us (0% of model)",
+                "2232 ~ 2288 us (56)"
+            ],
+            [
+                "/m/model.22/cv1/act/Mul",
+                "0",
+                "[1,40,40,56]",
+                "[1,40,40,56]",
+                "3 us (0% of model)",
+                "1 us (0% of model)",
+                "2234 ~ 2291 us (57)"
+            ],
+            [
+                "/m/model.22/m/m.0/cv1/conv/Conv",
+                "10,035,200",
+                "[1,40,40,56]",
+                "[1,40,40,64]",
+                "3 us (0% of model)",
+                "2 us (0% of model)",
+                "2235 ~ 2297 us (62)"
+            ],
+            [
+                "/m/model.22/m/m.0/cv1/act/Mul",
+                "0",
+                "[1,40,40,56]",
+                "[1,40,40,56]",
+                "3 us (0% of model)",
+                "1 us (0% of model)",
+                "2215 ~ 2300 us (85)"
+            ],
+            [
+                "/m/model.22/m/m.0/cv2/conv/Conv",
+                "90,316,800",
+                "[1,40,40,56]",
+                "[1,40,40,64]",
+                "25 us (0.5% of model)",
+                "5 us (0.1% of model)",
+                "2238 ~ 2325 us (87)"
+            ],
+            [
+                "/m/model.22/m/m.0/cv2/act/Mul",
+                "0",
+                "[1,40,40,56]",
+                "[1,40,40,56]",
+                "3 us (0% of model)",
+                "1 us (0% of model)",
+                "2166 ~ 2329 us (163)"
+            ],
+            [
+                "/m/model.22/cv2/conv/Conv",
+                "20,070,400",
+                "[1,40,40,56]",
+                "[1,40,40,64]",
+                "6 us (0.1% of model)",
+                "2 us (0% of model)",
+                "2244 ~ 2294 us (50)"
+            ],
+            [
+                "/m/model.22/cv2/act/Mul",
+                "0",
+                "[1,40,40,56]",
+                "[1,40,40,56]",
+                "3 us (0% of model)",
+                "1 us (0% of model)",
+                "2270 ~ 2303 us (33)"
+            ],
+            [
+                "/m/model.22/Concat",
+                "0",
+                "[1,40,40,112]",
+                "[1,40,40,112]",
+                "6 us (0.1% of model)",
+                "0",
+                "2326 ~ 2363 us (37)"
+            ],
+            [
+                "/m/model.22/cv3/conv/Conv",
+                "40,140,800",
+                "[1,40,40,112]",
+                "[1,40,40,128]",
+                "12 us (0.2% of model)",
+                "3 us (0% of model)",
+                "2246 ~ 2365 us (119)"
+            ],
+            [
+                "/m/model.22/cv3/act/Mul",
+                "0",
+                "[1,40,40,112]",
+                "[1,40,40,112]",
+                "10 us (0.2% of model)",
+                "29 us (0.6% of model)",
+                "2297 ~ 2385 us (88)"
+            ],
+            [
+                "/m/model.23/conv/Conv",
+                "90,316,800",
+                "[1,20,20,112]",
+                "[1,20,24,128]",
+                "37 us (0.8% of model)",
+                "16 us (0.3% of model)",
+                "2279 ~ 2393 us (114)"
+            ],
+            [
+                "/m/model.23/act/Mul",
+                "0",
+                "[1,20,20,112]",
+                "[1,20,24,112]",
+                "2 us (0% of model)",
+                "2 us (0% of model)",
+                "2304 ~ 2394 us (90)"
+            ],
+            [
+                "/m/model.24/Concat",
+                "0",
+                "[1,20,20,224]",
+                "[1,20,24,224]",
+                "4 us (0% of model)",
+                "10 us (0.2% of model)",
+                "2306 ~ 2395 us (89)"
+            ],
+            [
+                "/m/model.25/cv1/conv/Conv",
+                "20,070,400",
+                "[1,20,20,112]",
+                "[1,20,24,128]",
+                "7 us (0.1% of model)",
+                "5 us (0.1% of model)",
+                "2308 ~ 2401 us (93)"
+            ],
+            [
+                "/m/model.25/cv1/act/Mul",
+                "0",
+                "[1,20,20,112]",
+                "[1,20,24,112]",
+                "2 us (0% of model)",
+                "1 us (0% of model)",
+                "2342 ~ 2403 us (61)"
+            ],
+            [
+                "/m/model.25/m/m.0/cv1/conv/Conv",
+                "10,035,200",
+                "[1,20,20,112]",
+                "[1,20,24,128]",
+                "4 us (0% of model)",
+                "3 us (0% of model)",
+                "2247 ~ 2412 us (165)"
+            ],
+            [
+                "/m/model.25/m/m.0/cv1/act/Mul",
+                "0",
+                "[1,20,20,112]",
+                "[1,20,24,112]",
+                "2 us (0% of model)",
+                "1 us (0% of model)",
+                "2343 ~ 2414 us (71)"
+            ],
+            [
+                "/m/model.25/m/m.0/cv2/conv/Conv",
+                "90,316,800",
+                "[1,20,20,112]",
+                "[1,20,24,112]",
+                "26 us (0.6% of model)",
+                "14 us (0.3% of model)",
+                "2248 ~ 2441 us (193)"
+            ],
+            [
+                "/m/model.25/m/m.0/cv2/act/Mul",
+                "0",
+                "[1,20,20,112]",
+                "[1,20,24,112]",
+                "2 us (0% of model)",
+                "1 us (0% of model)",
+                "2320 ~ 2443 us (123)"
+            ],
+            [
+                "/m/model.25/cv2/conv/Conv",
+                "20,070,400",
+                "[1,20,20,112]",
+                "[1,20,24,128]",
+                "7 us (0.1% of model)",
+                "5 us (0.1% of model)",
+                "2327 ~ 2409 us (82)"
+            ],
+            [
+                "/m/model.25/cv2/act/Mul",
+                "0",
+                "[1,20,20,112]",
+                "[1,20,24,112]",
+                "2 us (0% of model)",
+                "1 us (0% of model)",
+                "2323 ~ 2411 us (88)"
+            ],
+            [
+                "/m/model.25/Concat",
+                "0",
+                "[1,20,20,224]",
+                "[1,20,24,224]",
+                "4 us (0% of model)",
+                "0",
+                "2411 ~ 2445 us (34)"
+            ],
+            [
+                "/m/model.25/cv3/conv/Conv",
+                "40,140,800",
+                "[1,20,20,224]",
+                "[1,20,24,224]",
+                "12 us (0.2% of model)",
+                "8 us (0.1% of model)",
+                "2249 ~ 2457 us (208)"
+            ],
+            [
+                "/m/model.25/cv3/act/Mul",
+                "0",
+                "[1,20,20,224]",
+                "[1,20,24,224]",
+                "3 us (0% of model)",
+                "1 us (0% of model)",
+                "2326 ~ 2460 us (134)"
+            ],
+            [
+                "/m/model.26/m.0/Conv",
+                "47,308,800",
+                "[1,80,80,66]",
+                "[1,80,80,96]",
+                "56 us (1.3% of model)",
+                "60 us (1.3% of model)",
+                "2402 ~ 2652 us (250)"
+            ],
+            [
+                "/m/model.26/m.0/Conv_NHWC2NCHW_LayoutConvert_Output0",
+                "0",
+                "[1,66,80,80]",
+                "[1,66,80,80]",
+                "340 us (7.9% of model)",
+                "220 us (5.1% of model)",
+                "2497 ~ 3399 us (902)"
+            ],
+            [
+                "/m/model.26/Mul_/m/model.26/Mul_output_0_Transpose",
+                "0",
+                "[1,3,6400,22]",
+                "[1,3,6400,22]",
+                "203 us (4.7% of model)",
+                "0",
+                "2714 ~ 3417 us (703)"
+            ],
+            [
+                "/m/model.26/Add",
+                "0",
+                "[3,80,80,22]",
+                "[3,80,80,24]",
+                "151 us (3.5% of model)",
+                "114 us (2.6% of model)",
+                "2395 ~ 3424 us (1029)"
+            ],
+            [
+                "/m/model.26/Reshape_1",
+                "0",
+                "[1,1,19200,22]",
+                "[1,1,19200,64]",
+                "203 us (4.7% of model)",
+                "258 us (6.0% of model)",
+                "2737 ~ 3458 us (721)"
+            ],
+            [
+                "/m/model.26/m.1/Conv",
+                "23,654,400",
+                "[1,40,40,66]",
+                "[1,40,40,96]",
+                "20 us (0.4% of model)",
+                "29 us (0.6% of model)",
+                "3419 ~ 3487 us (68)"
+            ],
+            [
+                "/m/model.26/m.1/Conv_NHWC2NCHW_LayoutConvert_Output0",
+                "0",
+                "[1,66,40,40]",
+                "[1,66,40,40]",
+                "67 us (1.5% of model)",
+                "0",
+                "3461 ~ 3533 us (72)"
+            ],
+            [
+                "/m/model.26/Mul_1_/m/model.26/Mul_1_output_0_Transpose",
+                "0",
+                "[1,3,1600,22]",
+                "[1,3,1664,22]",
+                "49 us (1.1% of model)",
+                "0",
+                "3533 ~ 3583 us (50)"
+            ],
+            [
+                "/m/model.26/Add_1",
+                "0",
+                "[3,40,40,22]",
+                "[3,40,40,24]",
+                "37 us (0.8% of model)",
+                "79 us (1.8% of model)",
+                "3533 ~ 3712 us (179)"
+            ],
+            [
+                "/m/model.26/Reshape_3",
+                "0",
+                "[1,1,4800,22]",
+                "[1,1,4800,64]",
+                "51 us (1.1% of model)",
+                "65 us (1.5% of model)",
+                "3631 ~ 3744 us (113)"
+            ],
+            [
+                "/m/model.26/m.2/Conv",
+                "11,827,200",
+                "[1,20,20,66]",
+                "[1,20,24,96]",
+                "14 us (0.3% of model)",
+                "51 us (1.1% of model)",
+                "2460 ~ 3718 us (1258)"
+            ],
+            [
+                "/m/model.26/m.2/Conv_NHWC2NCHW_LayoutConvert_Output0",
+                "0",
+                "[1,66,20,20]",
+                "[1,66,20,20]",
+                "19 us (0.4% of model)",
+                "0",
+                "3622 ~ 3754 us (132)"
+            ],
+            [
+                "/m/model.26/Mul_2_/m/model.26/Mul_2_output_0_Transpose",
+                "0",
+                "[1,3,400,22]",
+                "[1,3,512,22]",
+                "14 us (0.3% of model)",
+                "0",
+                "3754 ~ 3772 us (18)"
+            ],
+            [
+                "/m/model.26/Add_2",
+                "0",
+                "[3,20,20,22]",
+                "[3,20,24,24]",
+                "11 us (0.2% of model)",
+                "16 us (0.3% of model)",
+                "3546 ~ 4170 us (624)"
+            ],
+            [
+                "/m/model.26/Reshape_5",
+                "0",
+                "[1,1,1200,22]",
+                "[1,1,1200,64]",
+                "13 us (0.2% of model)",
+                "0",
+                "4182 ~ 4195 us (13)"
+            ],
+            [
+                "/m/model.26/Reshape_1_output_0_calibrated_Requantize",
+                "0",
+                "[1,1,19200,22]",
+                "[1,2,19200,24]",
+                "30 us (0.7% of model)",
+                "272 us (6.3% of model)",
+                "3545 ~ 4150 us (605)"
+            ],
+            [
+                "/m/model.26/Reshape_3_output_0_calibrated_Requantize",
+                "0",
+                "[1,1,4800,22]",
+                "[1,2,4800,24]",
+                "8 us (0.1% of model)",
+                "70 us (1.6% of model)",
+                "3545 ~ 4274 us (729)"
+            ],
+            [
+                "/m/model.26/Concat",
+                "0",
+                "[1,1,25200,22]",
+                "[1,2,25200,24]",
+                "230 us (5.3% of model)",
+                "152 us (3.5% of model)",
+                "3759 ~ 4298 us (539)"
+            ]
+        ],
+        "loaded bytes per frame": 8504128,
+        "loaded bytes per run": 8504128,
+        "model json CRC": "a071e193",
+        "model json file": "/tmp/tmpmv_v2rub/torch_jit_subgraph_0.hbir",
+        "model name": "torch_jit_subgraph_0",
+        "model param CRC": "00000000",
+        "multicore sync time (ms)": 0.0,
+        "run per second": 232.66,
+        "runtime version": "3.15.55.0",
+        "stored bytes per frame": 5888256,
+        "stored bytes per run": 5888256,
+        "worst FPS": 232.66
+    }
+}
