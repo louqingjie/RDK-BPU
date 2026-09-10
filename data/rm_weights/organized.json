@@ -1,0 +1,2257 @@
+[
+  {
+    "year": 2020,
+    "path": "2020/个人_starrysky9959_CNN_Det_Cls_数字识别_state_dict.pt",
+    "bytes": 178477,
+    "md5": "2191d7398e9e587da062d5ba173c55e9",
+    "sha256": "790989486065f12711de6690012287bdc0c4ae7ec1fc5dd83817685ee13c5383",
+    "sources": [
+      "gitee.com/starrysky9959/Digital-recognition/model_param/state_dict.pt"
+    ],
+    "school": "个人_starrysky9959",
+    "arch": "CNN",
+    "pose": "Det",
+    "task": "Cls",
+    "detail": "数字识别_state_dict"
+  },
+  {
+    "year": 2020,
+    "path": "2020/个人_starrysky9959_CNN_Det_Cls_数字识别_权重.pt",
+    "bytes": 198674,
+    "md5": "c01a6fcb23460be0f31528f1eb5054ef",
+    "sha256": "c04cd48f0ef4f21f4f1ec536980ee366c14a03124471425a5f894df9ae6f0f92",
+    "sources": [
+      "gitee.com/starrysky9959/Digital-recognition/C++模型部署/model/model.pt",
+      "gitee.com/starrysky9959/Digital-recognition/libtorch_model/model.pt"
+    ],
+    "school": "个人_starrysky9959",
+    "arch": "CNN",
+    "pose": "Det",
+    "task": "Cls",
+    "detail": "数字识别_权重"
+  },
+  {
+    "year": 2020,
+    "path": "2020/深圳大学_Caffe-ArmorNet_Det_Cls_装甲数字_200000.caffemodel",
+    "bytes": 1708978,
+    "md5": "5e16081f57bff6077dd692c19b6ce783",
+    "sha256": "7dcde6c58b80baade3f6e676cd3125286d42f4ed0af3b271216a74be81633f6c",
+    "sources": [
+      "github.com/yarkable/RP_Infantry_Plus/extraFile/caffemodel/armornet_iter_200000.caffemodel"
+    ],
+    "school": "深圳大学",
+    "arch": "Caffe-ArmorNet",
+    "pose": "Det",
+    "task": "Cls",
+    "detail": "装甲数字_200000"
+  },
+  {
+    "year": 2020,
+    "path": "2020/深圳大学_Caffe-LeNet_Det_Cls_打符数字_80000.caffemodel",
+    "bytes": 1708972,
+    "md5": "0743c26372e8ea6671ccd4150100d14a",
+    "sha256": "720c55e987637fcec0fc5c4a8a2b16140ef315496f9360dc5586cd2783527026",
+    "sources": [
+      "github.com/yarkable/RP_Infantry_Plus/extraFile/Rune/lenet/lenet_iter_80000.caffemodel"
+    ],
+    "school": "深圳大学",
+    "arch": "Caffe-LeNet",
+    "pose": "Det",
+    "task": "Cls",
+    "detail": "打符数字_80000"
+  },
+  {
+    "year": 2020,
+    "path": "2020/深圳大学_Caffe-LeNet_Det_Cls_打符数字_80000_加负样本.caffemodel",
+    "bytes": 1708974,
+    "md5": "815e0a331ac30851984054c9cb171fea",
+    "sha256": "3005b9872008820d72e0d4aefc1da6303aff0d1b18263b248a396fb3432908b8",
+    "sources": [
+      "github.com/yarkable/RP_Infantry_Plus/extraFile/Rune/lenet/lenet_iter_80000加了负样本.caffemodel"
+    ],
+    "school": "深圳大学",
+    "arch": "Caffe-LeNet",
+    "pose": "Det",
+    "task": "Cls",
+    "detail": "打符数字_80000_加负样本"
+  },
+  {
+    "year": 2020,
+    "path": "2020/深圳大学_Caffe-LeNet_Det_Cls_打符数字_80000_旋转.caffemodel",
+    "bytes": 1708974,
+    "md5": "d2d2f3853b57f4826df4995b06871a71",
+    "sha256": "27310fa87b97c5b2d79f70d787611ca1aa5d4b98992b5ea516d416cc21806e86",
+    "sources": [
+      "github.com/yarkable/RP_Infantry_Plus/extraFile/Rune/lenet/lenet_iter_80000_旋转后.caffemodel"
+    ],
+    "school": "深圳大学",
+    "arch": "Caffe-LeNet",
+    "pose": "Det",
+    "task": "Cls",
+    "detail": "打符数字_80000_旋转"
+  },
+  {
+    "year": 2020,
+    "path": "2020/深圳大学_Caffe-LeNet_Det_Cls_装甲数字_200000.caffemodel",
+    "bytes": 1721020,
+    "md5": "a6a7fb1d6b1ea6f6e1f9a317b9466982",
+    "sha256": "0f7d9cf9ff3641d9e5404b7792b9a0be2cee489842c40e9b3c499f5f58a95b9e",
+    "sources": [
+      "github.com/yarkable/RP_Infantry_Plus/extraFile/caffemodel/lenet_iter_200000.caffemodel"
+    ],
+    "school": "深圳大学",
+    "arch": "Caffe-LeNet",
+    "pose": "Det",
+    "task": "Cls",
+    "detail": "装甲数字_200000"
+  },
+  {
+    "year": 2020,
+    "path": "2020/深圳大学_tiny-YOLOv2_Det_Rune_打符_235000.weights",
+    "bytes": 2191628,
+    "md5": "fb95d50cd9908fdefea814487257e15d",
+    "sha256": "e2325fca0d036b1446ee58d8be4bfabe1dc4067c73b8e7446e963ab541501b8d",
+    "sources": [
+      "github.com/yarkable/RP_Infantry_Plus/extraFile/Rune/yolo/tiny-yolov2-trial3-noBatch_235000.weights"
+    ],
+    "school": "深圳大学",
+    "arch": "tiny-YOLOv2",
+    "pose": "Det",
+    "task": "Rune",
+    "detail": "打符_235000"
+  },
+  {
+    "year": 2020,
+    "path": "2020/深圳大学_tiny-YOLOv2_Det_Rune_打符_80000.weights",
+    "bytes": 2191628,
+    "md5": "db5fe9984bbc7d7ed233c3e2aea9bd21",
+    "sha256": "bfc7ccad84a433f1650cafbce3ebf9ab2bef9a31338e32692c7e2f30172932f1",
+    "sources": [
+      "github.com/yarkable/RP_Infantry_Plus/extraFile/Rune/yolo/tiny-yolov2-trial3-noBatch_80000.weights"
+    ],
+    "school": "深圳大学",
+    "arch": "tiny-YOLOv2",
+    "pose": "Det",
+    "task": "Rune",
+    "detail": "打符_80000"
+  },
+  {
+    "year": 2020,
+    "path": "2020/深圳大学_tiny-YOLOv2_Det_Rune_打符_80000_单通道.weights",
+    "bytes": 2190476,
+    "md5": "8ab91ca39ece2191a257f2febe5379d9",
+    "sha256": "4b9662f44d302dd984997cf9acfcd1ad7e40ee4fc49ef9c61352f73b5a6bfc80",
+    "sources": [
+      "github.com/yarkable/RP_Infantry_Plus/extraFile/Rune/yolo/单通道/tiny-yolov2-trial3-noBatch_80000.weights"
+    ],
+    "school": "深圳大学",
+    "arch": "tiny-YOLOv2",
+    "pose": "Det",
+    "task": "Rune",
+    "detail": "打符_80000_单通道"
+  },
+  {
+    "year": 2021,
+    "path": "2021/野狼战队_LeNet_Det_Cls_MNIST_28x28.onnx",
+    "bytes": 26454,
+    "md5": "d7cd24a0a76cd492f31065301d468c3d",
+    "sha256": "2f06e72de813a8635c9bc0397ac447a601bdbfa7df4bebc278723b958831c9bf",
+    "sources": [
+      "github.com/wildwolf-team/WolfVision/module/ml/mnist-8.onnx"
+    ],
+    "school": "野狼战队",
+    "arch": "LeNet",
+    "pose": "Det",
+    "task": "Cls",
+    "detail": "MNIST_28x28"
+  },
+  {
+    "year": 2023,
+    "path": "2023/个人_hxfhxy_LeNet_Det_Cls_数字_28x28.onnx",
+    "bytes": 248678,
+    "md5": "d1092b760d0eb7fa63e26e05fa981576",
+    "sha256": "509955a9b9bf0342a787a2a5574357df9b218c1f90b7158e09dd72b7d6c71168",
+    "sources": [
+      "github.com/hxfhxy/RoboMaster_vision_Armor/src/cpp08_armor_detector/model/Zenet-已训练好.onnx"
+    ],
+    "school": "个人_hxfhxy",
+    "arch": "LeNet",
+    "pose": "Det",
+    "task": "Cls",
+    "detail": "数字_28x28"
+  },
+  {
+    "year": 2023,
+    "path": "2023/华东交通大学_FC_Det_Cls_数字_20x28_9类.onnx",
+    "bytes": 664680,
+    "md5": "47b84781290fdec3193d2e31a355ac70",
+    "sha256": "2aabb25f7ff16fe93b3b6550fd169d2404be5806f15d1c34a13abcc73f0d3cc9",
+    "sources": [
+      "github.com/ecjtu-cx/ECJTU_RM_Vision/model/fc.onnx"
+    ],
+    "school": "华东交通大学",
+    "arch": "FC",
+    "pose": "Det",
+    "task": "Cls",
+    "detail": "数字_20x28_9类"
+  },
+  {
+    "year": 2023,
+    "path": "2023/华南师范大学_MLP_Det_Cls_数字_20x28_9类.onnx",
+    "bytes": 314058,
+    "md5": "5f3b50536bb7b731a78ffb41507a3396",
+    "sha256": "b3250176ea8fdbe6d1585be954363757ff6a8245a81e8797f16cea601976d47a",
+    "sources": [
+      "gitee.com/ucas-sas-robot-team/RMVision-2026/src/rm_auto_aim/armor_detector/model/mlp.onnx",
+      "gitee.com/ucas-sas-robot-team/RMVision-RM4P-2025/src/rm_auto_aim/armor_detector/model/mlp.onnx",
+      "github.com/0X5A0X480X52/hfut_rm_auto_aim_ws/src/rm_auto_aim/armor_detector/model/mlp.onnx",
+      "github.com/Blackjack200/talos_26/models/mlp.onnx",
+      "github.com/CSU-FYT-Vision/FYT2024_vision/rm_auto_aim/armor_detector/model/mlp.onnx",
+      "github.com/FaterYU/rm_auto_aim/armor_detector/model/mlp.onnx",
+      "github.com/HDU-PHOENIX/rm_auto_aim/armor_auto_aim/armor_detector/model/mlp.onnx",
+      "github.com/LihanChen2004/rm_auto_aim/armor_detector/model/mlp.onnx",
+      "github.com/SPR-Algorithm/SPR-Vision-2025/Main_ws/src/rm_auto_aim/armor_detector_classic/model/mlp.onnx",
+      "github.com/WUST-RM/awakening/model/mlp.onnx",
+      "github.com/aiyo472/auto_aim_rps26/src/rm_auto_aim/armor_detector/model/mlp.onnx",
+      "github.com/chenjunnn/rm_auto_aim/armor_detector/model/mlp.onnx",
+      "github.com/ecjtu-cx/ECJTU_RM_Vision/model/mlp.onnx"
+    ],
+    "school": "华南师范大学",
+    "arch": "MLP",
+    "pose": "Det",
+    "task": "Cls",
+    "detail": "数字_20x28_9类"
+  },
+  {
+    "year": 2023,
+    "path": "2023/华南师范大学_MLP_Det_Cls_数字_20x28_9类_微调.onnx",
+    "bytes": 314058,
+    "md5": "aff7515bcb71ce9a2333a41735ccc58b",
+    "sha256": "742b7ef4fe0a3dfdeb53ce12ec57de699ee4b496d9190d79a9a7736e6eb07398",
+    "sources": [
+      "github.com/Blackjack200/talos_26/models/mlp_finetuned.onnx",
+      "github.com/WUST-RM/awakening/model/mlp_finetuned.onnx"
+    ],
+    "school": "华南师范大学",
+    "arch": "MLP",
+    "pose": "Det",
+    "task": "Cls",
+    "detail": "数字_20x28_9类_微调"
+  },
+  {
+    "year": 2023,
+    "path": "2023/杭州电子科技大学_YOLOX_Pose_Rune_打符_2023.bin",
+    "bytes": 3613256,
+    "md5": "3b49cb46fbf00651eb1efa075faac57d",
+    "sha256": "59bf0ebcb31f5155dd297c8f1a36f4ea55e2101a550cf18f3149d2de978c5a7a",
+    "sources": [
+      "github.com/HDU-PHOENIX/rm_auto_aim/rune_auto_aim/rune_detector/model/2023/yolox.bin"
+    ],
+    "school": "杭州电子科技大学",
+    "arch": "YOLOX",
+    "pose": "Pose",
+    "task": "Rune",
+    "detail": "打符_2023"
+  },
+  {
+    "year": 2023,
+    "path": "2023/杭州电子科技大学_YOLOX_Pose_Rune_打符_2023.onnx",
+    "bytes": 3717163,
+    "md5": "2e75806c74656aa00110d70b57b1246e",
+    "sha256": "2b99d5cbcf63bcb2e45a720d50d212ffb2ff195fc5c23188a56e16527362cc68",
+    "sources": [
+      "github.com/HDU-PHOENIX/rm_auto_aim/rune_auto_aim/rune_detector/model/2023/yolox.onnx"
+    ],
+    "school": "杭州电子科技大学",
+    "arch": "YOLOX",
+    "pose": "Pose",
+    "task": "Rune",
+    "detail": "打符_2023"
+  },
+  {
+    "year": 2023,
+    "path": "2023/杭州电子科技大学_YOLOX_Pose_Rune_打符_2023.xml",
+    "bytes": 427802,
+    "md5": "a7f75c56203544bee38dc789260aad73",
+    "sha256": "2a6eb18faae9c28d0119eaf6c951acc972587fc27e9ef729aaa7feb4418e6598",
+    "sources": [
+      "github.com/HDU-PHOENIX/rm_auto_aim/rune_auto_aim/rune_detector/model/2023/yolox.xml"
+    ],
+    "school": "杭州电子科技大学",
+    "arch": "YOLOX",
+    "pose": "Pose",
+    "task": "Rune",
+    "detail": "打符_2023"
+  },
+  {
+    "year": 2023,
+    "path": "2023/杭州电子科技大学_YOLOX_Pose_Rune_打符_416.onnx",
+    "bytes": 3597887,
+    "md5": "44f06579a64ab3d9638a7ec235486bc4",
+    "sha256": "70df1f1ee7861028ebac5dc58cacf3d2be8dd7516bc31fe1608f9cea346aff41",
+    "sources": [
+      "github.com/HDU-PHOENIX/rm_auto_aim/rune_auto_aim/rune_detector/model/yolox.onnx"
+    ],
+    "school": "杭州电子科技大学",
+    "arch": "YOLOX",
+    "pose": "Pose",
+    "task": "Rune",
+    "detail": "打符_416"
+  },
+  {
+    "year": 2023,
+    "path": "2023/杭州电子科技大学_YOLOX_Pose_Rune_打符_416_fp16.onnx",
+    "bytes": 1826844,
+    "md5": "c09a1c4ca0486fb41ec9a109436af26b",
+    "sha256": "7b08e182c1e131f8d42c820ce5fa1b65e118cff6f63b0948ebf0e10d7dbbc109",
+    "sources": [
+      "github.com/HDU-PHOENIX/rm_auto_aim/rune_auto_aim/rune_detector/model/yolox_fp16.onnx"
+    ],
+    "school": "杭州电子科技大学",
+    "arch": "YOLOX",
+    "pose": "Pose",
+    "task": "Rune",
+    "detail": "打符_416_fp16"
+  },
+  {
+    "year": 2023,
+    "path": "2023/通用_LeNet_Det_Cls_数字_28x28_9类.onnx",
+    "bytes": 248674,
+    "md5": "f8297789bb646fef48f4618f3f303d82",
+    "sha256": "21278d220f0c19bf6b497b8052dabb8a4ad1a82fe516b786decff0eb760a4a75",
+    "sources": [
+      "github.com/0X5A0X480X52/hfut_rm_auto_aim_ws/src/rm_auto_aim/armor_detector/model/lenet.onnx",
+      "github.com/Blackjack200/talos_26/models/lenet.onnx",
+      "github.com/CSU-FYT-Vision/FYT2024_vision/rm_auto_aim/armor_detector/model/lenet.onnx",
+      "github.com/SPR-Algorithm/SPR-Vision-2025/Main_ws/src/rm_auto_aim/armor_detector_classic/model/lenet.onnx",
+      "github.com/WUST-RM/awakening/model/lenet.onnx",
+      "github.com/aiyo472/auto_aim_rps26/src/rm_auto_aim/armor_detector/model/lenet.onnx"
+    ],
+    "school": "通用",
+    "arch": "LeNet",
+    "pose": "Det",
+    "task": "Cls",
+    "detail": "数字_28x28_9类"
+  },
+  {
+    "year": 2024,
+    "path": "2024/中南大学_YOLOX_Pose_Rune_打符_3.6m_480.bin",
+    "bytes": 1770714,
+    "md5": "104f48fbcfba7e36a224c8c6a29983d6",
+    "sha256": "967d291743154d381ee718d64128f077b8f882d661f11bde4e34aac5efe3c6d7",
+    "sources": [
+      "github.com/CSU-FYT-Vision/FYT2024_vision/rm_rune/rune_detector/model/yolox_rune_3.6m.bin",
+      "github.com/SPR-Algorithm/SPR-Vision-2025/Main_ws/src/rm_rune/rune_detector/model/yolox_rune_3.6m.bin"
+    ],
+    "school": "中南大学",
+    "arch": "YOLOX",
+    "pose": "Pose",
+    "task": "Rune",
+    "detail": "打符_3.6m_480"
+  },
+  {
+    "year": 2024,
+    "path": "2024/中南大学_YOLOX_Pose_Rune_打符_3.6m_480.onnx",
+    "bytes": 3608024,
+    "md5": "7a0c6fc59093c9ac0b3111b113f5367b",
+    "sha256": "4d95248258921036081a5f227954af12e1f6b5503da9907d4be7f4548f71da19",
+    "sources": [
+      "github.com/CSU-FYT-Vision/FYT2024_vision/rm_rune/rune_detector/model/yolox_rune_3.6m.onnx",
+      "github.com/SPR-Algorithm/SPR-Vision-2025/Main_ws/src/rm_rune/rune_detector/model/yolox_rune_3.6m.onnx"
+    ],
+    "school": "中南大学",
+    "arch": "YOLOX",
+    "pose": "Pose",
+    "task": "Rune",
+    "detail": "打符_3.6m_480"
+  },
+  {
+    "year": 2024,
+    "path": "2024/中南大学_YOLOX_Pose_Rune_打符_3.6m_480.xml",
+    "bytes": 410237,
+    "md5": "83637a0f6ea02bd2898f3caa9971f8a3",
+    "sha256": "77fd45eaa5e0a3c6d981862816e2d874c68ad13d0905b2e95efe2000564c35d0",
+    "sources": [
+      "github.com/CSU-FYT-Vision/FYT2024_vision/rm_rune/rune_detector/model/yolox_rune_3.6m.xml",
+      "github.com/SPR-Algorithm/SPR-Vision-2025/Main_ws/src/rm_rune/rune_detector/model/yolox_rune_3.6m.xml"
+    ],
+    "school": "中南大学",
+    "arch": "YOLOX",
+    "pose": "Pose",
+    "task": "Rune",
+    "detail": "打符_3.6m_480"
+  },
+  {
+    "year": 2024,
+    "path": "2024/中南大学_YOLOX_Pose_Rune_打符_480.bin",
+    "bytes": 5363648,
+    "md5": "a81a50e20023882d270b2ed4d088587a",
+    "sha256": "c39b8c09a5ef4d929aa4d5c7eacc21021747badf2d8d42f66aa4943cc98d356c",
+    "sources": [
+      "github.com/CSU-FYT-Vision/FYT2024_vision/rm_rune/rune_detector/model/yolox_rune.bin",
+      "github.com/SPR-Algorithm/SPR-Vision-2025/Main_ws/src/rm_rune/rune_detector/model/yolox_rune.bin"
+    ],
+    "school": "中南大学",
+    "arch": "YOLOX",
+    "pose": "Pose",
+    "task": "Rune",
+    "detail": "打符_480"
+  },
+  {
+    "year": 2024,
+    "path": "2024/中南大学_YOLOX_Pose_Rune_打符_480.onnx",
+    "bytes": 10821115,
+    "md5": "6205323336980f411ecac0120320ad70",
+    "sha256": "98a891f664e51baa20ba73db64ed1909f89e5cf6da4def92acb80a157f533a4f",
+    "sources": [
+      "github.com/CSU-FYT-Vision/FYT2024_vision/rm_rune/rune_detector/model/yolox_rune.onnx",
+      "github.com/SPR-Algorithm/SPR-Vision-2025/Main_ws/src/rm_rune/rune_detector/model/yolox_rune.onnx"
+    ],
+    "school": "中南大学",
+    "arch": "YOLOX",
+    "pose": "Pose",
+    "task": "Rune",
+    "detail": "打符_480"
+  },
+  {
+    "year": 2024,
+    "path": "2024/中南大学_YOLOX_Pose_Rune_打符_480.xml",
+    "bytes": 411708,
+    "md5": "ed887620b50eb7d73afa1158f89e4c7f",
+    "sha256": "147af770482dbb012928b88012f3738e3654eae4fc69644bd3f152ee77920d38",
+    "sources": [
+      "github.com/CSU-FYT-Vision/FYT2024_vision/rm_rune/rune_detector/model/yolox_rune.xml",
+      "github.com/SPR-Algorithm/SPR-Vision-2025/Main_ws/src/rm_rune/rune_detector/model/yolox_rune.xml"
+    ],
+    "school": "中南大学",
+    "arch": "YOLOX",
+    "pose": "Pose",
+    "task": "Rune",
+    "detail": "打符_480"
+  },
+  {
+    "year": 2024,
+    "path": "2024/中南大学_YOLOv10_Det_Armor_雷达_11类.onnx",
+    "bytes": 9222339,
+    "md5": "d1f4b37cc024023b96f4dc0980288120",
+    "sha256": "5312f17625a14645d391b53c84e8ac26e87d7b2601f6b0bdcb3908c96fe6a399",
+    "sources": [
+      "github.com/baiyeweiguang/FYT2024_radar/radar_detector/model/armor.onnx"
+    ],
+    "school": "中南大学",
+    "arch": "YOLOv10",
+    "pose": "Det",
+    "task": "Armor",
+    "detail": "雷达_11类"
+  },
+  {
+    "year": 2024,
+    "path": "2024/中南大学_YOLOv10_Det_Armor_雷达_11类.pt",
+    "bytes": 5705145,
+    "md5": "21caf5e99ab9eba53e45f81500490c12",
+    "sha256": "c5b83ac684a086fd6e3471227cc915cbf0100d1133c57475ebfe08225af20e4c",
+    "sources": [
+      "github.com/baiyeweiguang/FYT2024_radar/radar_detector/model/armor.pt"
+    ],
+    "school": "中南大学",
+    "arch": "YOLOv10",
+    "pose": "Det",
+    "task": "Armor",
+    "detail": "雷达_11类"
+  },
+  {
+    "year": 2024,
+    "path": "2024/中南大学_YOLOv10_Det_Armor_雷达_11类_new2.pt",
+    "bytes": 5702152,
+    "md5": "5149933bbdfc8df2023465cfc2370b88",
+    "sha256": "d6e6dca62abda33552cdb0db387dab1ecb7850984cb1eb5de6d0d8e37a875481",
+    "sources": [
+      "github.com/baiyeweiguang/FYT2024_radar/radar_detector/model/armor_new2.pt"
+    ],
+    "school": "中南大学",
+    "arch": "YOLOv10",
+    "pose": "Det",
+    "task": "Armor",
+    "detail": "雷达_11类_new2"
+  },
+  {
+    "year": 2024,
+    "path": "2024/中南大学_YOLOv10_Det_Car_雷达车辆.onnx",
+    "bytes": 9317887,
+    "md5": "51489c78564272ef2b857aa1aa94b1d9",
+    "sha256": "b9ce9ba43125d27f57ac51ddce8413fa4056ffb58497545ff7cbc5649ed6fbf3",
+    "sources": [
+      "github.com/baiyeweiguang/FYT2024_radar/radar_detector/model/car.onnx"
+    ],
+    "school": "中南大学",
+    "arch": "YOLOv10",
+    "pose": "Det",
+    "task": "Car",
+    "detail": "雷达车辆"
+  },
+  {
+    "year": 2024,
+    "path": "2024/中南大学_YOLOv10_Det_Car_雷达车辆.pt",
+    "bytes": 5723193,
+    "md5": "3d74085d59f01e4379b5aaef9c8d0567",
+    "sha256": "4f6d2cd323834dfec5af29ce0d5c5921c97c18a68cdcc7376703a442cd2385c8",
+    "sources": [
+      "github.com/baiyeweiguang/FYT2024_radar/radar_detector/model/car.pt"
+    ],
+    "school": "中南大学",
+    "arch": "YOLOv10",
+    "pose": "Det",
+    "task": "Car",
+    "detail": "雷达车辆"
+  },
+  {
+    "year": 2024,
+    "path": "2024/北京科技大学_CNN_Det_Cls_数字_20x28.onnx",
+    "bytes": 117494,
+    "md5": "722d8f148c33d913682373908da5b83c",
+    "sha256": "3bb0080be74a93ea4e45e13ad13be2c58526974228b60fbade1db00b87a9ed3e",
+    "sources": [
+      "github.com/RebornVision/Reborn-Vision-2024-armor-Inference/model/number_classifier.onnx",
+      "github.com/WUST-RM/awakening/model/reborn_number_classifier.onnx"
+    ],
+    "school": "北京科技大学",
+    "arch": "CNN",
+    "pose": "Det",
+    "task": "Cls",
+    "detail": "数字_20x28"
+  },
+  {
+    "year": 2024,
+    "path": "2024/北京科技大学_CNN_Det_Cls_数字_TensorRT.engine",
+    "bytes": 525788,
+    "md5": "89216c26839d0836876a36497b57308f",
+    "sha256": "0a59a6baf7c6df408a64bcb95fcc9303be5658a96b28cf5bee4c75a3004df6d3",
+    "sources": [
+      "github.com/WUST-RM/awakening/model/reborn_number_classifier.engine"
+    ],
+    "school": "北京科技大学",
+    "arch": "CNN",
+    "pose": "Det",
+    "task": "Cls",
+    "detail": "数字_TensorRT"
+  },
+  {
+    "year": 2024,
+    "path": "2024/北京科技大学_YOLOv8_Det_General_n_预训练_非装甲.pt",
+    "bytes": 6534387,
+    "md5": "0305608151dd1725c9d7da6882ae52d5",
+    "sha256": "31e20dde3def09e2cf938c7be6fe23d9150bbbe503982af13345706515f2ef95",
+    "sources": [
+      "github.com/gaoxinstudent/RM-Armor-Detect/yolov8n.pt"
+    ],
+    "school": "北京科技大学",
+    "arch": "YOLOv8",
+    "pose": "Det",
+    "task": "General",
+    "detail": "n_预训练_非装甲"
+  },
+  {
+    "year": 2024,
+    "path": "2024/北京科技大学_YOLOv8_Pose_Armor_MobileNetV3_last.bin",
+    "bytes": 3623860,
+    "md5": "387d38640e603fc9ed756cf547cc6206",
+    "sha256": "91299dac7405d01e9a1a35c3ee8850f0f3a6775e4c2c9beac1ef2069f222434f",
+    "sources": [
+      "github.com/GKD-RM-Lab/gkd_vision_26/assets/yolov8.bin",
+      "github.com/RebornVision/Reborn-Vision-2024-armor-Inference/model/mobilenetv3_last_int_all_new/last.bin",
+      "github.com/SHM-white/RM2026-AutoAim/assets/yolov8.bin",
+      "github.com/TongjiSuperPower/sp_vision_25/assets/yolov8.bin"
+    ],
+    "school": "北京科技大学",
+    "arch": "YOLOv8",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "MobileNetV3_last"
+  },
+  {
+    "year": 2024,
+    "path": "2024/北京科技大学_YOLOv8_Pose_Armor_MobileNetV3_last.xml",
+    "bytes": 770007,
+    "md5": "dc817fa0cf06f00181caec4276d86aa5",
+    "sha256": "4eecaa89fd3ad4e80b3090c59e9261edddc2b9f4df86df2c5d1778451943fe1e",
+    "sources": [
+      "github.com/GKD-RM-Lab/gkd_vision_26/assets/yolov8.xml",
+      "github.com/RebornVision/Reborn-Vision-2024-armor-Inference/model/mobilenetv3_last_int_all_new/last.xml",
+      "github.com/SHM-white/RM2026-AutoAim/assets/yolov8.xml",
+      "github.com/TongjiSuperPower/sp_vision_25/assets/yolov8.xml"
+    ],
+    "school": "北京科技大学",
+    "arch": "YOLOv8",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "MobileNetV3_last"
+  },
+  {
+    "year": 2024,
+    "path": "2024/通用_YOLOv8_Pose_General_n-pose_COCO人体姿态预训练.pt",
+    "bytes": 6828990,
+    "md5": "0303686c8ec6aff7c7d13399de8cb667",
+    "sha256": "7f80660bc2f97d664d86fc9f50fd5903af392fe332c0d603fa0dd6c78bf8844c",
+    "sources": [
+      "github.com/gaoxinstudent/RM-Armor-Detect/yolov8n-pose.pt"
+    ],
+    "school": "通用",
+    "arch": "YOLOv8",
+    "pose": "Pose",
+    "task": "General",
+    "detail": "n-pose_COCO人体姿态预训练"
+  },
+  {
+    "year": 2024,
+    "path": "2024/北京科技大学_YOLOv8_Pose_Armor_四点_train_best.pt",
+    "bytes": 27803246,
+    "md5": "e55bf9f8f98a97528f7e8d97cae0b96b",
+    "sha256": "8ee5b81cc682f31204cd194fd27203ec1014ad87dee55c5c3645f8314e581b97",
+    "sources": [
+      "github.com/gaoxinstudent/RM-Armor-Detect/ultralytics/runs/pose/train/weights/best.pt"
+    ],
+    "school": "北京科技大学",
+    "arch": "YOLOv8",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "四点_train_best"
+  },
+  {
+    "year": 2024,
+    "path": "2024/北京科技大学_YOLOv8_Pose_Armor_四点_train_last.pt",
+    "bytes": 27803438,
+    "md5": "ed7b8d815f86376c2da434550bcbde9b",
+    "sha256": "82625a77bbfb427ae9316e61edd4a8ace7ee71ff93d1f124a821e7aaf2b4c9be",
+    "sources": [
+      "github.com/gaoxinstudent/RM-Armor-Detect/ultralytics/runs/pose/train/weights/last.pt"
+    ],
+    "school": "北京科技大学",
+    "arch": "YOLOv8",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "四点_train_last"
+  },
+  {
+    "year": 2024,
+    "path": "2024/华中科技大学_CNN_Det_Cls_数字_32x32_10类.onnx",
+    "bytes": 259246,
+    "md5": "31ffa9fb58f4fcb0e97301ffa8b1bb8c",
+    "sha256": "cc7795e11ef82394e96768b4c9c0b922a0c1e30b5f458576f1722e11af3f1211",
+    "sources": [
+      "github.com/HUSTLYRM/HUST_HeroAim_2024/src/utils/tools/armor.onnx"
+    ],
+    "school": "华中科技大学",
+    "arch": "CNN",
+    "pose": "Det",
+    "task": "Cls",
+    "detail": "数字_32x32_10类"
+  },
+  {
+    "year": 2024,
+    "path": "2024/华中科技大学_SVM_Det_Cls_数字_SVM.xml",
+    "bytes": 956159,
+    "md5": "47fa0b165806dc7cf4c8cac061a061ba",
+    "sha256": "1f113a3b06f05ae61661469a3d505f71dea1b0119a7dea071dae734e844f08c1",
+    "sources": [
+      "github.com/HUSTLYRM/HUST_HeroAim_2024/src/utils/model/svm_numbers.xml"
+    ],
+    "school": "华中科技大学",
+    "arch": "SVM",
+    "pose": "Det",
+    "task": "Cls",
+    "detail": "数字_SVM"
+  },
+  {
+    "year": 2024,
+    "path": "2024/华中科技大学_SVM_Det_Cls_数字_SVM_RBF.xml",
+    "bytes": 5978693,
+    "md5": "de16943756f5d9471f230aa5b42ae3fe",
+    "sha256": "107160749138037e5f24c32db9073db0c8fd852f8bf9c3197535dabb60541eea",
+    "sources": [
+      "github.com/HUSTLYRM/HUST_HeroAim_2024/src/utils/model/svm_numbers_rbf.xml"
+    ],
+    "school": "华中科技大学",
+    "arch": "SVM",
+    "pose": "Det",
+    "task": "Cls",
+    "detail": "数字_SVM_RBF"
+  },
+  {
+    "year": 2024,
+    "path": "2024/华中科技大学_YOLOX_Pose_Armor_英雄自瞄_12类_416.onnx",
+    "bytes": 3615824,
+    "md5": "eaf4aaf94b51cec67d9825ae9d9a7f7f",
+    "sha256": "2ad460fbd2955ae4b905173ef20801210dc9d2729a0b7c0dc031194786a5d5f8",
+    "sources": [
+      "github.com/HUSTLYRM/HUST_HeroAim_2024/src/utils/model/best_06_02.onnx"
+    ],
+    "school": "华中科技大学",
+    "arch": "YOLOX",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "英雄自瞄_12类_416"
+  },
+  {
+    "year": 2024,
+    "path": "2024/华中科技大学_YOLOX_Pose_Armor_英雄自瞄_12类_416_IR.bin",
+    "bytes": 1774618,
+    "md5": "3d448f37e79396a3f67930fd7a87a480",
+    "sha256": "5b21a06da641ece47d62f74d37fabd8058cac7025ab815af438c16fd6695e51f",
+    "sources": [
+      "github.com/HUSTLYRM/HUST_HeroAim_2024/src/utils/model/best_06_02.bin"
+    ],
+    "school": "华中科技大学",
+    "arch": "YOLOX",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "英雄自瞄_12类_416_IR"
+  },
+  {
+    "year": 2024,
+    "path": "2024/华中科技大学_YOLOX_Pose_Armor_英雄自瞄_12类_416_IR.xml",
+    "bytes": 302342,
+    "md5": "a2193e389c2ed5d556477516e96780f5",
+    "sha256": "c697074031210d0102f0524bac9343e30d7e732fd781c2117af703f624f6a674",
+    "sources": [
+      "github.com/HUSTLYRM/HUST_HeroAim_2024/src/utils/model/best_06_02.xml"
+    ],
+    "school": "华中科技大学",
+    "arch": "YOLOX",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "英雄自瞄_12类_416_IR"
+  },
+  {
+    "year": 2024,
+    "path": "2024/华中科技大学_YOLOv10_Det_Armor_416_IR.bin",
+    "bytes": 9104456,
+    "md5": "a588a5810a35132bfd789b0ff0c68b9e",
+    "sha256": "0608739743eec19cf6f8f26946f09bd7466441f5ffc8aeece6127d532783674c",
+    "sources": [
+      "github.com/HUSTLYRM/HUST_HeroAim_2024/src/utils/model/0715_v10_416n_openvino_model/0715_v10_416n.bin"
+    ],
+    "school": "华中科技大学",
+    "arch": "YOLOv10",
+    "pose": "Det",
+    "task": "Armor",
+    "detail": "416_IR"
+  },
+  {
+    "year": 2024,
+    "path": "2024/华中科技大学_YOLOv10_Det_Armor_416_IR.xml",
+    "bytes": 317231,
+    "md5": "1f3edbfba07ce4644b9440d36bf587b7",
+    "sha256": "9ba40b3d587a5c8c2613375bbd5a5319faf0836da2cc5b1c610a93b990264cbb",
+    "sources": [
+      "github.com/HUSTLYRM/HUST_HeroAim_2024/src/utils/model/0715_v10_416n_openvino_model/0715_v10_416n.xml"
+    ],
+    "school": "华中科技大学",
+    "arch": "YOLOv10",
+    "pose": "Det",
+    "task": "Armor",
+    "detail": "416_IR"
+  },
+  {
+    "year": 2024,
+    "path": "2024/华中科技大学_YOLOv8_Det_Armor_前哨站_green.onnx",
+    "bytes": 11020389,
+    "md5": "9950db533c5a7dea1b6c083c58bf88e7",
+    "sha256": "01af7649e47932e1da5ea396075bffa627e00e4b5a501a9da32a52498bdc9f86",
+    "sources": [
+      "github.com/HUSTLYRM/HUST_HeroAim_2024/src/utils/model/outpost_nano_100epoch_1_8.onnx"
+    ],
+    "school": "华中科技大学",
+    "arch": "YOLOv8",
+    "pose": "Det",
+    "task": "Armor",
+    "detail": "前哨站_green"
+  },
+  {
+    "year": 2024,
+    "path": "2024/华中科技大学_YOLOv8_Det_Armor_前哨站_green_384_IR.bin",
+    "bytes": 12059932,
+    "md5": "5ad819cd4aae96ea8834b00825ab6a56",
+    "sha256": "946fe6bb40eac2ced6311617ff3281484fa683f6e3d5ec9c43806397d6db8fa8",
+    "sources": [
+      "github.com/HUSTLYRM/HUST_HeroAim_2024/src/utils/model/0801_384nano_green_openvino_model/0801_384nano_green.bin"
+    ],
+    "school": "华中科技大学",
+    "arch": "YOLOv8",
+    "pose": "Det",
+    "task": "Armor",
+    "detail": "前哨站_green_384_IR"
+  },
+  {
+    "year": 2024,
+    "path": "2024/华中科技大学_YOLOv8_Det_Armor_前哨站_green_384_IR.xml",
+    "bytes": 223234,
+    "md5": "2bfd909ab792d179f6bd9c86b5ccc8a5",
+    "sha256": "55d8e251fa9b635b4e15b47feda1af1b6e6a6cb02527c216bc4983d2eb7c4f38",
+    "sources": [
+      "github.com/HUSTLYRM/HUST_HeroAim_2024/src/utils/model/0801_384nano_green_openvino_model/0801_384nano_green.xml"
+    ],
+    "school": "华中科技大学",
+    "arch": "YOLOv8",
+    "pose": "Det",
+    "task": "Armor",
+    "detail": "前哨站_green_384_IR"
+  },
+  {
+    "year": 2024,
+    "path": "2024/厦门理工学院_YOLOv5_Det_Armor_雷达_640_11类.onnx",
+    "bytes": 14344276,
+    "md5": "0ba1594a67971d31da2c2af81bff94bd",
+    "sha256": "a3fa07e5d39fe835bcace5a77b76144c2008bcb2967c1fe50e0f7c13ef84b3f5",
+    "sources": [
+      "gitee.com/CarryzhangZKY/pfa_vision_radar/models/armor.onnx"
+    ],
+    "school": "厦门理工学院",
+    "arch": "YOLOv5",
+    "pose": "Det",
+    "task": "Armor",
+    "detail": "雷达_640_11类"
+  },
+  {
+    "year": 2024,
+    "path": "2024/厦门理工学院_YOLOv5_Det_Car_雷达_640_5类.onnx",
+    "bytes": 14306466,
+    "md5": "5db3763286c97f99e750a885bec1c3fa",
+    "sha256": "0f7a179021781f35c12d6eb782eebaf9d08b3e3a74b9471350d94c57b9a692f2",
+    "sources": [
+      "gitee.com/CarryzhangZKY/pfa_vision_radar/models/car.onnx"
+    ],
+    "school": "厦门理工学院",
+    "arch": "YOLOv5",
+    "pose": "Det",
+    "task": "Car",
+    "detail": "雷达_640_5类"
+  },
+  {
+    "year": 2024,
+    "path": "2024/武汉科技大学_YOLOv5_Pose_Armor_0708_TensorRT.engine",
+    "bytes": 6032604,
+    "md5": "704e10a31b2cfed2fdde792b5c3b0152",
+    "sha256": "008b6f5ebe8cc3121b4ea27ae3db0690efcac58d09a7d2754becd2122e9a8cb7",
+    "sources": [
+      "github.com/WUST-RM/awakening/model/0708.engine"
+    ],
+    "school": "武汉科技大学",
+    "arch": "YOLOv5",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "0708_TensorRT"
+  },
+  {
+    "year": 2024,
+    "path": "2024/深圳大学_YOLOv5_Pose_Armor_0708.onnx",
+    "bytes": 5752110,
+    "md5": "bc9f2c32da164e29596807682460d07f",
+    "sha256": "0a535eb10d0cc7c9fe3151f4ddba81418bbec188c6389cadc3850e8771c7ab78",
+    "sources": [
+      "github.com/Alliance-Algorithm/rmcs_auto_aim_v2/models/shenzhen-0708.onnx",
+      "github.com/SPR-Algorithm/SPR-Vision-2025/Main_ws/src/rm_auto_aim/armor_detector_network/model/0708.onnx",
+      "github.com/TOL0VE/RP24-DectionModel/0708.onnx",
+      "github.com/WUST-RM/awakening/model/0708.onnx",
+      "github.com/broalantaps/RobotDetectionModel/Model/0708.onnx"
+    ],
+    "school": "深圳大学",
+    "arch": "YOLOv5",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "0708"
+  },
+  {
+    "year": 2024,
+    "path": "2024/深圳大学_YOLOv5_Pose_Armor_0708_SPR版.bin",
+    "bytes": 2836140,
+    "md5": "",
+    "sha256": "",
+    "sources": [
+      "本地复制自 2024/深圳大学_YOLOv5_Pose_Armor_0708_同济版.bin"
+    ],
+    "school": "深圳大学",
+    "arch": "YOLOv5",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "0708_SPR版"
+  },
+  {
+    "year": 2024,
+    "path": "2024/深圳大学_YOLOv5_Pose_Armor_0708_SPR版.xml",
+    "bytes": 362334,
+    "md5": "5a815d6d2681bfb4caa7ac0bead11382",
+    "sha256": "56bd80bee3b44c6060b5a04bd40b320bd1a5857ab0a93804681742286be1e713",
+    "sources": [
+      "github.com/SPR-Algorithm/SPR-Vision-2025/Main_ws/src/rm_auto_aim/armor_detector_network/model/0708.xml"
+    ],
+    "school": "深圳大学",
+    "arch": "YOLOv5",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "0708_SPR版"
+  },
+  {
+    "year": 2024,
+    "path": "2024/深圳大学_YOLOv5_Pose_Armor_0708_同济版.bin",
+    "bytes": 2836140,
+    "md5": "e5e7a0b3ce1f134ecec20bc1071c8450",
+    "sha256": "aeae1db78494b631ddc1420a04714608b5dcf8bdf11f360ce503309757b1a7de",
+    "sources": [
+      "github.com/Alliance-Algorithm/rmcs_auto_aim_v2/models/tongji-yolov5.bin",
+      "github.com/GKD-RM-Lab/gkd_vision_26/assets/yolov5.bin",
+      "github.com/SHM-white/RM2026-AutoAim/assets/yolov5.bin",
+      "github.com/SPR-Algorithm/SPR-Vision-2025/Main_ws/src/rm_auto_aim/armor_detector_network/model/0708.bin",
+      "github.com/TongjiSuperPower/sp_vision_25/assets/yolov5.bin"
+    ],
+    "school": "深圳大学",
+    "arch": "YOLOv5",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "0708_同济版"
+  },
+  {
+    "year": 2024,
+    "path": "2024/深圳大学_YOLOv5_Pose_Armor_0708_同济版.xml",
+    "bytes": 349369,
+    "md5": "9bbb1ec8c82681b5e4f1e0d8152cfc81",
+    "sha256": "1cf9f2eb20e0312e8277ec457cfc67fb6867c4ff634d337c9c441a6aea052f8a",
+    "sources": [
+      "github.com/Alliance-Algorithm/rmcs_auto_aim_v2/models/tongji-yolov5.xml",
+      "github.com/GKD-RM-Lab/gkd_vision_26/assets/yolov5.xml",
+      "github.com/SHM-white/RM2026-AutoAim/assets/yolov5.xml",
+      "github.com/TongjiSuperPower/sp_vision_25/assets/yolov5.xml"
+    ],
+    "school": "深圳大学",
+    "arch": "YOLOv5",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "0708_同济版"
+  },
+  {
+    "year": 2025,
+    "path": "2025/RPS战队_EfficientNet_Pose_Armor_0717_eff2.onnx",
+    "bytes": 7709527,
+    "md5": "b9523e574d3458b541cac9fad7cbc037",
+    "sha256": "d6100f37a1557e508b454a94ee39a5f56144fe869f97f4fbbd5c840bf8ff1e00",
+    "sources": [
+      "github.com/aiyo472/auto_aim_rps26/src/rm_auto_aim/armor_detector/model/aims0717.onnx"
+    ],
+    "school": "RPS战队",
+    "arch": "EfficientNet",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "0717_eff2"
+  },
+  {
+    "year": 2025,
+    "path": "2025/RPS战队_EfficientNet_Pose_Armor_0731_eff2.onnx",
+    "bytes": 7439598,
+    "md5": "88baf224fc2c2e70adaf14001dd5d4f8",
+    "sha256": "43cdcd8cb9065b8c3eef67a73299c2a93048b98ad789fd5366f9b0be15e97892",
+    "sources": [
+      "github.com/aiyo472/auto_aim_rps26/src/rm_auto_aim/armor_detector/model/aim0731.onnx"
+    ],
+    "school": "RPS战队",
+    "arch": "EfficientNet",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "0731_eff2"
+  },
+  {
+    "year": 2025,
+    "path": "2025/上海科技大学_YOLOv5_Pose_Armor_SKD250526_512x640.onnx",
+    "bytes": 11146248,
+    "md5": "8b35bdc332b0f7547bb170a479378605",
+    "sha256": "0fdea1e9b894c2f2d24ae6a5e78b57cbe6acf20d62b8636fb66f68be63635426",
+    "sources": [
+      "github.com/Astra-Whale/SHtech_auto_aim/asset/models/SKD250526.onnx"
+    ],
+    "school": "上海科技大学",
+    "arch": "YOLOv5",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "SKD250526_512x640"
+  },
+  {
+    "year": 2025,
+    "path": "2025/上海科技大学_YOLOv5_Pose_Armor_SKD250526_AX650.axmodel",
+    "bytes": 3016148,
+    "md5": "f7ccb3ad393e7c4fdd1656e5fc4301d7",
+    "sha256": "ba89b91f7df6c36f4260fec8080bd6ff8596e3114c017df90e2fab57d3ebb154",
+    "sources": [
+      "github.com/Astra-Whale/SHtech_auto_aim/asset/models/SKD250526.axmodel"
+    ],
+    "school": "上海科技大学",
+    "arch": "YOLOv5",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "SKD250526_AX650"
+  },
+  {
+    "year": 2025,
+    "path": "2025/中国科学院大学_YOLOv5_Pose_Armor_RM4P_384x640.onnx",
+    "bytes": 28440153,
+    "md5": "fd90aa0a05c041ca1eb154fd210f54c9",
+    "sha256": "a5a2c28b4c046949f9224654c0b2a2813fdf51304890c56e79fb627a47581e56",
+    "sources": [
+      "gitee.com/ucas-sas-robot-team/RMVision-2026/src/rm_auto_aim/rm4p_inference/model/model-opt-4.onnx",
+      "gitee.com/ucas-sas-robot-team/RMVision-RM4P-2025/src/rm_auto_aim/rm4p_inference/model/model-opt-4.onnx"
+    ],
+    "school": "中国科学院大学",
+    "arch": "YOLOv5",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "RM4P_384x640"
+  },
+  {
+    "year": 2025,
+    "path": "2025/同济大学_ResNet_Det_Cls_数字_32x32_9类.onnx",
+    "bytes": 1105322,
+    "md5": "9241dff88f59b4d176dcd8a4ab0287ff",
+    "sha256": "9f45670da9e61f31b60c12efb08c8a7522ff56cc220c7fa9907283ce7e730179",
+    "sources": [
+      "github.com/Blackjack200/talos_26/models/tiny_resnet.onnx",
+      "github.com/GKD-RM-Lab/gkd_vision_26/assets/tiny_resnet.onnx",
+      "github.com/Justin186/vision_assessment_2026/assets/tiny_resnet.onnx",
+      "github.com/SHM-white/RM2026-AutoAim/assets/tiny_resnet.onnx",
+      "github.com/TongjiSuperPower/sp_vision_25/assets/tiny_resnet.onnx",
+      "github.com/WUST-RM/awakening/model/tiny_resnet.onnx"
+    ],
+    "school": "同济大学",
+    "arch": "ResNet",
+    "pose": "Det",
+    "task": "Cls",
+    "detail": "数字_32x32_9类"
+  },
+  {
+    "year": 2025,
+    "path": "2025/同济大学_YOLO11_Pose_Armor_yolo11_int8.bin",
+    "bytes": 2922484,
+    "md5": "1650f8118afb4c66f03861b52d9a09eb",
+    "sha256": "ace99cf0ce36a7ac5deb0d779ef0a15e952a67da9f57f6e16119e093d713963c",
+    "sources": [
+      "github.com/GKD-RM-Lab/gkd_vision_26/assets/yolo11.bin",
+      "github.com/SHM-white/RM2026-AutoAim/assets/yolo11.bin",
+      "github.com/TongjiSuperPower/sp_vision_25/assets/yolo11.bin"
+    ],
+    "school": "同济大学",
+    "arch": "YOLO11",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "yolo11_int8"
+  },
+  {
+    "year": 2025,
+    "path": "2025/同济大学_YOLO11_Pose_Armor_yolo11_int8.xml",
+    "bytes": 709518,
+    "md5": "e782601df538a8992ab199f381e2c773",
+    "sha256": "c513dea404aa704d7e4923441b4b51a0f1c3ee54186f5215a04048c297a239c0",
+    "sources": [
+      "github.com/GKD-RM-Lab/gkd_vision_26/assets/yolo11.xml",
+      "github.com/SHM-white/RM2026-AutoAim/assets/yolo11.xml",
+      "github.com/TongjiSuperPower/sp_vision_25/assets/yolo11.xml"
+    ],
+    "school": "同济大学",
+    "arch": "YOLO11",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "yolo11_int8"
+  },
+  {
+    "year": 2025,
+    "path": "2025/同济大学_YOLO11_Pose_Rune_buff_int8.bin",
+    "bytes": 2914672,
+    "md5": "4182bd8379b606eebe7c41d4f66451f4",
+    "sha256": "5e3c4a3562c39d7887f78e628d32850ba74ee6bf1cbf2da576c1c70a8b58f92e",
+    "sources": [
+      "github.com/GKD-RM-Lab/gkd_vision_26/assets/yolo11_buff_int8.bin",
+      "github.com/SHM-white/RM2026-AutoAim/assets/yolo11_buff_int8.bin",
+      "github.com/TongjiSuperPower/sp_vision_25/assets/yolo11_buff_int8.bin"
+    ],
+    "school": "同济大学",
+    "arch": "YOLO11",
+    "pose": "Pose",
+    "task": "Rune",
+    "detail": "buff_int8"
+  },
+  {
+    "year": 2025,
+    "path": "2025/同济大学_YOLO11_Pose_Rune_buff_int8.xml",
+    "bytes": 696202,
+    "md5": "e7612ebd531799a996d527d7e8049604",
+    "sha256": "f0caefcf0fede13c85ae3c597390d7ed1706cc9f8f3e24898a89cdd59fb9dd5a",
+    "sources": [
+      "github.com/GKD-RM-Lab/gkd_vision_26/assets/yolo11_buff_int8.xml",
+      "github.com/SHM-white/RM2026-AutoAim/assets/yolo11_buff_int8.xml",
+      "github.com/TongjiSuperPower/sp_vision_25/assets/yolo11_buff_int8.xml"
+    ],
+    "school": "同济大学",
+    "arch": "YOLO11",
+    "pose": "Pose",
+    "task": "Rune",
+    "detail": "buff_int8"
+  },
+  {
+    "year": 2025,
+    "path": "2025/同济大学_YOLOv8_Pose_Rune_5点_best2-sim.onnx",
+    "bytes": 12547691,
+    "md5": "ae75f0e662566f5ce2767dc2e822a2fe",
+    "sha256": "0cfa086d050751299f56a8a04dac00869d7e7c5650d37d317fd5d8f38e047ae2",
+    "sources": [
+      "github.com/GKD-RM-Lab/gkd_vision_26/assets/best2-sim.onnx",
+      "github.com/SHM-white/RM2026-AutoAim/assets/best2-sim.onnx",
+      "github.com/TongjiSuperPower/sp_vision_25/assets/best2-sim.onnx"
+    ],
+    "school": "同济大学",
+    "arch": "YOLOv8",
+    "pose": "Pose",
+    "task": "Rune",
+    "detail": "5点_best2-sim"
+  },
+  {
+    "year": 2025,
+    "path": "2025/武汉科技大学_YOLOv5_Pose_Armor_0526_TensorRT.engine",
+    "bytes": 6966564,
+    "md5": "b027dab3d4dc4005d3ac3d6aab84d8ce",
+    "sha256": "8796ac20bfa95d884d1290822fe6d48e1d6b0090f526cb781ec4e1f8b6f4749a",
+    "sources": [
+      "github.com/WUST-RM/awakening/model/0526.engine"
+    ],
+    "school": "武汉科技大学",
+    "arch": "YOLOv5",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "0526_TensorRT"
+  },
+  {
+    "year": 2025,
+    "path": "2025/浙江大学_YOLO11_Pose_Rune_buff_9点.onnx",
+    "bytes": 39044804,
+    "md5": "7b7f35797cc28e602c3e9acfcf2425ed",
+    "sha256": "c14620fd33fda26379ea655c49145522eeb891f6a9548c0c445f1b1f05199515",
+    "sources": [
+      "github.com/IC-Alan/HWauto_buff2026/buff.onnx"
+    ],
+    "school": "浙江大学",
+    "arch": "YOLO11",
+    "pose": "Pose",
+    "task": "Rune",
+    "detail": "buff_9点"
+  },
+  {
+    "year": 2025,
+    "path": "2025/浙江师范大学_YOLOv5_Pose_Armor_ZLion2025.onnx",
+    "bytes": 15782065,
+    "md5": "5e3a4336f0a185b0a26c2f57da4bb1a1",
+    "sha256": "cfd24ca0b049324426638facc3f923d3aa360d7e4e01e1168c44949b4f9b1b2a",
+    "sources": [
+      "github.com/dielivelr/Z_LION_AutoAim2025/src/auto_aim/models/yolo.onnx"
+    ],
+    "school": "浙江师范大学",
+    "arch": "YOLOv5",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "ZLion2025"
+  },
+  {
+    "year": 2025,
+    "path": "2025/深圳大学_YOLOv5_Pose_Armor_0526.onnx",
+    "bytes": 4359932,
+    "md5": "45b111e2ddde9e0b588fef5a38917af4",
+    "sha256": "b53470b42a5778aca8f3382ebe3c623482599cbf8ebad2e9a0dcc0c7f42c9255",
+    "sources": [
+      "github.com/Alliance-Algorithm/rmcs_auto_aim_v2/models/shenzhen-0526.onnx",
+      "github.com/WUST-RM/awakening/model/0526.onnx",
+      "github.com/broalantaps/RobotDetectionModel/Model/0526.onnx",
+      "github.com/hxfhxy/RoboMaster_vision_Armor/src/cpp08_armor_detector/model/0526.onnx"
+    ],
+    "school": "深圳大学",
+    "arch": "YOLOv5",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "0526"
+  },
+  {
+    "year": 2025,
+    "path": "2025/深圳大学_YOLOv5_Pose_Armor_0526_IR.bin",
+    "bytes": 3934528,
+    "md5": "5c2d9a0ea455245b3857b8005d8da8c1",
+    "sha256": "4033899e7749ea863c6158411da0f2ca5d8a927f0fca2a3bd9a4f5c73a506c54",
+    "sources": [
+      "github.com/Justin186/vision_assessment_2026/assets/0526.bin"
+    ],
+    "school": "深圳大学",
+    "arch": "YOLOv5",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "0526_IR"
+  },
+  {
+    "year": 2025,
+    "path": "2025/深圳大学_YOLOv5_Pose_Armor_0526_IR.xml",
+    "bytes": 197586,
+    "md5": "59924218f3115a93c6d0fdc19e6956c5",
+    "sha256": "648266e05a33a318f9fbbce615060f3c4aa07bfa0f906273bb435c59d96af325",
+    "sources": [
+      "github.com/Justin186/vision_assessment_2026/assets/0526.xml"
+    ],
+    "school": "深圳大学",
+    "arch": "YOLOv5",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "0526_IR"
+  },
+  {
+    "year": 2025,
+    "path": "2025/深圳大学_YOLOv5_Pose_Armor_0526_IR_仲恺版.bin",
+    "bytes": 3934528,
+    "md5": "5c2d9a0ea455245b3857b8005d8da8c1",
+    "sha256": "4033899e7749ea863c6158411da0f2ca5d8a927f0fca2a3bd9a4f5c73a506c54",
+    "sources": [
+      "本地复制自 2025/深圳大学_YOLOv5_Pose_Armor_0526_IR.bin"
+    ],
+    "school": "深圳大学",
+    "arch": "YOLOv5",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "0526_IR"
+  },
+  {
+    "year": 2025,
+    "path": "2025/深圳大学_YOLOv5_Pose_Armor_0526_IR_仲恺版.xml",
+    "bytes": 197722,
+    "md5": "4eefe6222d0c58bc6cacd36c67a3eed8",
+    "sha256": "77f188695bc01cbc2eb26548e95ad85c83c29adf263872e3df8047c48ad71af0",
+    "sources": [
+      "github.com/NOMANE-0/QD_Vision2026/src/rm_auto_aim/armor_detector/model/IR/0526.xml"
+    ],
+    "school": "深圳大学",
+    "arch": "YOLOv5",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "0526_IR_仲恺版"
+  },
+  {
+    "year": 2025,
+    "path": "2025/深圳大学_YOLOv5_Pose_Armor_Infantry_v5n_20260725_IR.bin",
+    "bytes": 3934528,
+    "md5": "aff8745f9f359a82150bf6cf2d1556de",
+    "sha256": "2815ca7be902289807f5584329716a13fc25722f9b720823c670bc42817a7a42",
+    "sources": [
+      "github.com/SZURPVision/26_NNDeployment_Lib_and_Detection_Models/所有模型/openvino/Infantry-v5n-fp16-20250725/Infantry-v5n-Release-20260725.bin"
+    ],
+    "school": "深圳大学",
+    "arch": "YOLOv5",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "Infantry_v5n_20260725_IR"
+  },
+  {
+    "year": 2025,
+    "path": "2025/深圳大学_YOLOv5_Pose_Armor_Infantry_v5n_20260725_IR.xml",
+    "bytes": 265631,
+    "md5": "651e343caadbc1bfb468cfea3ff9313f",
+    "sha256": "5acbcdebce7e85875266d84470377560a14a21641905e5c613aa4178962282b1",
+    "sources": [
+      "github.com/SZURPVision/26_NNDeployment_Lib_and_Detection_Models/所有模型/openvino/Infantry-v5n-fp16-20250725/Infantry-v5n-Release-20260725.xml"
+    ],
+    "school": "深圳大学",
+    "arch": "YOLOv5",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "Infantry_v5n_20260725_IR"
+  },
+  {
+    "year": 2025,
+    "path": "2025/深圳大学_YOLOv5_Pose_Armor_SZU0526_512x640.onnx",
+    "bytes": 4212192,
+    "md5": "ce637d8cf12b9d185a12e801b2a2d9cb",
+    "sha256": "582dde276f67513e95ab87c5480e025bf102c508b541517609a48c37385d046e",
+    "sources": [
+      "github.com/Astra-Whale/SHtech_auto_aim/asset/models/SZU0526_fp32input_512x640_nopre_fixoutput.onnx"
+    ],
+    "school": "深圳大学",
+    "arch": "YOLOv5",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "SZU0526_512x640"
+  },
+  {
+    "year": 2025,
+    "path": "2025/西南石油大学_PredNet_Det_Solver_弹道预测_IR.bin",
+    "bytes": 14602856,
+    "md5": "1b0c16c24c7f4459dd6960242e7a9eb9",
+    "sha256": "7f61a3e90b22ad63e5f95197d07c77c2bee49f300fee9951027f71d9670b3e37",
+    "sources": [
+      "github.com/soloplayl/Total3DAutoAim_md/c++_AutoAim_example/example_AutoAim/ir_pred_model/pred_model.bin"
+    ],
+    "school": "西南石油大学",
+    "arch": "PredNet",
+    "pose": "Det",
+    "task": "Solver",
+    "detail": "弹道预测_IR"
+  },
+  {
+    "year": 2025,
+    "path": "2025/西南石油大学_PredNet_Det_Solver_弹道预测_IR.xml",
+    "bytes": 275930,
+    "md5": "db1c1b2f7075c7035fe43b4e3de91986",
+    "sha256": "613cc421aac9cd6fcc4a1ad2f62920c312b13196867a870ddacbc8d4d2c70b8c",
+    "sources": [
+      "github.com/soloplayl/Total3DAutoAim_md/c++_AutoAim_example/example_AutoAim/ir_pred_model/pred_model.xml"
+    ],
+    "school": "西南石油大学",
+    "arch": "PredNet",
+    "pose": "Det",
+    "task": "Solver",
+    "detail": "弹道预测_IR"
+  },
+  {
+    "year": 2026,
+    "path": "2026/RPS战队_EfficientNet_Pose_Armor_0516_eff4.onnx",
+    "bytes": 6455925,
+    "md5": "d7189fa9689d4a737bd06e4ec6851702",
+    "sha256": "954bdfa047ba1639abda3e441f8d17f8da350efd32cc7e27e3da57a50f687eac",
+    "sources": [
+      "github.com/aiyo472/auto_aim_rps26/src/rm_auto_aim/armor_detector/model/516.onnx"
+    ],
+    "school": "RPS战队",
+    "arch": "EfficientNet",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "0516_eff4"
+  },
+  {
+    "year": 2026,
+    "path": "2026/RPS战队_MLP_Det_Cls_兵种_28x28_8类.onnx",
+    "bytes": 324096,
+    "md5": "beeead1711a6e5ec3dfa961d73d9612b",
+    "sha256": "7badd202c92ec43684e7a476baeeabf12ea1ac76abcb2566ad13f07cc69528ba",
+    "sources": [
+      "github.com/aiyo472/auto_aim_rps26/src/rm_auto_aim/armor_detector/model/armor_classifier.onnx"
+    ],
+    "school": "RPS战队",
+    "arch": "MLP",
+    "pose": "Det",
+    "task": "Cls",
+    "detail": "兵种_28x28_8类"
+  },
+  {
+    "year": 2026,
+    "path": "2026/talos战队_YOLO26_Pose_Armor_best_640.onnx",
+    "bytes": 5234914,
+    "md5": "b27f8ab2190e121ae6b86960cd071df0",
+    "sha256": "83cc133ec1f0b36c4e559dfc22c6ce3e799a1e423d0ae88a4ca02df571831b6c",
+    "sources": [
+      "github.com/Blackjack200/talos_26/models/best.onnx"
+    ],
+    "school": "talos战队",
+    "arch": "YOLO26",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "best_640"
+  },
+  {
+    "year": 2026,
+    "path": "2026/talos战队_YOLO26_Pose_Armor_best_AX650.axmodel",
+    "bytes": 2462747,
+    "md5": "9d9f125ec6139930aebda20c498ea182",
+    "sha256": "8a7e78f7bb0fb240ea882deb2b93e69bcfdfea7167512ee15706bde137d4cd4b",
+    "sources": [
+      "github.com/Blackjack200/talos_26/models/compiled.axmodel"
+    ],
+    "school": "talos战队",
+    "arch": "YOLO26",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "best_AX650"
+  },
+  {
+    "year": 2026,
+    "path": "2026/talos战队_YOLO26_Pose_Armor_best_QAT_u16_AX650.axmodel",
+    "bytes": 2509878,
+    "md5": "a879e50a86d0f13c509cd3c53940fed3",
+    "sha256": "f7122a5dbf9166fb33a2acbb648786add608af482970015b0bcb607f58ce1d7b",
+    "sources": [
+      "github.com/Blackjack200/talos_26/models/qat_u16_all.axmodel"
+    ],
+    "school": "talos战队",
+    "arch": "YOLO26",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "best_QAT_u16_AX650"
+  },
+  {
+    "year": 2026,
+    "path": "2026/talos战队_YOLO26_Pose_Armor_best_QAT_u8u16_AX650.axmodel",
+    "bytes": 2573996,
+    "md5": "0984c79de6e5d257ab71c13f9e59598c",
+    "sha256": "1083af27e3c57e1b53dc4738e20b5e780c8ae9d3a1b083380e20f2f7bf8b488f",
+    "sources": [
+      "github.com/Blackjack200/talos_26/models/qat_u8u16.axmodel"
+    ],
+    "school": "talos战队",
+    "arch": "YOLO26",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "best_QAT_u8u16_AX650"
+  },
+  {
+    "year": 2026,
+    "path": "2026/talos战队_YOLO26_Pose_Armor_best_dwconv_fp16.onnx",
+    "bytes": 1493904,
+    "md5": "43d97b651288b5405c138d72f24b1241",
+    "sha256": "2cd40f016189e58e4eb1f96ae2bc9886752d807cb70cff2a59115fb5858c3f48",
+    "sources": [
+      "github.com/Blackjack200/talos_26/models/best_fp16.onnx"
+    ],
+    "school": "talos战队",
+    "arch": "YOLO26",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "best_dwconv_fp16"
+  },
+  {
+    "year": 2026,
+    "path": "2026/talos战队_YOLO26_Pose_Armor_best_final_AX650.axmodel",
+    "bytes": 2525654,
+    "md5": "0bf1d94eef09a7a72d97e1f1ff544600",
+    "sha256": "0b7f71d17b24e7ad97ac280634a84e0c72ca4e849c8b4d54a69170a062a3ca6e",
+    "sources": [
+      "github.com/Blackjack200/talos_26/models/the_most_expected_one.axmodel"
+    ],
+    "school": "talos战队",
+    "arch": "YOLO26",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "best_final_AX650"
+  },
+  {
+    "year": 2026,
+    "path": "2026/talos战队_YOLO26_Pose_Armor_best_sm87_TensorRT.engine",
+    "bytes": 4397932,
+    "md5": "e4697c1085e746dd262620974612ef9a",
+    "sha256": "43fd7f54db8c17abbe62e759dfbf420e3e29cc3ba4e1742c1efedb73725060ca",
+    "sources": [
+      "github.com/Blackjack200/talos_26/models/best_fp16_sm87_fp16.engine"
+    ],
+    "school": "talos战队",
+    "arch": "YOLO26",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "best_sm87_TensorRT"
+  },
+  {
+    "year": 2026,
+    "path": "2026/talos战队_YOLO26_Pose_Armor_best_u16attn_AX650.axmodel",
+    "bytes": 2662852,
+    "md5": "cbede5829d382ab786a10d92078209c1",
+    "sha256": "1df95757402c62b627409522482c7d3d673cdc634a07edee1f532542db36daa4",
+    "sources": [
+      "github.com/Blackjack200/talos_26/models/u16_attn.axmodel"
+    ],
+    "school": "talos战队",
+    "arch": "YOLO26",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "best_u16attn_AX650"
+  },
+  {
+    "year": 2026,
+    "path": "2026/东南大学_MSSSIM_Det_Compress_图传_生成器g_s_IR.bin",
+    "bytes": 5972496,
+    "md5": "95e29c3a8091dd4d1fbdc7f68b18f9cc",
+    "sha256": "fee596cfe7ad0941d07389591209377fee7cc696106055553e1e54d79b42e69d",
+    "sources": [
+      "github.com/ElainaXD/rm_compress/rm_qvrf_receiver/models/msssim_g_s_fp32.bin"
+    ],
+    "school": "东南大学",
+    "arch": "MSSSIM",
+    "pose": "Det",
+    "task": "Compress",
+    "detail": "图传_生成器g_s_IR"
+  },
+  {
+    "year": 2026,
+    "path": "2026/东南大学_MSSSIM_Det_Compress_图传_生成器g_s_IR.xml",
+    "bytes": 21940,
+    "md5": "3daedad1591b1d26395f4d7dff4fd92a",
+    "sha256": "28d677910bb6e41551ad68e6f057ed0dc391c3af31e28d1b2495125ef4e83728",
+    "sources": [
+      "github.com/ElainaXD/rm_compress/rm_qvrf_receiver/models/msssim_g_s_fp32.xml"
+    ],
+    "school": "东南大学",
+    "arch": "MSSSIM",
+    "pose": "Det",
+    "task": "Compress",
+    "detail": "图传_生成器g_s_IR"
+  },
+  {
+    "year": 2026,
+    "path": "2026/东南大学_MSSSIM_Det_Compress_图传_超先验h_a_IR.bin",
+    "bytes": 4163076,
+    "md5": "41b6b514f0a352ea782cb0122e1763cf",
+    "sha256": "1b76c88b71a5296f4b693df4954e7b37cde2126a558b07fc0ca27b84aa548063",
+    "sources": [
+      "github.com/ElainaXD/rm_compress/rm_qvrf_receiver/models/msssim_h_a_fp32.bin"
+    ],
+    "school": "东南大学",
+    "arch": "MSSSIM",
+    "pose": "Det",
+    "task": "Compress",
+    "detail": "图传_超先验h_a_IR"
+  },
+  {
+    "year": 2026,
+    "path": "2026/东南大学_MSSSIM_Det_Compress_图传_超先验h_a_IR.xml",
+    "bytes": 8737,
+    "md5": "b23f0ebbf449688ccc2af0a99f55b1d7",
+    "sha256": "1d422ca88cb747a53a5a57efd01082aa0c60507658446bd0fb8c78a54b17e31f",
+    "sources": [
+      "github.com/ElainaXD/rm_compress/rm_qvrf_receiver/models/msssim_h_a_fp32.xml"
+    ],
+    "school": "东南大学",
+    "arch": "MSSSIM",
+    "pose": "Det",
+    "task": "Compress",
+    "detail": "图传_超先验h_a_IR"
+  },
+  {
+    "year": 2026,
+    "path": "2026/东南大学_MSSSIM_Det_Compress_图传_超先验h_s_IR.bin",
+    "bytes": 11971972,
+    "md5": "87e98861b85b6354f1c92d0ec1b11b70",
+    "sha256": "be2b4ba572b81928317dd027f454e929fbf667d43518054b7eb7bf0dada69f72",
+    "sources": [
+      "github.com/ElainaXD/rm_compress/rm_qvrf_receiver/models/msssim_h_s_fp32.bin"
+    ],
+    "school": "东南大学",
+    "arch": "MSSSIM",
+    "pose": "Det",
+    "task": "Compress",
+    "detail": "图传_超先验h_s_IR"
+  },
+  {
+    "year": 2026,
+    "path": "2026/东南大学_MSSSIM_Det_Compress_图传_超先验h_s_IR.xml",
+    "bytes": 8927,
+    "md5": "7770170f1ade65e2dbadb56acc1ca429",
+    "sha256": "d8334de61e9bf14b275a724efc60e81bcf7137c9003cef821f60225311914f92",
+    "sources": [
+      "github.com/ElainaXD/rm_compress/rm_qvrf_receiver/models/msssim_h_s_fp32.xml"
+    ],
+    "school": "东南大学",
+    "arch": "MSSSIM",
+    "pose": "Det",
+    "task": "Compress",
+    "detail": "图传_超先验h_s_IR"
+  },
+  {
+    "year": 2026,
+    "path": "2026/东南大学_QVRF_Det_Compress_图传_192x384.onnx",
+    "bytes": 270617,
+    "md5": "4a9e5210eda9fd9790ab968863891dc1",
+    "sha256": "0c8384568e7b0b50f383a8ff7a56872bf365d345a77b5e3949db2c3c6f184e77",
+    "sources": [
+      "github.com/ElainaXD/rm_compress/rm_qvrf_receiver/models/qvrf_gs_rlfn_x2_192.onnx"
+    ],
+    "school": "东南大学",
+    "arch": "QVRF",
+    "pose": "Det",
+    "task": "Compress",
+    "detail": "图传_192x384"
+  },
+  {
+    "year": 2026,
+    "path": "2026/东南大学_QVRF_Det_Compress_图传_448x896.onnx",
+    "bytes": 270639,
+    "md5": "81befd542ac436f70db6a061f74d69bf",
+    "sha256": "3f3bf0118462df0a840fc6a98fc0315aed1c832314d8c0befd53b0b9d5851b29",
+    "sources": [
+      "github.com/ElainaXD/rm_compress/rm_qvrf_receiver/models/qvrf_gs_rlfn_x2_448.onnx"
+    ],
+    "school": "东南大学",
+    "arch": "QVRF",
+    "pose": "Det",
+    "task": "Compress",
+    "detail": "图传_448x896"
+  },
+  {
+    "year": 2026,
+    "path": "2026/东南大学_Real-ESRGAN_Det_Compress_图传_超分x4v3.pth",
+    "bytes": 4885111,
+    "md5": "91a7644643c884ee00737db24e478156",
+    "sha256": "8dc7edb9ac80ccdc30c3a5dca6616509367f05fbc184ad95b731f05bece96292",
+    "sources": [
+      "github.com/ElainaXD/rm_compress/rm_qvrf_receiver/models/realesr-general-x4v3.pth"
+    ],
+    "school": "东南大学",
+    "arch": "Real-ESRGAN",
+    "pose": "Det",
+    "task": "Compress",
+    "detail": "图传_超分x4v3"
+  },
+  {
+    "year": 2026,
+    "path": "2026/中国科学院大学_YOLO11_Pose_Armor_6兵种_640.onnx",
+    "bytes": 10985528,
+    "md5": "7a574d032b6e55f669d15f26d2193fe3",
+    "sha256": "04b52817caf0379e9d585c630f0c88716f3ab98d077fa048047f08fe74c2e471",
+    "sources": [
+      "gitee.com/ucas-sas-robot-team/RMVision-2026/src/rm_auto_aim/rm4p_2026/model/yolo11-012345-x.onnx"
+    ],
+    "school": "中国科学院大学",
+    "arch": "YOLO11",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "6兵种_640"
+  },
+  {
+    "year": 2026,
+    "path": "2026/华北理工大学_YOLOv8_Det_Armor_雷达_ghost_p2_1280_原始.pt",
+    "bytes": 4123842,
+    "md5": "27669de4d0eda4bb6b360b81dede7cf3",
+    "sha256": "9995fcd39d7e6085a68955347f5950db7335be027b5e86bd1693447a08686292",
+    "sources": [
+      "github-release/BreCaspian/ROBOMASTER-HORIZON-LiDAR-2025/Horizon-Armor-yolov8n-ghost-p2-2026-04-04.pt"
+    ],
+    "school": "华北理工大学",
+    "arch": "YOLOv8",
+    "pose": "Det",
+    "task": "Armor",
+    "detail": "雷达_ghost_p2_1280_原始"
+  },
+  {
+    "year": 2026,
+    "path": "2026/华北理工大学_YOLOv8_Det_Car_雷达车辆_ghost_p2_1280_原始.pt",
+    "bytes": 11552322,
+    "md5": "45a4074622b1e8f0782f83666f21700b",
+    "sha256": "a935d78b94d5debd980e8c61a63c9c234d913868a1b29bfea1cbf8acf1ceb695",
+    "sources": [
+      "github-release/BreCaspian/ROBOMASTER-HORIZON-LiDAR-2025/Horizon-Car-yolov8s-ghost-p2-2026-04-06.pt"
+    ],
+    "school": "华北理工大学",
+    "arch": "YOLOv8",
+    "pose": "Det",
+    "task": "Car",
+    "detail": "雷达车辆_ghost_p2_1280_原始"
+  },
+  {
+    "year": 2026,
+    "path": "2026/复旦大学_MobileNetV2_Det_Backbone_特征提取.pth",
+    "bytes": 27189835,
+    "md5": "2a138f4f0208ade5ef46d0820d33f243",
+    "sha256": "ac45e67cc919214a4e8ea9e04cbf770d56e74e594c6c1648864e1112cdb71db7",
+    "sources": [
+      "github.com/Ryaxwn7/EGA_Radar_Algorithm/Main_ws/weights/MobileNetv2.2.pth"
+    ],
+    "school": "复旦大学",
+    "arch": "MobileNetV2",
+    "pose": "Det",
+    "task": "Backbone",
+    "detail": "特征提取"
+  },
+  {
+    "year": 2026,
+    "path": "2026/复旦大学_YOLOv12_Det_Armor_雷达_3类.onnx",
+    "bytes": 80641842,
+    "md5": "37926d71191cfe15e12a2d29979cd9d6",
+    "sha256": "463229640be82dc865f9bcf3199de9deb7a106831745dd3cd3a54c440b8de3de",
+    "sources": [
+      "github.com/Ryaxwn7/EGA_Radar_Algorithm/Main_ws/weights/armor/armor_best.onnx"
+    ],
+    "school": "复旦大学",
+    "arch": "YOLOv12",
+    "pose": "Det",
+    "task": "Armor",
+    "detail": "雷达_3类"
+  },
+  {
+    "year": 2026,
+    "path": "2026/复旦大学_YOLOv12_Det_Armor_雷达_3类.pt",
+    "bytes": 40744039,
+    "md5": "32fa0469bda05441ac8c61f0c78c5a01",
+    "sha256": "c25ec94451557a5fa014859746482b5c186bb7b87ff014f5e62ef48a0721eb18",
+    "sources": [
+      "github.com/Ryaxwn7/EGA_Radar_Algorithm/Main_ws/weights/armor/armor_best.pt"
+    ],
+    "school": "复旦大学",
+    "arch": "YOLOv12",
+    "pose": "Det",
+    "task": "Armor",
+    "detail": "雷达_3类"
+  },
+  {
+    "year": 2026,
+    "path": "2026/复旦大学_YOLOv12_Det_Armor_雷达_3类_TensorRT.engine",
+    "bytes": 44325759,
+    "md5": "953a81ac814bdc9a3785d59a87d72ce6",
+    "sha256": "3e070c4589ee4c4556e2bd064ee197f2f79e046318778ca6fd87bc73aaacf67a",
+    "sources": [
+      "github.com/Ryaxwn7/EGA_Radar_Algorithm/Main_ws/weights/armor/armor_best.engine"
+    ],
+    "school": "复旦大学",
+    "arch": "YOLOv12",
+    "pose": "Det",
+    "task": "Armor",
+    "detail": "雷达_3类_TensorRT"
+  },
+  {
+    "year": 2026,
+    "path": "2026/复旦大学_YOLOv12_Det_Car_雷达车辆_1280.onnx",
+    "bytes": 37771288,
+    "md5": "c275a9abb4d598c1b51958e0bc43d378",
+    "sha256": "f661450f85db7b94b0b2d2a7501a25513d7669e2644818d28cc816dedc09d9bc",
+    "sources": [
+      "github.com/Ryaxwn7/EGA_Radar_Algorithm/Main_ws/weights/car/best.onnx"
+    ],
+    "school": "复旦大学",
+    "arch": "YOLOv12",
+    "pose": "Det",
+    "task": "Car",
+    "detail": "雷达车辆_1280"
+  },
+  {
+    "year": 2026,
+    "path": "2026/复旦大学_YOLOv12_Det_Car_雷达车辆_1280.pt",
+    "bytes": 19106714,
+    "md5": "05c20e973df4ed0f80c35cf87910ba1e",
+    "sha256": "2f3d9e6d37e7924a746ec9daf5e2bf46ff979db0fc887324f6159d3573956cb7",
+    "sources": [
+      "github.com/Ryaxwn7/EGA_Radar_Algorithm/Main_ws/weights/car/best.pt"
+    ],
+    "school": "复旦大学",
+    "arch": "YOLOv12",
+    "pose": "Det",
+    "task": "Car",
+    "detail": "雷达车辆_1280"
+  },
+  {
+    "year": 2026,
+    "path": "2026/复旦大学_YOLOv12_Det_Car_雷达车辆_1280_TensorRT.engine",
+    "bytes": 23750482,
+    "md5": "92acce3d28f63123e9ef7a6303488bb2",
+    "sha256": "42b28f13772aea655ba88dd1516ba5daa1bdd05cef7c967d7d98826788f8fa95",
+    "sources": [
+      "github.com/Ryaxwn7/EGA_Radar_Algorithm/Main_ws/weights/car/best.engine"
+    ],
+    "school": "复旦大学",
+    "arch": "YOLOv12",
+    "pose": "Det",
+    "task": "Car",
+    "detail": "雷达车辆_1280_TensorRT"
+  },
+  {
+    "year": 2026,
+    "path": "2026/常州大学_RepVGG_Pose_Rune_buff_repvgg_9点.bin",
+    "bytes": 2502304,
+    "md5": "6f723cab8d53a4aab0ce5600a51c9ed8",
+    "sha256": "07ec6e5af8a094bc20cfd77a8f4abc6a9450da53fd533225ca99025a954ae23f",
+    "sources": [
+      "github.com/CCZU-Climber/Climber_Vision_26/assets/buff_repvgg.bin"
+    ],
+    "school": "常州大学",
+    "arch": "RepVGG",
+    "pose": "Pose",
+    "task": "Rune",
+    "detail": "buff_repvgg_9点"
+  },
+  {
+    "year": 2026,
+    "path": "2026/常州大学_RepVGG_Pose_Rune_buff_repvgg_9点.xml",
+    "bytes": 186733,
+    "md5": "ce2e554c13ea1bbca1d49aaeba73d1c0",
+    "sha256": "717a830df79789c8a974d6656b336be3020d96306e019463be50242f2a26750c",
+    "sources": [
+      "github.com/CCZU-Climber/Climber_Vision_26/assets/buff_repvgg.xml"
+    ],
+    "school": "常州大学",
+    "arch": "RepVGG",
+    "pose": "Pose",
+    "task": "Rune",
+    "detail": "buff_repvgg_9点"
+  },
+  {
+    "year": 2026,
+    "path": "2026/武汉科技大学_RepVGG_Pose_Rune_cb_rune_9点.onnx",
+    "bytes": 2632872,
+    "md5": "e9c1fa581f0bb9ecba00a9404c8ff69f",
+    "sha256": "8e2a52029a5e90dbf017e7dd242d3fa1624bdd66d97e4d09a83901bb745cc1eb",
+    "sources": [
+      "github.com/WUST-RM/awakening/model/cb_rune.onnx"
+    ],
+    "school": "武汉科技大学",
+    "arch": "RepVGG",
+    "pose": "Pose",
+    "task": "Rune",
+    "detail": "cb_rune_9点"
+  },
+  {
+    "year": 2026,
+    "path": "2026/武汉科技大学_RepVGG_Pose_Rune_cb_rune_9点_TensorRT.engine",
+    "bytes": 3968228,
+    "md5": "778839e8000ae215015e21f9f2855820",
+    "sha256": "cdf047f644cae7499f6bc00ddd524b72f9ae05660a2bd61cd9b28e1fab514914",
+    "sources": [
+      "github.com/WUST-RM/awakening/model/cb_rune.engine"
+    ],
+    "school": "武汉科技大学",
+    "arch": "RepVGG",
+    "pose": "Pose",
+    "task": "Rune",
+    "detail": "cb_rune_9点_TensorRT"
+  },
+  {
+    "year": 2026,
+    "path": "2026/武汉科技大学_YOLO26_Pose_Armor_praysky_C2PSA_576x768.onnx",
+    "bytes": 4582378,
+    "md5": "535d4a84a4618e5ca01b522a1aa6577d",
+    "sha256": "5d16a7a067eb0b989a35ec7eba28151c41efd6b56d623f110ea7b3d8a3da1038",
+    "sources": [
+      "github.com/WUST-RM/awakening/model/praysky_c2psa_e2e_0228_576x768.onnx"
+    ],
+    "school": "武汉科技大学",
+    "arch": "YOLO26",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "praysky_C2PSA_576x768"
+  },
+  {
+    "year": 2026,
+    "path": "2026/武汉科技大学_YOLO26_Pose_Armor_praysky_C2PSA_576x768_TensorRT.engine",
+    "bytes": 8997860,
+    "md5": "9d355ff82836fb72c9ba750b3b73f3b6",
+    "sha256": "0981d5fdcf435792bbf3c4a24b1f8b5342dd1d9d757417bf9c5a3c16241d8420",
+    "sources": [
+      "github.com/WUST-RM/awakening/model/praysky_c2psa_e2e_0228_576x768.engine"
+    ],
+    "school": "武汉科技大学",
+    "arch": "YOLO26",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "praysky_C2PSA_576x768_TensorRT"
+  },
+  {
+    "year": 2026,
+    "path": "2026/武汉科技大学_YOLO26_Pose_Armor_praysky_C2PSA_640.onnx",
+    "bytes": 4560874,
+    "md5": "714b8f36bc4438622bf0d17d31e0513b",
+    "sha256": "32e500790aa7c352547d64f6c7062c7fac88552346bbaa7a078455dc7f24a424",
+    "sources": [
+      "github.com/WUST-RM/awakening/model/praysky_c2psa_e2e_0228_640x640.onnx"
+    ],
+    "school": "武汉科技大学",
+    "arch": "YOLO26",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "praysky_C2PSA_640"
+  },
+  {
+    "year": 2026,
+    "path": "2026/武汉科技大学_YOLO26_Pose_Armor_praysky_C2PSA_640_TensorRT.engine",
+    "bytes": 9847540,
+    "md5": "5922ea7d9887d2227a09c689a091f355",
+    "sha256": "38eb680b87d0211a8ded05b49fc56db0b69270efb74724bf4316d7723a54af31",
+    "sources": [
+      "github.com/WUST-RM/awakening/model/praysky_c2psa_e2e_0228_640x640.engine"
+    ],
+    "school": "武汉科技大学",
+    "arch": "YOLO26",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "praysky_C2PSA_640_TensorRT"
+  },
+  {
+    "year": 2026,
+    "path": "2026/武汉科技大学_YOLOX_Pose_Armor_opt0527_416.onnx",
+    "bytes": 3664655,
+    "md5": "4a58d9211a6914b8cad41bbd9c5f4a53",
+    "sha256": "692209aaf518ca9921122f9f08dd9d43750bd40ffb357291bdbdbf4aa19138f2",
+    "sources": [
+      "github.com/WUST-RM/awakening/model/opt-0527-001.onnx"
+    ],
+    "school": "武汉科技大学",
+    "arch": "YOLOX",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "opt0527_416"
+  },
+  {
+    "year": 2026,
+    "path": "2026/武汉科技大学_YOLOX_Pose_Armor_opt1208_416.onnx",
+    "bytes": 2167983,
+    "md5": "a2ef71420c6ca996150c32e3ae0cf423",
+    "sha256": "45b240e83ddbf464a7e79090a5065eee88ea8ab300a1448b3b953224ae75d921",
+    "sources": [
+      "github.com/Blackjack200/talos_26/models/opt-1208-001.onnx",
+      "github.com/WUST-RM/awakening/model/opt-1208-001.onnx"
+    ],
+    "school": "武汉科技大学",
+    "arch": "YOLOX",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "opt1208_416"
+  },
+  {
+    "year": 2026,
+    "path": "2026/武汉科技大学_YOLOX_Pose_Armor_opt1208_416_TensorRT.engine",
+    "bytes": 3165476,
+    "md5": "2797f1ddaa6e9a45ab0c9cbee99b4051",
+    "sha256": "18e42dc2346e0a2594754b7b0d6ae7d9cc133d705fe46dc6972b33bf53a5983d",
+    "sources": [
+      "github.com/WUST-RM/awakening/model/opt-1208-001.engine"
+    ],
+    "school": "武汉科技大学",
+    "arch": "YOLOX",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "opt1208_416_TensorRT"
+  },
+  {
+    "year": 2026,
+    "path": "2026/武汉科技大学_YOLOX_Pose_Armor_opt1208_416_ncnn.bin",
+    "bytes": 2128592,
+    "md5": "5708663a1ef7e475f7beb1e92ce20cb0",
+    "sha256": "9f1ce8d2c92cb29ef9ef7a3b510696ae221e0151dd61414f41bc885670f72545",
+    "sources": [
+      "github.com/WUST-RM/awakening/model/opt-1208-001.bin"
+    ],
+    "school": "武汉科技大学",
+    "arch": "YOLOX",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "opt1208_416_ncnn"
+  },
+  {
+    "year": 2026,
+    "path": "2026/武汉科技大学_YOLOX_Pose_Armor_opt1208_416_ncnn.param",
+    "bytes": 25314,
+    "md5": "6eb5e7955c478f4abc59fa2291a470cd",
+    "sha256": "0bff6b42485c2de67348ccd5e4fdb831e80fb6877d9698d646adde5aa34408ad",
+    "sources": [
+      "github.com/WUST-RM/awakening/model/opt-1208-001.param"
+    ],
+    "school": "武汉科技大学",
+    "arch": "YOLOX",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "opt1208_416_ncnn"
+  },
+  {
+    "year": 2026,
+    "path": "2026/武汉科技大学_YOLOX_Pose_Armor_opt1208_416_ncnn_fp16.bin",
+    "bytes": 1076688,
+    "md5": "1cff71099c4c386af587150181de3e5b",
+    "sha256": "ed7f86e6a1533b70318d6440fcbb76a5c4006192707b96121fa8919a3d16a9f9",
+    "sources": [
+      "github.com/WUST-RM/awakening/model/opt_1208_001.ncnn.bin"
+    ],
+    "school": "武汉科技大学",
+    "arch": "YOLOX",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "opt1208_416_ncnn_fp16"
+  },
+  {
+    "year": 2026,
+    "path": "2026/武汉科技大学_YOLOX_Pose_Armor_opt1208_416_ncnn_fp16.param",
+    "bytes": 18444,
+    "md5": "c8f7442960d29882a2701f4c43ed126f",
+    "sha256": "3016eaf87b297db2d1d9fac31f6a9d1c6bcf1b7ee931e9d625521c1660180150",
+    "sources": [
+      "github.com/WUST-RM/awakening/model/opt_1208_001.ncnn.param"
+    ],
+    "school": "武汉科技大学",
+    "arch": "YOLOX",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "opt1208_416_ncnn_fp16"
+  },
+  {
+    "year": 2026,
+    "path": "2026/武汉科技大学_YOLOv8_Det_Armor_雷达_ghost_p2_1280.onnx",
+    "bytes": 9261874,
+    "md5": "538b19191e7dac19c409441a6190454a",
+    "sha256": "e1cc4b6283256b90165298b9207d09ccee1a323f7ee561265551fc420fbb69b6",
+    "sources": [
+      "github.com/WUST-RM/awakening/src/tasks/radar_detect/data/Horizon-Armor-yolov8n-ghost-p2-2026-04-04.onnx"
+    ],
+    "school": "武汉科技大学",
+    "arch": "YOLOv8",
+    "pose": "Det",
+    "task": "Armor",
+    "detail": "雷达_ghost_p2_1280"
+  },
+  {
+    "year": 2026,
+    "path": "2026/武汉科技大学_YOLOv8_Det_Armor_雷达_ghost_p2_1280_TensorRT.engine",
+    "bytes": 7816844,
+    "md5": "06459e4ec49a7ef02bafa1a2d6c0780b",
+    "sha256": "c4d0c0b2d023bacda0e823cc6fa60e66a775a64bc1d79cc74a6a513c915a3ea9",
+    "sources": [
+      "github.com/WUST-RM/awakening/src/tasks/radar_detect/data/Horizon-Armor-yolov8n-ghost-p2-2026-04-04.engine"
+    ],
+    "school": "武汉科技大学",
+    "arch": "YOLOv8",
+    "pose": "Det",
+    "task": "Armor",
+    "detail": "雷达_ghost_p2_1280_TensorRT"
+  },
+  {
+    "year": 2026,
+    "path": "2026/武汉科技大学_YOLOv8_Det_Car_雷达车辆_ghost_p2_1280.onnx",
+    "bytes": 24074138,
+    "md5": "e5eab7c35a286383569f55234729ad94",
+    "sha256": "b674aafdaf3de5a9afe86685296660ec355671256f34e372f2f4cdb1a13e4b98",
+    "sources": [
+      "github.com/WUST-RM/awakening/src/tasks/radar_detect/data/Horizon-Car-yolov8s-ghost-p2-2026-04-06.onnx"
+    ],
+    "school": "武汉科技大学",
+    "arch": "YOLOv8",
+    "pose": "Det",
+    "task": "Car",
+    "detail": "雷达车辆_ghost_p2_1280"
+  },
+  {
+    "year": 2026,
+    "path": "2026/武汉科技大学_YOLOv8_Det_Car_雷达车辆_ghost_p2_1280_TensorRT.engine",
+    "bytes": 15984548,
+    "md5": "e45f27aedf8eb7fa8612da5cec87f4a7",
+    "sha256": "260f861a5d4a28cf5f18bc5f7491954cb4130aae62f5779f628e021854bf765b",
+    "sources": [
+      "github.com/WUST-RM/awakening/src/tasks/radar_detect/data/Horizon-Car-yolov8s-ghost-p2-2026-04-06.engine"
+    ],
+    "school": "武汉科技大学",
+    "arch": "YOLOv8",
+    "pose": "Det",
+    "task": "Car",
+    "detail": "雷达车辆_ghost_p2_1280_TensorRT"
+  },
+  {
+    "year": 2026,
+    "path": "2026/江南大学_YOLOv5_Det_Armor_雷达_1280_13类.onnx",
+    "bytes": 30147068,
+    "md5": "2761250f7615ac9c58cb0d6e16dee434",
+    "sha256": "d71e22bb9598376cbde139944d597196ed345f6127f9065666bd1c5442c166a8",
+    "sources": [
+      "github.com/JNU-SHARK/shark-radar-vision/models/armor.onnx"
+    ],
+    "school": "江南大学",
+    "arch": "YOLOv5",
+    "pose": "Det",
+    "task": "Armor",
+    "detail": "雷达_1280_13类"
+  },
+  {
+    "year": 2026,
+    "path": "2026/江南大学_YOLOv5_Det_Armor_雷达_1280_13类.pt",
+    "bytes": 14370941,
+    "md5": "ea570156d3e0f610a60822b4a7d0b82f",
+    "sha256": "3e471df79311687c16499df214ebc759102d898ae5b4256e793f4dab2baab9f4",
+    "sources": [
+      "github.com/JNU-SHARK/shark-radar-vision/models/armor.pt"
+    ],
+    "school": "江南大学",
+    "arch": "YOLOv5",
+    "pose": "Det",
+    "task": "Armor",
+    "detail": "雷达_1280_13类"
+  },
+  {
+    "year": 2026,
+    "path": "2026/江南大学_YOLOv5_Det_Armor_雷达_1280_13类_TensorRT.engine",
+    "bytes": 18276260,
+    "md5": "ea6d2712a35a9d17d82d101e1025ed89",
+    "sha256": "2850fccdf802fa7e0a42619e7eb1b83002c401307f018c482845797e1b74d6a6",
+    "sources": [
+      "github.com/JNU-SHARK/shark-radar-vision/models/armor.engine"
+    ],
+    "school": "江南大学",
+    "arch": "YOLOv5",
+    "pose": "Det",
+    "task": "Armor",
+    "detail": "雷达_1280_13类_TensorRT"
+  },
+  {
+    "year": 2026,
+    "path": "2026/江南大学_YOLOv5_Det_Armor_雷达_1280_13类_batch_TensorRT.engine",
+    "bytes": 32272596,
+    "md5": "22a921e015b3af9fdd09694c363846bc",
+    "sha256": "15758bc4e227e5dd1af89117fde7ee14fecbbfed6eacf724a085a87914fba638",
+    "sources": [
+      "github.com/JNU-SHARK/shark-radar-vision/models/armor_batch.engine"
+    ],
+    "school": "江南大学",
+    "arch": "YOLOv5",
+    "pose": "Det",
+    "task": "Armor",
+    "detail": "雷达_1280_13类_batch_TensorRT"
+  },
+  {
+    "year": 2026,
+    "path": "2026/江南大学_YOLOv5_Det_Car_雷达_640_5类.onnx",
+    "bytes": 28861762,
+    "md5": "4d4b002d1325cfc58511b3d3d3df28a3",
+    "sha256": "b89462f351455f92ae4278060d0813dcf9d4877a379152e8a9005e96806a3b96",
+    "sources": [
+      "github.com/JNU-SHARK/shark-radar-vision/models/car.onnx"
+    ],
+    "school": "江南大学",
+    "arch": "YOLOv5",
+    "pose": "Det",
+    "task": "Car",
+    "detail": "雷达_640_5类"
+  },
+  {
+    "year": 2026,
+    "path": "2026/江南大学_YOLOv5_Det_Car_雷达_640_5类.pt",
+    "bytes": 14364733,
+    "md5": "f0479e2aac05a72d5a67ea4dbc92f80d",
+    "sha256": "75aa7e629f860e44fd01d90d010ea82c4aad2a9104bff13c0c784ea7a666a9b0",
+    "sources": [
+      "github.com/JNU-SHARK/shark-radar-vision/models/car.pt"
+    ],
+    "school": "江南大学",
+    "arch": "YOLOv5",
+    "pose": "Det",
+    "task": "Car",
+    "detail": "雷达_640_5类"
+  },
+  {
+    "year": 2026,
+    "path": "2026/江南大学_YOLOv5_Det_Car_雷达_640_5类_TensorRT.engine",
+    "bytes": 17583028,
+    "md5": "cb6f4caad5bdddb32ab886c3f3827046",
+    "sha256": "9f235b589e5f3ef258e116e3f12f6d67588c4095cd4810817ebe92959591c9fe",
+    "sources": [
+      "github.com/JNU-SHARK/shark-radar-vision/models/car.engine"
+    ],
+    "school": "江南大学",
+    "arch": "YOLOv5",
+    "pose": "Det",
+    "task": "Car",
+    "detail": "雷达_640_5类_TensorRT"
+  },
+  {
+    "year": 2026,
+    "path": "2026/深圳大学_YOLOv8_Pose_Armor_Infantry_v8n_7类_480x640.onnx",
+    "bytes": 6429469,
+    "md5": "d63490302c494961099c56ae33c58f66",
+    "sha256": "8b735d0e68faf330e351e353be9f792954512cfaf64f054123c466f755a6fe1e",
+    "sources": [
+      "github.com/SZURPVision/26_NNDeployment_Lib_and_Detection_Models/所有模型/onnx/Infantry-v8n-fp16-20260726-D1.8w-B16.onnx"
+    ],
+    "school": "深圳大学",
+    "arch": "YOLOv8",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "Infantry_v8n_7类_480x640"
+  },
+  {
+    "year": 2026,
+    "path": "2026/深圳大学_YOLOv8_Pose_Armor_Infantry_v8n_7类_IR.bin",
+    "bytes": 6344694,
+    "md5": "cfac31c06230db5a5573a263498acd5d",
+    "sha256": "622a4df2dae8d3fc640fd59ff294d756772ab1c045c2445e7415651653635cdf",
+    "sources": [
+      "github.com/SZURPVision/26_NNDeployment_Lib_and_Detection_Models/所有模型/openvino/Infantry-v8n-fp16-20260726-D1.8w-B16/Infantry-v8n-fp16-20260726-D1.8w-B16.bin"
+    ],
+    "school": "深圳大学",
+    "arch": "YOLOv8",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "Infantry_v8n_7类_IR"
+  },
+  {
+    "year": 2026,
+    "path": "2026/深圳大学_YOLOv8_Pose_Armor_Infantry_v8n_7类_IR.xml",
+    "bytes": 328947,
+    "md5": "0e715fdd3e33b8d909f9e6b1eadf72fb",
+    "sha256": "75b55eb48b911547cbc029961ddfd62cbbc961a9b5a792a0aa65485f23658c4a",
+    "sources": [
+      "github.com/SZURPVision/26_NNDeployment_Lib_and_Detection_Models/所有模型/openvino/Infantry-v8n-fp16-20260726-D1.8w-B16/Infantry-v8n-fp16-20260726-D1.8w-B16.xml"
+    ],
+    "school": "深圳大学",
+    "arch": "YOLOv8",
+    "pose": "Pose",
+    "task": "Armor",
+    "detail": "Infantry_v8n_7类_IR"
+  },
+  {
+    "year": 2026,
+    "path": "2026/深圳大学_YOLOv8_Pose_Rune_Rune_v8n_5点_480x640.onnx",
+    "bytes": 11680556,
+    "md5": "48b8fbad24ae101817e23ebb4db9514e",
+    "sha256": "e6e6bddf1f793ece1b9b351b8db061dbb026d32b8a6d71cb39a8fd21ce9cb917",
+    "sources": [
+      "github.com/SZURPVision/26_NNDeployment_Lib_and_Detection_Models/所有模型/onnx/Rune-v8n-fp16-20260624.onnx",
+      "github.com/SZURPVision/RuneDetectionModel/model/model-0624.onnx"
+    ],
+    "school": "深圳大学",
+    "arch": "YOLOv8",
+    "pose": "Pose",
+    "task": "Rune",
+    "detail": "Rune_v8n_5点_480x640"
+  },
+  {
+    "year": 2026,
+    "path": "2026/深圳大学_YOLOv8_Pose_Rune_Rune_v8n_5点_IR.bin",
+    "bytes": 5803892,
+    "md5": "64f32f3781db934d1f9357031fd4a732",
+    "sha256": "bc093d30aa601fc8cb13f1bff032119e7c7d2f999517c7301e7d9e47cdb645ce",
+    "sources": [
+      "github.com/SZURPVision/26_NNDeployment_Lib_and_Detection_Models/所有模型/openvino/Rune-v8n-fp16-20260624-D14367-B16/Rune-v8n-fp16-20260624-D14367-B16.bin"
+    ],
+    "school": "深圳大学",
+    "arch": "YOLOv8",
+    "pose": "Pose",
+    "task": "Rune",
+    "detail": "Rune_v8n_5点_IR"
+  },
+  {
+    "year": 2026,
+    "path": "2026/深圳大学_YOLOv8_Pose_Rune_Rune_v8n_5点_IR.xml",
+    "bytes": 293927,
+    "md5": "75fb8370a0fd6ff4b0cf0eb139998216",
+    "sha256": "0ef2608f02fe9e6b0d2bf427d53bf238b1046aace57a67e017e9d4b0fe16174f",
+    "sources": [
+      "github.com/SZURPVision/26_NNDeployment_Lib_and_Detection_Models/所有模型/openvino/Rune-v8n-fp16-20260624-D14367-B16/Rune-v8n-fp16-20260624-D14367-B16.xml"
+    ],
+    "school": "深圳大学",
+    "arch": "YOLOv8",
+    "pose": "Pose",
+    "task": "Rune",
+    "detail": "Rune_v8n_5点_IR"
+  },
+  {
+    "year": 2026,
+    "path": "2026/深圳职业技术大学_YOLO11_Det_Armor_能量单元6dof.pt",
+    "bytes": 5454426,
+    "md5": "fad91a9f99604176cef2d2286d0869c0",
+    "sha256": "b3110c32b9439202bd3603156aa24a4f0267c96c8d5b09e1797fb0b2a4096e2b",
+    "sources": [
+      "github.com/BenmaoNeko/RCIA_Benmao_Vision/models/yolo/best-v2.pt",
+      "github.com/BenmaoNeko/RCIA_Benmao_Vision/models/yolo/best.pt"
+    ],
+    "school": "深圳职业技术大学",
+    "arch": "YOLO11",
+    "pose": "Det",
+    "task": "Armor",
+    "detail": "能量单元6dof"
+  },
+  {
+    "year": 2026,
+    "path": "2026/西北工业大学_YOLOv8_Pose_AntiDrone_反无人机.pt",
+    "bytes": 6426278,
+    "md5": "9359799dc66f0b85d66586249886ad6e",
+    "sha256": "c0134ea8888d699751db296e851581ea7c2a6297ea042ed95b2e9010dbabb385",
+    "sources": [
+      "github.com/zplszz/WMJRadar/anti_drone/wmj_anti_drone.pt"
+    ],
+    "school": "西北工业大学",
+    "arch": "YOLOv8",
+    "pose": "Pose",
+    "task": "AntiDrone",
+    "detail": "反无人机"
+  }
+]

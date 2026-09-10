@@ -23,6 +23,15 @@ data/*
 !data/sp25_requant/
 # CoordAtt 576x768 板端试验（2026-09-07）：编译模型、输入样本与 README / 日志
 !data/coord_trial_20260907/
+# RoboMaster 开源自瞄/视觉权重库：2020–2026 分年份目录，146 份权重（约 1044 MB）
+# 来源含 GitHub/Gitee 仓库 + 官方论坛（BBS_SOURCES.md）
+!data/rm_weights/
+# 抓取过程日志（可由 fetch_rm_weights.py 再生，不入库）
+data/rm_weights/fetch.log
+# 第一批精选：装甲板 + 输出角点（55 份，约 277 MB，见 EVALUATION.md）
+!data/rm_weights_selected/
+# 跨数据集评测工作区：结果图 + ROI 矩阵图 + summary.json（约 66 MB）
+!data/armor_query/
 
 # 校准样本本体（约 2.2 GB，可由脚本再生，不入库）
 data/horizon_x5/data/calibration_data/images/

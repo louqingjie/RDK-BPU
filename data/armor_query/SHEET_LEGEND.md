@@ -1,0 +1,186 @@
+# 拼图序号对照表
+
+- `0020` [01] **2024_华中科技大学_YOLOX_Pose_Armor_英雄自瞄_12类_416** — 未识别
+- `0020` [02] **2024_华中科技大学_YOLOX_Pose_Armor_英雄自瞄_12类_416_IR** — 未识别
+- `0020` [03] **2024_深圳大学_YOLOv5_Pose_Armor_0708** — id=3 num3 conf=0.9425 R
+- `0020` [04] **2024_深圳大学_YOLOv5_Pose_Armor_0708_SPR版** — id=3 num3 conf=0.9425 R
+- `0020` [05] **2024_深圳大学_YOLOv5_Pose_Armor_0708_同济版** — id=3 num3 conf=0.9425 R
+- `0020` [06] **2025_RPS战队_EfficientNet_Pose_Armor_0717_eff2** — id=10 3r conf=0.9077 
+- `0020` [07] **2025_RPS战队_EfficientNet_Pose_Armor_0731_eff2** — id=10 3r conf=0.9234 
+- `0020` [08] **2025_上海科技大学_YOLOv5_Pose_Armor_SKD250526_512x640** — id=4 num4 conf=0.9296 P
+- `0020` [09] **2025_中国科学院大学_YOLOv5_Pose_Armor_RM4P_384x640** — 未识别
+- `0020` [10] **2025_浙江师范大学_YOLOv5_Pose_Armor_ZLion2025** — id=7 cls7 conf=0.8947 
+- `0020` [11] **2025_深圳大学_YOLOv5_Pose_Armor_0526** — id=3 num3 conf=0.9376 R
+- `0020` [12] **2025_深圳大学_YOLOv5_Pose_Armor_0526_IR** — id=3 num3 conf=0.9376 R
+- `0020` [13] **2025_深圳大学_YOLOv5_Pose_Armor_0526_IR_仲恺版** — id=3 num3 conf=0.9376 R
+- `0020` [14] **2025_深圳大学_YOLOv5_Pose_Armor_SZU0526_512x640** — id=3 num3 conf=0.9376 R
+- `0020` [15] **2026_RPS战队_EfficientNet_Pose_Armor_0516_eff4** — id=10 3r conf=0.8915 
+- `0020` [16] **2026_talos战队_YOLO26_Pose_Armor_best_640** — id=19 Rs3 conf=0.9712 
+- `0020` [17] **2026_talos战队_YOLO26_Pose_Armor_best_dwconv_fp16** — id=19 Rs3 conf=0.9355 
+- `0020` [18] **2026_中国科学院大学_YOLO11_Pose_Armor_6兵种_640** — id=4 R3 conf=0.8206 
+- `0020` [19] **2026_武汉科技大学_YOLO26_Pose_Armor_praysky_C2PSA_576x768** — id=2 s0_o3 conf=0.9295 R
+- `0020` [20] **2026_武汉科技大学_YOLO26_Pose_Armor_praysky_C2PSA_640** — id=2 s0_o3 conf=0.9318 R
+- `0020` [21] **2026_武汉科技大学_YOLOX_Pose_Armor_opt0527_416** — 未识别
+- `0020` [22] **2026_武汉科技大学_YOLOX_Pose_Armor_opt1208_416** — 未识别
+- `0020` [23] **2026_深圳大学_YOLOv8_Pose_Armor_Infantry_v8n_7类_IR** — id=3 cls3 conf=0.9706 R
+- `0029` [01] **2024_华中科技大学_YOLOX_Pose_Armor_英雄自瞄_12类_416** — 未识别
+- `0029` [02] **2024_华中科技大学_YOLOX_Pose_Armor_英雄自瞄_12类_416_IR** — 未识别
+- `0029` [03] **2024_深圳大学_YOLOv5_Pose_Armor_0708** — id=4 num4 conf=0.8448 B
+- `0029` [04] **2024_深圳大学_YOLOv5_Pose_Armor_0708_SPR版** — id=4 num4 conf=0.8453 B
+- `0029` [05] **2024_深圳大学_YOLOv5_Pose_Armor_0708_同济版** — id=4 num4 conf=0.8453 B
+- `0029` [06] **2025_RPS战队_EfficientNet_Pose_Armor_0717_eff2** — id=4 4b conf=0.9001 
+- `0029` [07] **2025_RPS战队_EfficientNet_Pose_Armor_0731_eff2** — id=4 4b conf=0.9164 
+- `0029` [08] **2025_上海科技大学_YOLOv5_Pose_Armor_SKD250526_512x640** — id=6 num6 conf=0.8704 W
+- `0029` [09] **2025_中国科学院大学_YOLOv5_Pose_Armor_RM4P_384x640** — 未识别
+- `0029` [10] **2025_浙江师范大学_YOLOv5_Pose_Armor_ZLion2025** — id=10 cls10 conf=0.8292 
+- `0029` [11] **2025_深圳大学_YOLOv5_Pose_Armor_0526** — id=4 num4 conf=0.9063 B
+- `0029` [12] **2025_深圳大学_YOLOv5_Pose_Armor_0526_IR** — id=4 num4 conf=0.9064 B
+- `0029` [13] **2025_深圳大学_YOLOv5_Pose_Armor_0526_IR_仲恺版** — id=4 num4 conf=0.9064 B
+- `0029` [14] **2025_深圳大学_YOLOv5_Pose_Armor_SZU0526_512x640** — id=4 num4 conf=0.9062 B
+- `0029` [15] **2026_RPS战队_EfficientNet_Pose_Armor_0516_eff4** — id=4 4b conf=0.9155 
+- `0029` [16] **2026_talos战队_YOLO26_Pose_Armor_best_640** — id=36 Gs4 conf=0.8804 
+- `0029` [17] **2026_talos战队_YOLO26_Pose_Armor_best_dwconv_fp16** — id=4 Bs4 conf=0.874 
+- `0029` [18] **2026_中国科学院大学_YOLO11_Pose_Armor_6兵种_640** — id=2 BS conf=0.7908 
+- `0029` [19] **2026_武汉科技大学_YOLO26_Pose_Armor_praysky_C2PSA_576x768** — id=3 s0_o4 conf=0.8877 B
+- `0029` [20] **2026_武汉科技大学_YOLO26_Pose_Armor_praysky_C2PSA_640** — id=3 s0_o4 conf=0.9027 B
+- `0029` [21] **2026_武汉科技大学_YOLOX_Pose_Armor_opt0527_416** — 未识别
+- `0029` [22] **2026_武汉科技大学_YOLOX_Pose_Armor_opt1208_416** — 未识别
+- `0029` [23] **2026_深圳大学_YOLOv8_Pose_Armor_Infantry_v8n_7类_IR** — id=4 cls4 conf=0.9154 B
+- `0037` [01] **2024_华中科技大学_YOLOX_Pose_Armor_英雄自瞄_12类_416** — 未识别
+- `0037` [02] **2024_华中科技大学_YOLOX_Pose_Armor_英雄自瞄_12类_416_IR** — 未识别
+- `0037` [03] **2024_深圳大学_YOLOv5_Pose_Armor_0708** — id=0 num0 conf=0.8844 R
+- `0037` [04] **2024_深圳大学_YOLOv5_Pose_Armor_0708_SPR版** — id=0 num0 conf=0.8848 R
+- `0037` [05] **2024_深圳大学_YOLOv5_Pose_Armor_0708_同济版** — id=0 num0 conf=0.8848 R
+- `0037` [06] **2025_RPS战队_EfficientNet_Pose_Armor_0717_eff2** — id=7 Gr conf=0.8934 
+- `0037` [07] **2025_RPS战队_EfficientNet_Pose_Armor_0731_eff2** — id=7 Gr conf=0.9219 
+- `0037` [08] **2025_上海科技大学_YOLOv5_Pose_Armor_SKD250526_512x640** — id=3 num3 conf=0.8322 W
+- `0037` [09] **2025_中国科学院大学_YOLOv5_Pose_Armor_RM4P_384x640** — 未识别
+- `0037` [10] **2025_浙江师范大学_YOLOv5_Pose_Armor_ZLion2025** — id=6 cls6 conf=0.9077 
+- `0037` [11] **2025_深圳大学_YOLOv5_Pose_Armor_0526** — id=0 num0 conf=0.8979 R
+- `0037` [12] **2025_深圳大学_YOLOv5_Pose_Armor_0526_IR** — id=0 num0 conf=0.8979 R
+- `0037` [13] **2025_深圳大学_YOLOv5_Pose_Armor_0526_IR_仲恺版** — id=0 num0 conf=0.8979 R
+- `0037` [14] **2025_深圳大学_YOLOv5_Pose_Armor_SZU0526_512x640** — id=0 num0 conf=0.8972 R
+- `0037` [15] **2026_RPS战队_EfficientNet_Pose_Armor_0516_eff4** — id=7 Gr conf=0.8837 
+- `0037` [16] **2026_talos战队_YOLO26_Pose_Armor_best_640** — id=16 Rs0 conf=0.9688 
+- `0037` [17] **2026_talos战队_YOLO26_Pose_Armor_best_dwconv_fp16** — id=16 Rs0 conf=0.8804 
+- `0037` [18] **2026_中国科学院大学_YOLO11_Pose_Armor_6兵种_640** — id=5 RS conf=0.8185 
+- `0037` [19] **2026_武汉科技大学_YOLO26_Pose_Armor_praysky_C2PSA_576x768** — id=0 s0_o0 conf=0.9085 R
+- `0037` [20] **2026_武汉科技大学_YOLO26_Pose_Armor_praysky_C2PSA_640** — id=0 s0_o0 conf=0.9036 R
+- `0037` [21] **2026_武汉科技大学_YOLOX_Pose_Armor_opt0527_416** — 未识别
+- `0037` [22] **2026_武汉科技大学_YOLOX_Pose_Armor_opt1208_416** — 未识别
+- `0037` [23] **2026_深圳大学_YOLOv8_Pose_Armor_Infantry_v8n_7类_IR** — id=0 cls0 conf=0.9305 R
+- `0051` [01] **2024_华中科技大学_YOLOX_Pose_Armor_英雄自瞄_12类_416** — 未识别
+- `0051` [02] **2024_华中科技大学_YOLOX_Pose_Armor_英雄自瞄_12类_416_IR** — 未识别
+- `0051` [03] **2024_深圳大学_YOLOv5_Pose_Armor_0708** — id=4 num4 conf=0.9416 R
+- `0051` [04] **2024_深圳大学_YOLOv5_Pose_Armor_0708_SPR版** — id=4 num4 conf=0.9416 R
+- `0051` [05] **2024_深圳大学_YOLOv5_Pose_Armor_0708_同济版** — id=4 num4 conf=0.9416 R
+- `0051` [06] **2025_RPS战队_EfficientNet_Pose_Armor_0717_eff2** — id=11 4r conf=0.8865 
+- `0051` [07] **2025_RPS战队_EfficientNet_Pose_Armor_0731_eff2** — id=11 4r conf=0.9488 
+- `0051` [08] **2025_上海科技大学_YOLOv5_Pose_Armor_SKD250526_512x640** — id=4 num4 conf=0.9133 W
+- `0051` [09] **2025_中国科学院大学_YOLOv5_Pose_Armor_RM4P_384x640** — 未识别
+- `0051` [10] **2025_浙江师范大学_YOLOv5_Pose_Armor_ZLion2025** — id=8 cls8 conf=0.9183 
+- `0051` [11] **2025_深圳大学_YOLOv5_Pose_Armor_0526** — id=4 num4 conf=0.9123 R
+- `0051` [12] **2025_深圳大学_YOLOv5_Pose_Armor_0526_IR** — id=4 num4 conf=0.9122 R
+- `0051` [13] **2025_深圳大学_YOLOv5_Pose_Armor_0526_IR_仲恺版** — id=4 num4 conf=0.9122 R
+- `0051` [14] **2025_深圳大学_YOLOv5_Pose_Armor_SZU0526_512x640** — id=4 num4 conf=0.9121 R
+- `0051` [15] **2026_RPS战队_EfficientNet_Pose_Armor_0516_eff4** — id=11 4r conf=0.8907 
+- `0051` [16] **2026_talos战队_YOLO26_Pose_Armor_best_640** — id=20 Rs4 conf=0.9526 
+- `0051` [17] **2026_talos战队_YOLO26_Pose_Armor_best_dwconv_fp16** — id=20 Rs4 conf=0.9116 
+- `0051` [18] **2026_中国科学院大学_YOLO11_Pose_Armor_6兵种_640** — id=5 RS conf=0.7744 
+- `0051` [19] **2026_武汉科技大学_YOLO26_Pose_Armor_praysky_C2PSA_576x768** — id=3 s0_o4 conf=0.924 R
+- `0051` [20] **2026_武汉科技大学_YOLO26_Pose_Armor_praysky_C2PSA_640** — id=3 s0_o4 conf=0.9219 R
+- `0051` [21] **2026_武汉科技大学_YOLOX_Pose_Armor_opt0527_416** — 未识别
+- `0051` [22] **2026_武汉科技大学_YOLOX_Pose_Armor_opt1208_416** — 未识别
+- `0051` [23] **2026_深圳大学_YOLOv8_Pose_Armor_Infantry_v8n_7类_IR** — id=4 cls4 conf=0.9044 R
+- `0063` [01] **2024_华中科技大学_YOLOX_Pose_Armor_英雄自瞄_12类_416** — 未识别
+- `0063` [02] **2024_华中科技大学_YOLOX_Pose_Armor_英雄自瞄_12类_416_IR** — 未识别
+- `0063` [03] **2024_深圳大学_YOLOv5_Pose_Armor_0708** — id=2 num2 conf=0.958 R
+- `0063` [04] **2024_深圳大学_YOLOv5_Pose_Armor_0708_SPR版** — id=2 num2 conf=0.958 R
+- `0063` [05] **2024_深圳大学_YOLOv5_Pose_Armor_0708_同济版** — id=2 num2 conf=0.958 R
+- `0063` [06] **2025_RPS战队_EfficientNet_Pose_Armor_0717_eff2** — id=9 2r conf=0.8918 
+- `0063` [07] **2025_RPS战队_EfficientNet_Pose_Armor_0731_eff2** — id=9 2r conf=0.9293 
+- `0063` [08] **2025_上海科技大学_YOLOv5_Pose_Armor_SKD250526_512x640** — id=4 num4 conf=0.8603 W
+- `0063` [09] **2025_中国科学院大学_YOLOv5_Pose_Armor_RM4P_384x640** — 未识别
+- `0063` [10] **2025_浙江师范大学_YOLOv5_Pose_Armor_ZLion2025** — id=7 cls7 conf=0.7996 
+- `0063` [11] **2025_深圳大学_YOLOv5_Pose_Armor_0526** — id=2 num2 conf=0.9448 R
+- `0063` [12] **2025_深圳大学_YOLOv5_Pose_Armor_0526_IR** — id=2 num2 conf=0.9448 R
+- `0063` [13] **2025_深圳大学_YOLOv5_Pose_Armor_0526_IR_仲恺版** — id=2 num2 conf=0.9448 R
+- `0063` [14] **2025_深圳大学_YOLOv5_Pose_Armor_SZU0526_512x640** — id=2 num2 conf=0.9446 R
+- `0063` [15] **2026_RPS战队_EfficientNet_Pose_Armor_0516_eff4** — id=9 2r conf=0.9357 
+- `0063` [16] **2026_talos战队_YOLO26_Pose_Armor_best_640** — id=18 Rs2 conf=0.9775 
+- `0063` [17] **2026_talos战队_YOLO26_Pose_Armor_best_dwconv_fp16** — id=18 Rs2 conf=0.9268 
+- `0063` [18] **2026_中国科学院大学_YOLO11_Pose_Armor_6兵种_640** — id=2 BS conf=0.7576 
+- `0063` [19] **2026_武汉科技大学_YOLO26_Pose_Armor_praysky_C2PSA_576x768** — id=1 s0_o2 conf=0.9311 R
+- `0063` [20] **2026_武汉科技大学_YOLO26_Pose_Armor_praysky_C2PSA_640** — id=1 s0_o2 conf=0.9174 R
+- `0063` [21] **2026_武汉科技大学_YOLOX_Pose_Armor_opt0527_416** — 未识别
+- `0063` [22] **2026_武汉科技大学_YOLOX_Pose_Armor_opt1208_416** — 未识别
+- `0063` [23] **2026_深圳大学_YOLOv8_Pose_Armor_Infantry_v8n_7类_IR** — id=2 cls2 conf=0.9363 R
+- `0079` [01] **2024_华中科技大学_YOLOX_Pose_Armor_英雄自瞄_12类_416** — 未识别
+- `0079` [02] **2024_华中科技大学_YOLOX_Pose_Armor_英雄自瞄_12类_416_IR** — 未识别
+- `0079` [03] **2024_深圳大学_YOLOv5_Pose_Armor_0708** — id=3 num3 conf=0.9347 R
+- `0079` [04] **2024_深圳大学_YOLOv5_Pose_Armor_0708_SPR版** — id=3 num3 conf=0.9348 R
+- `0079` [05] **2024_深圳大学_YOLOv5_Pose_Armor_0708_同济版** — id=3 num3 conf=0.9348 R
+- `0079` [06] **2025_RPS战队_EfficientNet_Pose_Armor_0717_eff2** — id=10 3r conf=0.9098 
+- `0079` [07] **2025_RPS战队_EfficientNet_Pose_Armor_0731_eff2** — id=10 3r conf=0.9334 
+- `0079` [08] **2025_上海科技大学_YOLOv5_Pose_Armor_SKD250526_512x640** — id=6 num6 conf=0.9238 P
+- `0079` [09] **2025_中国科学院大学_YOLOv5_Pose_Armor_RM4P_384x640** — 未识别
+- `0079` [10] **2025_浙江师范大学_YOLOv5_Pose_Armor_ZLion2025** — id=7 cls7 conf=0.9266 
+- `0079` [11] **2025_深圳大学_YOLOv5_Pose_Armor_0526** — id=3 num3 conf=0.9284 R
+- `0079` [12] **2025_深圳大学_YOLOv5_Pose_Armor_0526_IR** — id=3 num3 conf=0.9284 R
+- `0079` [13] **2025_深圳大学_YOLOv5_Pose_Armor_0526_IR_仲恺版** — id=3 num3 conf=0.9284 R
+- `0079` [14] **2025_深圳大学_YOLOv5_Pose_Armor_SZU0526_512x640** — id=3 num3 conf=0.928 R
+- `0079` [15] **2026_RPS战队_EfficientNet_Pose_Armor_0516_eff4** — id=10 3r conf=0.8926 
+- `0079` [16] **2026_talos战队_YOLO26_Pose_Armor_best_640** — id=19 Rs3 conf=0.9668 
+- `0079` [17] **2026_talos战队_YOLO26_Pose_Armor_best_dwconv_fp16** — id=19 Rs3 conf=0.9263 
+- `0079` [18] **2026_中国科学院大学_YOLO11_Pose_Armor_6兵种_640** — id=4 R3 conf=0.8237 
+- `0079` [19] **2026_武汉科技大学_YOLO26_Pose_Armor_praysky_C2PSA_576x768** — id=2 s0_o3 conf=0.9301 R
+- `0079` [20] **2026_武汉科技大学_YOLO26_Pose_Armor_praysky_C2PSA_640** — id=2 s0_o3 conf=0.9277 R
+- `0079` [21] **2026_武汉科技大学_YOLOX_Pose_Armor_opt0527_416** — 未识别
+- `0079` [22] **2026_武汉科技大学_YOLOX_Pose_Armor_opt1208_416** — 未识别
+- `0079` [23] **2026_深圳大学_YOLOv8_Pose_Armor_Infantry_v8n_7类_IR** — id=3 cls3 conf=0.944 R
+- `45c6f734` [01] **2024_华中科技大学_YOLOX_Pose_Armor_英雄自瞄_12类_416** — 未识别
+- `45c6f734` [02] **2024_华中科技大学_YOLOX_Pose_Armor_英雄自瞄_12类_416_IR** — 未识别
+- `45c6f734` [03] **2024_深圳大学_YOLOv5_Pose_Armor_0708** — id=6 num6 conf=0.7816 R
+- `45c6f734` [04] **2024_深圳大学_YOLOv5_Pose_Armor_0708_SPR版** — id=6 num6 conf=0.7825 R
+- `45c6f734` [05] **2024_深圳大学_YOLOv5_Pose_Armor_0708_同济版** — id=6 num6 conf=0.7825 R
+- `45c6f734` [06] **2025_RPS战队_EfficientNet_Pose_Armor_0717_eff2** — id=12 Or conf=0.845 
+- `45c6f734` [07] **2025_RPS战队_EfficientNet_Pose_Armor_0731_eff2** — id=13 Bbr conf=0.74 
+- `45c6f734` [08] **2025_上海科技大学_YOLOv5_Pose_Armor_SKD250526_512x640** — id=2 num2 conf=0.9214 B
+- `45c6f734` [09] **2025_中国科学院大学_YOLOv5_Pose_Armor_RM4P_384x640** — 未识别
+- `45c6f734` [10] **2025_浙江师范大学_YOLOv5_Pose_Armor_ZLion2025** — 未识别
+- `45c6f734` [11] **2025_深圳大学_YOLOv5_Pose_Armor_0526** — id=6 num6 conf=0.9492 R
+- `45c6f734` [12] **2025_深圳大学_YOLOv5_Pose_Armor_0526_IR** — id=6 num6 conf=0.9492 R
+- `45c6f734` [13] **2025_深圳大学_YOLOv5_Pose_Armor_0526_IR_仲恺版** — id=6 num6 conf=0.9492 R
+- `45c6f734` [14] **2025_深圳大学_YOLOv5_Pose_Armor_SZU0526_512x640** — id=6 num6 conf=0.9493 R
+- `45c6f734` [15] **2026_RPS战队_EfficientNet_Pose_Armor_0516_eff4** — id=5 Ob conf=0.3098 
+- `45c6f734` [16] **2026_talos战队_YOLO26_Pose_Armor_best_640** — id=22 Rs6 conf=0.4998 
+- `45c6f734` [17] **2026_talos战队_YOLO26_Pose_Armor_best_dwconv_fp16** — 未识别
+- `45c6f734` [18] **2026_中国科学院大学_YOLO11_Pose_Armor_6兵种_640** — id=5 RS conf=0.6583 
+- `45c6f734` [19] **2026_武汉科技大学_YOLO26_Pose_Armor_praysky_C2PSA_576x768** — id=5 s0_o6 conf=0.4823 R
+- `45c6f734` [20] **2026_武汉科技大学_YOLO26_Pose_Armor_praysky_C2PSA_640** — id=2 s0_o3 conf=0.2821 R
+- `45c6f734` [21] **2026_武汉科技大学_YOLOX_Pose_Armor_opt0527_416** — 未识别
+- `45c6f734` [22] **2026_武汉科技大学_YOLOX_Pose_Armor_opt1208_416** — 未识别
+- `45c6f734` [23] **2026_深圳大学_YOLOv8_Pose_Armor_Infantry_v8n_7类_IR** — id=6 cls6 conf=0.8648 R
+- `ae15cbf1` [01] **2024_华中科技大学_YOLOX_Pose_Armor_英雄自瞄_12类_416** — 未识别
+- `ae15cbf1` [02] **2024_华中科技大学_YOLOX_Pose_Armor_英雄自瞄_12类_416_IR** — 未识别
+- `ae15cbf1` [03] **2024_深圳大学_YOLOv5_Pose_Armor_0708** — id=0 num0 conf=0.3786 R
+- `ae15cbf1` [04] **2024_深圳大学_YOLOv5_Pose_Armor_0708_SPR版** — id=0 num0 conf=0.3791 R
+- `ae15cbf1` [05] **2024_深圳大学_YOLOv5_Pose_Armor_0708_同济版** — id=0 num0 conf=0.3791 R
+- `ae15cbf1` [06] **2025_RPS战队_EfficientNet_Pose_Armor_0717_eff2** — id=13 Bbr conf=0.8152 
+- `ae15cbf1` [07] **2025_RPS战队_EfficientNet_Pose_Armor_0731_eff2** — id=13 Bbr conf=0.9205 
+- `ae15cbf1` [08] **2025_上海科技大学_YOLOv5_Pose_Armor_SKD250526_512x640** — id=7 num7 conf=0.8703 B
+- `ae15cbf1` [09] **2025_中国科学院大学_YOLOv5_Pose_Armor_RM4P_384x640** — 未识别
+- `ae15cbf1` [10] **2025_浙江师范大学_YOLOv5_Pose_Armor_ZLion2025** — id=5 cls5 conf=0.5375 
+- `ae15cbf1` [11] **2025_深圳大学_YOLOv5_Pose_Armor_0526** — id=8 num8 conf=0.6333 R
+- `ae15cbf1` [12] **2025_深圳大学_YOLOv5_Pose_Armor_0526_IR** — id=8 num8 conf=0.6333 R
+- `ae15cbf1` [13] **2025_深圳大学_YOLOv5_Pose_Armor_0526_IR_仲恺版** — id=8 num8 conf=0.6333 R
+- `ae15cbf1` [14] **2025_深圳大学_YOLOv5_Pose_Armor_SZU0526_512x640** — id=8 num8 conf=0.6334 R
+- `ae15cbf1` [15] **2026_RPS战队_EfficientNet_Pose_Armor_0516_eff4** — id=18 4n conf=0.6657 
+- `ae15cbf1` [16] **2026_talos战队_YOLO26_Pose_Armor_best_640** — 未识别
+- `ae15cbf1` [17] **2026_talos战队_YOLO26_Pose_Armor_best_dwconv_fp16** — 未识别
+- `ae15cbf1` [18] **2026_中国科学院大学_YOLO11_Pose_Armor_6兵种_640** — id=5 RS conf=0.2914 
+- `ae15cbf1` [19] **2026_武汉科技大学_YOLO26_Pose_Armor_praysky_C2PSA_576x768** — 未识别
+- `ae15cbf1` [20] **2026_武汉科技大学_YOLO26_Pose_Armor_praysky_C2PSA_640** — id=3 s0_o4 conf=0.305 R
+- `ae15cbf1` [21] **2026_武汉科技大学_YOLOX_Pose_Armor_opt0527_416** — 未识别
+- `ae15cbf1` [22] **2026_武汉科技大学_YOLOX_Pose_Armor_opt1208_416** — 未识别
+- `ae15cbf1` [23] **2026_深圳大学_YOLOv8_Pose_Armor_Infantry_v8n_7类_IR** — id=7 cls7 conf=0.7589 R

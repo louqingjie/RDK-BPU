@@ -54,6 +54,9 @@ hb_perf data/output/model_output/your_model.bin
 | [docs/同济sp_vision_25量化实录_通俗版.md](docs/同济sp_vision_25量化实录_通俗版.md) | 同济开源模型量化全复盘（零基础向：溯源、成功/失败案例与启示） |
 | [docs/传统精修与PnP解算分析_上科大与同济方案.md](docs/传统精修与PnP解算分析_上科大与同济方案.md) | 强队传统精修方案解读 |
 | [docs/数据集使用规范.md](docs/数据集使用规范.md) | 校准/验证数据集禁用与合规清单 |
+| [data/rm_weights/README.md](data/rm_weights/README.md) | **RoboMaster 开源自瞄权重库（2020–2026 分年份目录，146 份权重；命名含学校/网络版本/Pose/Armor）** |
+| [data/rm_weights/BBS_SOURCES.md](data/rm_weights/BBS_SOURCES.md) | 官方论坛 / RM Search 权重检索记录（接口方法、来源帖、未获取项） |
+| [data/rm_weights_selected/EVALUATION.md](data/rm_weights_selected/EVALUATION.md) | **第一批精选评估：装甲板 + 必须输出角点（146 → 48 份，按年份 2024/2025/2026 排序）** |
 
 ## 实用脚本（scripts/）
 
@@ -75,6 +78,9 @@ hb_perf data/output/model_output/your_model.bin
 | `shtech_fp32_baseline.py` | SHtech SKD host FP32 基准 + 阳性样本/NV12 bin 生成 |
 | `shtech_board_compare.py` | SHtech SKD 板端 vs host FP32 阳性对照 |
 | `shtech_nv12_chroma_check.py` | NV12 色度域偏移影响统计（BGR↔NV12 往返模拟） |
+| `fetch_rm_weights.py` | 各开源仓库 RM 自瞄权重批量抓取 + md5/sha256 清单生成（幂等） |
+| `organize_rm_weights.py` | 权重按年份/学校/网络/Pose/Armor 重组与内容去重（可增量） |
+| `select_armor_pose.py` | 装甲板+角点权重评估筛选（ONNX/`.pt` 元数据核验 + 同源继承，四档置信度） |
 
 ## 切换 CPU 镜像 / 离线兜底
 
